@@ -75,7 +75,7 @@ The Python Standard Library and the following packages:
 - -t \<threads>: number of threads to use. By default 5.
 
 ## Output files
-- job_name+_signatures.txt: 
+- Job_name+`_signatures.txt`:
 Three output files will be generated for each job, named as ****, **{JOB NAME}_drivers.txt** and **{JOB NAME}_subnetworks.txt**.
 
 
