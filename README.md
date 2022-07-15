@@ -1,5 +1,5 @@
 # Net3D
-Net3D 是用来干嘛的。 具体请参见paper link。我们还有一个web server也可以用来run Net3D on your data
+Net3D 是用来decode somatic mutations干嘛的。 具体请参见paper link。我们还有一个web server也可以用来run Net3D on your data
 
 ## Installation
 Net3D is available on PyPI, which means you can install it with the following command:
@@ -21,7 +21,7 @@ The Python Standard Library and the following packages:
 
 ## Get started
 ### Required input
-- Mutation Annotation Format (MAF) file (https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format)
+- A Mutation Annotation Format (MAF) file (https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format)
 
 	Necessary columns:
 	<ul>
@@ -42,7 +42,14 @@ The Python Standard Library and the following packages:
 	Other columns can also be present in the MAF file but they will not be used. 
 
 ### Optional input
-- A text file containing a complete list of genes/proteins expressed in the cells where the mutations occur. One ID per line. Gene name, Ensembl gene ID, Ensembl transcript ID, Ensembl protein ID, and UniProt ID are accepted. By default all human genes are considered as expressed. 
+- A text file containing a complete list of genes/proteins expressed in the cells where the mutations occur. One ID per line. Gene name, Ensembl gene ID, Ensembl transcript ID, Ensembl protein ID, and UniProt ID are accepted. By default all genes are considered as expressed. Example:
+
+	>ENSG00000163166
+	>ENSG00000110422
+	>ENSG00000077312
+	>ENSG00000180660
+	>ENSG00000186635
+
 
 PINTS can call peaks directly from BAM files. To call peaks from BAM files, you need to provide the tool a path to the bam file and what kind of experiment it was from. If it's from a standard protocol, like PROcap, then you can set --exp-type PROcap. Other supported experiments including GROcap/ CoPRO/ csRNAseq/ NETCAGE/ CAGE/ RAMPAGE/ STRIPEseq. For a complete list of ..., please run
 
