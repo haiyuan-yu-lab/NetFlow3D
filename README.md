@@ -3,8 +3,8 @@ Python 3.7.4 or later
 
 Install Net3D:
 git clone https://github.com/zzyingying753/Net3D.git
+cd Net3D
 
-cd hotspot3d
 user specify:
 parser = argparse.ArgumentParser(description = description)
 	parser.add_argument('-m','--input_maf', required = True, type = str, help = 'Mutation data in MAF format (MAF file format: https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)')
