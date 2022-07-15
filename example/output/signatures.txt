@@ -1,0 +1,3 @@
+Signature_ID	Type	Affected_genes	Structure_source	Mutation_frequency	LoF_enrichment	Raw_pvalue	Adjusted_pvalue
+TUBGCP5_NonTrunc1	NonTrunc_IntraProtein_Cluster	TUBGCP5	PDB	TUBGCP5_1015:1	[NA]	3.77e-04	3.77e-04
+GDF10_NonTrunc1	NonTrunc_IntraProtein_Cluster	GDF10	AlphaFold2	GDF10_263:1	[NA]	6.50e-04	1.30e-03
