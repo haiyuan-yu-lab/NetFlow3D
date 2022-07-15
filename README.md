@@ -4,7 +4,9 @@ Net3D 是用来干嘛的。 具体请参见paper link。我们还有一个web se
 ### Requirements
 Python 3.6.8 or later
 
-Install Net3D:
+### Net3D is available on PyPI, which means you can install it with the following command
+	pip install pyPINTS
+
 git clone https://github.com/zzyingying753/Net3D.git<br>
 cd Net3D
 
