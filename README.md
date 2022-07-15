@@ -31,14 +31,15 @@ Required input:
 	<li>Protein_position</li>
 	<li>Codons</li>
 	<li>Tumor_Sample_Barcode</li>
-	</ul><br>
+	</ul>
+	
 	Optional columns:
 	<ul>
 	<li>Transcript_ID</li>
 	<li>Gene</li>
 	</ul>
 
-Ot
+	Other columns present in the MAF file will not be used. 
 
 
 PINTS can call peaks directly from BAM files. To call peaks from BAM files, you need to provide the tool a path to the bam file and what kind of experiment it was from. If it's from a standard protocol, like PROcap, then you can set --exp-type PROcap. Other supported experiments including GROcap/ CoPRO/ csRNAseq/ NETCAGE/ CAGE/ RAMPAGE/ STRIPEseq. For a complete list of ..., please run
