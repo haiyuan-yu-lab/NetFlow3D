@@ -7,9 +7,9 @@ Python 3.6.8 or later
 ### Installation
 Net3D is available on PyPI, which means you can install it with the following command:
 
-	pip install pyPINTS
+	pip install Net3D
 
-Alternatively, you can clone this repo to a local directory, then in the directory, run the following command:
+Alternatively, you can clone this repository to a local directory:
 
 	git clone https://github.com/zzyingying753/Net3D.git<br>
 	cd Net3D
