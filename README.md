@@ -42,7 +42,7 @@ The Python Standard Library and the following packages:
 	Other columns can also be present in the MAF file but they will not be used. 
 
 ### Optional input
-- A text file containing a complete list of genes/proteins expressed in the cells where the mutations occur. One ID per line. Gene name, Ensembl gene ID, Ensembl transcript ID, Ensembl protein ID, and UniProt ID are accepted. By default all genes are considered as expressed. Example:
+- A text file containing a complete list of genes/proteins expressed in the cells where the mutations occur. One ID per line. Gene name, Ensembl gene ID, Ensembl transcript ID, Ensembl protein ID, and UniProt ID are accepted. Example:
 
 	>ENSG00000163166<br>
 	>ENSG00000110422<br>
@@ -50,7 +50,7 @@ The Python Standard Library and the following packages:
 	>ENSG00000180660<br>
 	>ENSG00000186635<br>
 
-- A text file containing a complete list of protein-protein interactions existing in the cells where the mutations occur. One interaction per line. Protein IDs should be separated by tab. Ensembl protein ID and UniProt ID are accepted. By default Net3D will use the high quality binary interactome of Homo sapiens curated by HINT (http://hint.yulab.org/). Example:
+- A text file containing a complete list of protein-protein interactions existing in the cells where the mutations occur. One interaction per line. Protein IDs should be separated by tab. Ensembl protein ID and UniProt ID are accepted. Example:
 
 	>Q9H4A3&emsp;Q9HBL0<br>
 	>Q15654&emsp;Q15797<br>
@@ -59,24 +59,32 @@ The Python Standard Library and the following packages:
 	>P01112&emsp;P04049<br>
 
 ## Usage
+Type your command in the following format:
 
 	python Net3D.py -m <input_maf> -R <resolution> -I <job_name> [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-L <logfile_path>] [-t <threads>]
 
 ### Required arguments
-- -m <input_maf>: specify a MAF file as input.
-- -R \<resolution>: resolution when reporting subnetworks. If set to high, smaller subnetworks are favored. If set to low, larger subnetworks are favored.
-- -I <job_name>: specify a name for the current job.
+- -m <input_maf>: replace <input_maf> with the path to your MAF file.
+- -R \<resolution>: replace \<resolution> with low or high. This argument specifies the resolution when reporting subnetworks. If set to high, smaller subnetworks are favored. If set to low, larger subnetworks are favored.
+- -I <job_name>: replace <job_name> with a preferred name of the current job.
 
 ### Optional arguments
-- -X <expressed_genes>: specify a text file containing a complete list of expressed genes/proteins.
-- -n <binary_interactome>: specify a text file containing a complete list of existing protein-protein interactions. 
-- -o <output_path>: specify a path to the output files. 
-- -L <logfile_path>: specify a path to the log file.
-- -t \<threads>: number of threads to use. By default 5.
+- -X <expressed_genes>: replace <expressed_genes> with the path to a text file containing a complete list of expressed genes/proteins (see [Optional input](#optional-input) for details). If not specified, all genes will be considered as expressed.
+- -n <binary_interactome>: replace <binary_interactome> with the path to a text file containing a complete list of existing protein-protein interactions (see [Optional input](#optional-input) for details). If not specified, Net3D will use the high quality binary interactome of Homo sapiens curated by HINT (http://hint.yulab.org/).
+- -o <output_path>: replace <output_path> with a path where the output files will be put. If not specified, the output files will be stored in `./output/`
+- -L <logfile_path>: replace <logfile_path> with a path where the log file will be put. If not specified, the log file will be stored in `./log/`
+- -t \<threads>: replace \<threads> with a postive integer. This argument specifies the number of threads to use. If not specified, 5 threads will be used.
+	
+Example :
+
+	python Net3D.py -m example/input/mutations.maf -R low -I test -X example/input/expressed_genes.txt -n example/input/interactome.txt
 
 ## Output files
+If -o <output_path> is not specified, the output files will be stored in Net3D/output/. Otherwise the output files will be stored in the specified path. 
 - {job_name}`_signatures.txt`:
-Three output files will be generated for each job, named as ****, **{JOB NAME}_drivers.txt** and **{JOB NAME}_subnetworks.txt**.
+- {job_name}`_drivers.txt`:
+- {job_name}`_subnetworks.txt`:
+Three output files will be generated for each job, named as ****, **** and ****.
 
 
 PINTS can call peaks directly from BAM files. To call peaks from BAM files, you need to provide the tool a path to the bam file and what kind of experiment it was from. If it's from a standard protocol, like PROcap, then you can set --exp-type PROcap. Other supported experiments including GROcap/ CoPRO/ csRNAseq/ NETCAGE/ CAGE/ RAMPAGE/ STRIPEseq. For a complete list of ..., please run
