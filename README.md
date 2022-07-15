@@ -52,11 +52,12 @@ The Python Standard Library and the following packages:
 
 - A text file containing a complete list of protein-protein interactions existing in the cells where the mutations occur. One interaction per line. Protein IDs should be separated by tab. Ensembl protein ID and UniProt ID are accepted. By default Net3D will use the high quality binary interactome of Homo sapiens curated by HINT (http://hint.yulab.org/). Example:
 
-	>Q9H4A3&nbsp;Q9HBL0<br>
-	>Q15654&nbsp;Q15797<br>
-	>P63279&nbsp;Q13643<br>
-	>O43236&nbsp;O43236<br>
-	>P01112&nbsp;P04049<br>
+	>Q9H4A3&emsp;Q9HBL0<br>
+	>Q15654&emsp;Q15797<br>
+	>P63279&emsp;Q13643<br>
+	>O43236&emsp;O43236<br>
+	>P01112&emsp;P04049<br>
+
 	
 
 PINTS can call peaks directly from BAM files. To call peaks from BAM files, you need to provide the tool a path to the bam file and what kind of experiment it was from. If it's from a standard protocol, like PROcap, then you can set --exp-type PROcap. Other supported experiments including GROcap/ CoPRO/ csRNAseq/ NETCAGE/ CAGE/ RAMPAGE/ STRIPEseq. For a complete list of ..., please run
