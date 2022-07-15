@@ -1,2 +1,0 @@
-Subnetwork_genes	Subnetwork_size
-TUBGCP5	1
