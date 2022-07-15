@@ -44,11 +44,11 @@ The Python Standard Library and the following packages:
 ### Optional input
 - A text file containing a complete list of genes/proteins expressed in the cells where the mutations occur. One ID per line. Gene name, Ensembl gene ID, Ensembl transcript ID, Ensembl protein ID, and UniProt ID are accepted. By default all genes are considered as expressed. Example:
 
-	>ENSG00000163166
-	>ENSG00000110422
-	>ENSG00000077312
-	>ENSG00000180660
-	>ENSG00000186635
+	>ENSG00000163166<br>
+	>ENSG00000110422<br>
+	>ENSG00000077312<br>
+	>ENSG00000180660<br>
+	>ENSG00000186635<br>
 
 
 PINTS can call peaks directly from BAM files. To call peaks from BAM files, you need to provide the tool a path to the bam file and what kind of experiment it was from. If it's from a standard protocol, like PROcap, then you can set --exp-type PROcap. Other supported experiments including GROcap/ CoPRO/ csRNAseq/ NETCAGE/ CAGE/ RAMPAGE/ STRIPEseq. For a complete list of ..., please run
