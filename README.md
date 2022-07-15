@@ -23,16 +23,20 @@ The Python Standard Library and the following packages:
 Required input: 
 - Mutation Annotation Format (MAF) file (https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format)
 
-Necessary columns:
-  - Hugo_Symbol
-  - Variant_Classification
-  - ENSP
-  - Protein_position
-  - Codons
-  - Tumor_Sample_Barcode
-Optional columns:
-  - Transcript_ID
-  - Gene
+	Necessary columns:
+	<ul>
+	<li>Hugo_Symbol</li>
+	<li>Variant_Classification</li>
+	<li>ENSP</li>
+	<li>Protein_position</li>
+	<li>Codons</li>
+	<li>Tumor_Sample_Barcode</li>
+	</ul><br>
+	Optional columns:
+	<ul>
+	<li>Transcript_ID</li>
+	<li>Gene</li>
+	</ul>
 
 Ot
 
