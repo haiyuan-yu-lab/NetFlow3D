@@ -60,7 +60,8 @@ The Python Standard Library and the following packages:
 
 ### Usage
 
-	python Net3D.py -m <input_maf> -R <resolution> -I <job_name> [-t <threads> -X <expressed_genes> -n <binary_interactome> -o <output_path> -L <logfile_path>] 
+	python Net3D.py -m <input_maf> -R <resolution> -I <job_name> [-t <threads>] [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-L <logfile_path>] 
+
 ### Required argument
 - -m <MAF_file>
 - -R <high/low>: resolution when reporting subnetworks. If set to high, smaller subnetworks are favored. If set to low, larger subnetworks are favored.
