@@ -70,8 +70,14 @@ The Python Standard Library and the following packages:
 ### Optional arguments
 - -X <expressed_genes>: specify a text file containing a complete list of expressed genes/proteins.
 - -n <binary_interactome>: specify a text file containing a complete list of existing protein-protein interactions. 
-- -o <output_path>: specify a path to the output files. Three output files will be generated for each job, named as **{JOB NAME}_signatures.txt**, **{JOB NAME}_drivers.txt** and **{JOB NAME}_subnetworks.txt**.
+- -o <output_path>: specify a path to the output files. 
+- -L <logfile_path>: specify a path to the log file.
 - -t \<threads>: number of threads to use. By default 5.
+
+## Output files
+- job_name+_signatures.txt: 
+Three output files will be generated for each job, named as ****, **{JOB NAME}_drivers.txt** and **{JOB NAME}_subnetworks.txt**.
+
 
 PINTS can call peaks directly from BAM files. To call peaks from BAM files, you need to provide the tool a path to the bam file and what kind of experiment it was from. If it's from a standard protocol, like PROcap, then you can set --exp-type PROcap. Other supported experiments including GROcap/ CoPRO/ csRNAseq/ NETCAGE/ CAGE/ RAMPAGE/ STRIPEseq. For a complete list of ..., please run
 
