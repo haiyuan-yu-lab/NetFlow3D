@@ -68,7 +68,7 @@ Type your command in the following format:
 - `-R <resolution>`: replace `<resolution>` with `low` or `high`. This argument specifies the resolution when Net3D reports subnetworks. If set to `high`, smaller subnetworks are favored. If set to `low`, larger subnetworks are favored.
 - `-I <job_name>`: replace `<job_name>` with a preferred name of the current job.
 
-### Optional arguments (`[...]`)
+### Optional arguments `[...]`
 - `-X <expressed_genes>`: replace `<expressed_genes>` with the path to a text file containing a complete list of expressed genes/proteins (see [Optional input](#optional-input) for details). If not specified, all genes will be considered as expressed.
 - `-n <binary_interactome>`: replace `<binary_interactome>` with the path to a text file containing a complete list of existing protein-protein interactions (see [Optional input](#optional-input) for details). If not specified, Net3D will use the high quality binary interactome of Homo sapiens curated by HINT (http://hint.yulab.org/).
 - `-o <output_path>`: replace `<output_path>` with a path where the output files will be put. If not specified, the output files will be stored in `./output/`.
