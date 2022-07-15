@@ -13,21 +13,21 @@ Alternatively, you can clone this repository to a local directory:
 
 ## Prerequisites
 The Python Standard Library and the following packages:
-<li>scipy</li>
-<li>numpy</li>
-<li>networkx (2.5 or later)</li>
-<li>pandas</li>
-<li>statsmodels</li>
+- scipy
+- numpy
+- networkx (2.5 or later)
+- pandas
+- statsmodels
 
 ## Get started
 Required input: 
-<li>Mutation Annotation Format (MAF) file (https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format) with a handful of necessary columns:
-	<li>Hugo_Symbol</li> 
-<li>Variant_Classification</li>
-<li>ENSP</li>
-<li>Protein_position</li>
-<li>Codons</li>
-<li>Tumor_Sample_Barcode</li>
+- Mutation Annotation Format (MAF) file (https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format) with a handful of necessary columns:
+  - Hugo_Symbol
+  - Variant_Classification
+  - ENSP
+  - Protein_position
+  - Codons
+  - Tumor_Sample_Barcode
 
 PINTS can call peaks directly from BAM files. To call peaks from BAM files, you need to provide the tool a path to the bam file and what kind of experiment it was from. If it's from a standard protocol, like PROcap, then you can set --exp-type PROcap. Other supported experiments including GROcap/ CoPRO/ csRNAseq/ NETCAGE/ CAGE/ RAMPAGE/ STRIPEseq. For a complete list of ..., please run
 
