@@ -20,7 +20,7 @@ The Python Standard Library and the following packages:
 - statsmodels
 
 ## Get started
-Required input: 
+### Required input
 - Mutation Annotation Format (MAF) file (https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format)
 
 	Necessary columns:
@@ -39,8 +39,10 @@ Required input:
 	<li>Gene</li>
 	</ul>
 
-	Other columns present in the MAF file will not be used. 
+	Other columns can also be present in the MAF file but they will not be used. 
 
+### Optional input
+- A text file containing a complete list of genes/proteins expressed in the cells where the mutations occur. One ID per line. Gene name, Ensembl gene ID, Ensembl transcript ID, Ensembl protein ID, and UniProt ID are accepted. By default all human genes are considered as expressed. 
 
 PINTS can call peaks directly from BAM files. To call peaks from BAM files, you need to provide the tool a path to the bam file and what kind of experiment it was from. If it's from a standard protocol, like PROcap, then you can set --exp-type PROcap. Other supported experiments including GROcap/ CoPRO/ csRNAseq/ NETCAGE/ CAGE/ RAMPAGE/ STRIPEseq. For a complete list of ..., please run
 
