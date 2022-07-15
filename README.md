@@ -1,8 +1,8 @@
 # Net3D
-Net3D 是用来干嘛的。 具体请参见paper link。我们还有一个web server也可以用来run Net3D.
+Net3D 是用来干嘛的。 具体请参见paper link。我们还有一个web server也可以用来run Net3D on your data
 
-requirement:
-Python 3.7.4 or later
+### Requirements
+Python 3.6.8 or later
 
 Install Net3D:
 git clone https://github.com/zzyingying753/Net3D.git<br>
