@@ -64,9 +64,9 @@ Type your command in the following format:
 	python Net3D.py -m <input_maf> -R <resolution> -I <job_name> [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-L <logfile_path>] [-t <threads>]
 
 ### Required arguments
-- -m <input_maf>: replace <input_maf> with the path to your MAF file.
-- -R \<resolution>: replace \<resolution> with low or high. This argument specifies the resolution when reporting subnetworks. If set to high, smaller subnetworks are favored. If set to low, larger subnetworks are favored.
-- -I <job_name>: replace <job_name> with a preferred name of the current job.
+- `-m <input_maf>`: replace `<input_maf>` with the path to your MAF file.
+- `-R \<resolution>`: replace `\<resolution>` with `low` or `high`. This argument specifies the resolution when reporting subnetworks. If set to `high`, smaller subnetworks are favored. If set to `low`, larger subnetworks are favored.
+- `-I <job_name>`: replace `<job_name>` with a preferred name of the current job.
 
 ### Optional arguments
 - -X <expressed_genes>: replace <expressed_genes> with the path to a text file containing a complete list of expressed genes/proteins (see [Optional input](#optional-input) for details). If not specified, all genes will be considered as expressed.
