@@ -1,9 +1,14 @@
 # Net3D
+Net3D 是用来干嘛的。 具体请参见paper link。我们还有一个web server也可以用来run Net3D.
+
+requirement:
 Python 3.7.4 or later
 
 Install Net3D:
 git clone https://github.com/zzyingying753/Net3D.git
 cd Net3D
+
+
 
 user specify:
 parser = argparse.ArgumentParser(description = description)
@@ -15,3 +20,35 @@ parser = argparse.ArgumentParser(description = description)
 	parser.add_argument('-n','--binary_interactome', type = str, default = "./metadata/HomoSapiens_interactome_HINThq.txt", help = '[OPTIONAL] A text file with protein-protein interactions. Each row stands for an interaction (IDs should be separated by tab. HUGO/ENSP/UniProt IDs are accepted). Please include all existing interactions in your context. By default we use the human binary interactome from HINT (http://hint.yulab.org/download/HomoSapiens/binary/hq/)')
 	parser.add_argument('-o','--output_path', type = str, default = "./output/", help = '[OPTIONAL] Path to the job folder. If not specified, the job folder will be stored in the default output folder')
 	parser.add_argument('-L','--logfile_path', type = str, default = "./log/", help = '[OPTIONAL] Path to the log file. If not specified, the log file will be stored in the default log folder')
+	
+	Mutation file - Standard .maf with custom coding transcript and protein annotations (ENST00000275493 and p.L858R)
+
+There are only a handful of columns necessary from .maf files. They are:
+
+	Hugo_Symbol
+
+	Chromosome
+	
+	Start_Position
+	
+	End_Position
+	
+	Variant_Classification
+	
+	Reference_Allele
+	
+	Tumor_Seq_Allele1
+	
+	Tumor_Seq_Allele2
+	
+	Tumor_Sample_Barcode
+And two non-standard columns:
+
+	a transcript ID column
+	
+	a protein peptide change column (HGVS p. single letter abbreviations, ie p.T790M)
+Current Annotation Support:
+
+	Transcript ID - Ensembl coding transcript ID's (ENST)
+
+	Gene name - HUGO symbol
