@@ -19,7 +19,7 @@ The Python Standard Library and the following packages:
 - pandas
 - statsmodels
 
-## Get started
+## Prepare input files
 ### Required input
 - A Mutation Annotation Format (MAF) file (https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format)
 
@@ -58,17 +58,19 @@ The Python Standard Library and the following packages:
 	>O43236&emsp;O43236<br>
 	>P01112&emsp;P04049<br>
 
-### Usage
+## Usage
 
 	python Net3D.py -m <input_maf> -R <resolution> -I <job_name> [-t <threads>] [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-L <logfile_path>] 
 
-### Required argument
-- -m <MAF_file>
-- -R <high/low>: resolution when reporting subnetworks. If set to high, smaller subnetworks are favored. If set to low, larger subnetworks are favored.
-- -I <job_name>
+### Required arguments
+- -m <input_maf>: specify a MAF file as input.
+- -R <resolution>: resolution when reporting subnetworks. If set to high, smaller subnetworks are favored. If set to low, larger subnetworks are favored.
+- -I <job_name>: specify a name for the current job.
 
 ### Optional argument
-- -X <>
+- -t <threads>: number of threads to use when running Net3D. By default 5.
+- -X <expressed_genes>: specify a text file containing a complete list of expressed genes/proteins.
+- -n <binary_interactome>: specify a text file containing a complete list of existing protein-protein interactions.
 
 PINTS can call peaks directly from BAM files. To call peaks from BAM files, you need to provide the tool a path to the bam file and what kind of experiment it was from. If it's from a standard protocol, like PROcap, then you can set --exp-type PROcap. Other supported experiments including GROcap/ CoPRO/ csRNAseq/ NETCAGE/ CAGE/ RAMPAGE/ STRIPEseq. For a complete list of ..., please run
 
