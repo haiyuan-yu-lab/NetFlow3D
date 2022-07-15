@@ -59,7 +59,7 @@ The Python Standard Library and the following packages:
 	>P01112&emsp;P04049<br>
 
 ## Usage
-Type your command in the following format. Content in `[]` are optional.
+Type your command in the following format. The content in `[]` are optional.
 
 	python Net3D.py -m <input_maf> -R <resolution> -I <job_name> [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-L <logfile_path>] [-t <threads>]
 
