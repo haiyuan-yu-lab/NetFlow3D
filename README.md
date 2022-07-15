@@ -60,17 +60,17 @@ The Python Standard Library and the following packages:
 
 ## Usage
 
-	python Net3D.py -m <input_maf> -R <resolution> -I <job_name> [-t <threads>] [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-L <logfile_path>] 
+	python Net3D.py -m <input_maf> -R <resolution> -I <job_name> [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-L <logfile_path>] [-t <threads>]
 
 ### Required arguments
 - -m <input_maf>: specify a MAF file as input.
 - -R <resolution>: resolution when reporting subnetworks. If set to high, smaller subnetworks are favored. If set to low, larger subnetworks are favored.
 - -I <job_name>: specify a name for the current job.
 
-### Optional argument
-- -t <threads>: number of threads to use when running Net3D. By default 5.
+### Optional arguments
 - -X <expressed_genes>: specify a text file containing a complete list of expressed genes/proteins.
-- -n <binary_interactome>: specify a text file containing a complete list of existing protein-protein interactions.
+- -n <binary_interactome>: specify a text file containing a complete list of existing protein-protein interactions. 
+- -t <threads>: number of threads to use. By default 5.
 
 PINTS can call peaks directly from BAM files. To call peaks from BAM files, you need to provide the tool a path to the bam file and what kind of experiment it was from. If it's from a standard protocol, like PROcap, then you can set --exp-type PROcap. Other supported experiments including GROcap/ CoPRO/ csRNAseq/ NETCAGE/ CAGE/ RAMPAGE/ STRIPEseq. For a complete list of ..., please run
 
