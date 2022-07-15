@@ -64,7 +64,7 @@ The Python Standard Library and the following packages:
 
 ### Required arguments
 - -m <input_maf>: specify a MAF file as input.
-- -R <resolution>: resolution when reporting subnetworks. If set to high, smaller subnetworks are favored. If set to low, larger subnetworks are favored.
+- -R <resolution>:dsd resolution when reporting subnetworks. If set to high, smaller subnetworks are favored. If set to low, larger subnetworks are favored.
 - -I <job_name>: specify a name for the current job.
 
 ### Optional arguments
