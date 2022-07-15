@@ -2,7 +2,7 @@
 Python 3.7.4 or later
 
 Install Net3D:
-git clone https://github.com/ding-lab/hotspot3d
+git clone https://github.com/zzyingying753/Net3D.git
 
 cd hotspot3d
 user specify:
