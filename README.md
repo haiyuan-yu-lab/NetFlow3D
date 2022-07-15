@@ -1,10 +1,7 @@
 # Net3D
 Net3D 是用来干嘛的。 具体请参见paper link。我们还有一个web server也可以用来run Net3D on your data
 
-### Requirements
-Python 3.6.8 or later
-
-### Installation
+## Installation
 Net3D is available on PyPI, which means you can install it with the following command:
 
 	pip install Net3D
@@ -14,8 +11,27 @@ Alternatively, you can clone this repository to a local directory:
 	git clone https://github.com/zzyingying753/Net3D.git
 	cd Net3D
 
+## Prerequisites
+The Python Standard Library and the following packages:
+<li>scipy</li>
+<li>numpy</li>
+<li>networkx (2.5 or later)</li>
+<li>pandas</li>
+<li>statsmodels</li>
 
+## Get started
+Required input: 
+<li>Mutation Annotation Format (MAF) file (https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format) with a handful of necessary columns:
+	<li>Hugo_Symbol</li> 
+<li>Variant_Classification</li>
+<li>ENSP</li>
+<li>Protein_position</li>
+<li>Codons</li>
+<li>Tumor_Sample_Barcode</li>
 
+PINTS can call peaks directly from BAM files. To call peaks from BAM files, you need to provide the tool a path to the bam file and what kind of experiment it was from. If it's from a standard protocol, like PROcap, then you can set --exp-type PROcap. Other supported experiments including GROcap/ CoPRO/ csRNAseq/ NETCAGE/ CAGE/ RAMPAGE/ STRIPEseq. For a complete list of ..., please run
+
+	python Net3D.py -h
 user specify:
 parser = argparse.ArgumentParser(description = description)
 	parser.add_argument('-m','--input_maf', required = True, type = str, help = 'Mutation data in MAF format (MAF file format: https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)')
