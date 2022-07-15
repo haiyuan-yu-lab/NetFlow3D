@@ -11,7 +11,7 @@ Net3D is available on PyPI, which means you can install it with the following co
 
 Alternatively, you can clone this repository to a local directory:
 
-	git clone https://github.com/zzyingying753/Net3D.git<br>
+	git clone https://github.com/zzyingying753/Net3D.git
 	cd Net3D
 
 
