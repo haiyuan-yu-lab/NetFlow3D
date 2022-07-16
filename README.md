@@ -1,5 +1,5 @@
 # Net3D
-Net3D 是用来decode somatic mutations干嘛的。 具体请参见paper link。我们还有一个web server也可以用来run Net3D on your data
+Net3D 是用来decode somatic mutations干嘛的。 我们还有一个web server也可以用来run Net3D on your data. 如果你用它请cite paper link。
 
 ## Installation
 Net3D is available on PyPI, which means you can install it with the following command:
@@ -83,8 +83,12 @@ An example of your command (please run the following command to see if Net3D is 
 Net3D will output the following files. `{job_name}` will be replaced by the name you specified. If you run the example command, `{job_name}` will be replaced by `test`. 
 - `{job_name}`_signatures.txt
 
-	This a tab-separated file with eight columns:
-	- Signature_ID: each selection signature has a unique ID formatted as {gene1}_{type} or {gene1}_{gene2}_{type}
+	This a tab-separated file containing all the selection signatures identified by Net3D. The first line is a header. Eight columns are present:
+	1. Signature_ID
+	2. Type
+	3. Affected_genes
+	4. Structure_source
+	5. Mutation_frequency (format: `{amino acid residue}:{}`)
   - 
 - `{job_name}`_drivers.txt:
 - `{job_name}`_subnetworks.txt:
