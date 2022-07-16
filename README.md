@@ -66,7 +66,7 @@ Type your command in the following format. The content in `[]` are optional.
 ### Required arguments
 - `-m <input_maf>`: replace `<input_maf>` with the path to your MAF file.
 - `-R <resolution>`: replace `<resolution>` with `low` or `high`. This argument specifies the resolution when identifying subnetworks with strong internal interconnectivity. If set to `high`, smaller subnetworks are favored. If set to `low`, larger subnetworks are favored.
-- `-I <job_name>`: replace `<job_name>` with a preferred name of the current job.
+- `-I <job_name>`: replace `<job_name>` with a name you preferred for the current job.
 
 ### Optional arguments
 - `-X <expressed_genes>`: replace `<expressed_genes>` with the path to your file which stores a complete list of expressed genes/proteins (see [Optional input](#optional-input) for how to generate the file). If not specified, all genes/proteins will be considered as expressed.
