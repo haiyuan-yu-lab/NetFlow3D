@@ -71,8 +71,8 @@ Type your command in the following format. The content in `[]` are optional.
 ### Optional arguments
 - `-X <expressed_genes>`: replace `<expressed_genes>` with the path to your file which stores a complete list of expressed genes/proteins (see [Optional input](#optional-input) for how to generate the file). If not specified, all genes/proteins will be considered as expressed.
 - `-n <binary_interactome>`: replace `<binary_interactome>` with the path to your file which stores a complete list of existing protein-protein interactions (see [Optional input](#optional-input) for how to generate the file). If not specified, Net3D will use the high quality binary interactome of Homo sapiens curated by HINT (http://hint.yulab.org/).
-- `-o <output_path>`: replace `<output_path>` with a path where the output files will be put. If not specified, the output files will be stored in `./output/`.
-- `-L <logfile_path>`: replace `<logfile_path>` with a path where the log file will be put. If not specified, the log file will be stored in `./log/`.
+- `-o <output_path>`: replace `<output_path>` with a path where the output files will be stored. If not specified, the output files will be stored in `./output/`.
+- `-L <logfile_path>`: replace `<logfile_path>` with a path where the log file will be stored. If not specified, the log file will be stored in `./log/`.
 - -t `<threads>`: replace `<threads>` with a postive integer. This argument specifies the number of threads to use. If not specified, Net3D will use 5 threads.
 	
 Example :
