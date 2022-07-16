@@ -88,7 +88,7 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 	2. Type
 	4. Affected_genes
 	5. Structure_source (`[NA]` means not applicable)
-	6. Mutation_frequency (Format: comma separated `{amino acid residue}:{number of samples}` for spatial clusters of non-truncating mutations; `{gene}:{number of LoF mutations in all samples}` for protein-specific enrichment of LoF mutations.)
+	6. Mutation_frequency (Format: `{amino acid residue}:{number of samples}` separated by comma for spatial clusters of non-truncating mutations; `{gene}:{number of LoF mutations in all samples}` for protein-specific enrichment of LoF mutations.)
 	7. LoF_enrichment (`[NA]` means not applicable)
 	8. Raw_pvalue
 	9. Adjusted_pvalue
