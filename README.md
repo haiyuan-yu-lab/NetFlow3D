@@ -65,7 +65,7 @@ Type your command in the following format. The content in `[]` are optional.
 
 ### Required arguments
 - `-m <input_maf>`: replace `<input_maf>` with the path to your MAF file.
-- `-R <resolution>`: replace `<resolution>` with `low` or `high`. This argument specifies the resolution when Net3D reports subnetworks. If set to `high`, smaller subnetworks are favored. If set to `low`, larger subnetworks are favored.
+- `-R <resolution>`: replace `<resolution>` with `low` or `high`. This argument specifies the resolution when reporting subnetworks. If set to `high`, smaller subnetworks are favored. If set to `low`, larger subnetworks are favored.
 - `-I <job_name>`: replace `<job_name>` with a preferred name of the current job.
 
 ### Optional arguments
