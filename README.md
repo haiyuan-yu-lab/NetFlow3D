@@ -102,7 +102,7 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 
 - `{job_name}`_subnetworks.txt
 
-	This is a tab-separated file containing the subnetworks identified by Net3D. The first line is a header. Two columns are present:
+	This is a tab-separated file containing the subnetworks with strong internal interconnectivity identified by Net3D. The first line is a header. Two columns are present:
 	1. Subnetwork_genes	
 	2. Subnetwork_size
 
