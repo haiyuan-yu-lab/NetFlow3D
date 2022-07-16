@@ -80,7 +80,7 @@ An example of your command (please run the following command to see if Net3D is 
 	python Net3D.py -m example/input/mutations.maf -R low -I test -X example/input/expressed_genes.txt -n example/input/interactome.txt -t 10
 
 ## Output files
-Net3D will generate the following output files. `{job_name}` will be replaced by the name you specified (if you run the example command, `{job_name}` will be replaced by `test`). 
+Net3D will output the following files. `{job_name}` will be replaced by the name you specified (if you run the example command, `{job_name}` will be replaced by `test`). 
 - `{job_name}`_signatures.txt:
 - `{job_name}`_drivers.txt:
 - `{job_name}`_subnetworks.txt:
