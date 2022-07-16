@@ -88,7 +88,7 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 	2. Type
 	3. Affected_genes
 	4. Structure_source
-	5. Mutation_frequency (format: `{amino acid residue}:{number of samples}`)
+	5. Mutation_frequency (Format: `{amino acid residue}:{number of samples}`)
 	6. LoF_enrichment (`[NA]` means not applicable)
 	7. Raw_pvalue
 	8. Adjusted_pvalue
