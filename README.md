@@ -80,10 +80,10 @@ An example of your command (please run the following command to see if Net3D is 
 	python Net3D.py -m example/input/mutations.maf -R low -I test -X example/input/expressed_genes.txt -n example/input/interactome.txt -t 10
 
 ## Output files
-If -o <output_path> is not specified, the output files will be stored in Net3D/output/. Otherwise the output files will be stored in the specified path. 
-- {job_name}`_signatures.txt`:
-- {job_name}`_drivers.txt`:
-- {job_name}`_subnetworks.txt`:
+Net3D will generate the following output files. `{job_name}` will be replaced by the name you specified (if you run the example command, `{job_name}` will be replaced by `test`). 
+- `{job_name}`_signatures.txt:
+- `{job_name}`_drivers.txt:
+- `{job_name}`_subnetworks.txt:
 Three output files will be generated for each job, named as ****, **** and ****.
 
 
