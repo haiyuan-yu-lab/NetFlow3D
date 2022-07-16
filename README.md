@@ -69,7 +69,7 @@ Type your command in the following format. The content in `[]` are optional.
 - `-I <job_name>`: replace `<job_name>` with a preferred name of the current job.
 
 ### Optional arguments
-- `-X <expressed_genes>`: replace `<expressed_genes>` with the path to a text file containing a complete list of expressed genes/proteins (see [Optional input](#optional-input) for details). If not specified, all genes will be considered as expressed.
+- `-X <expressed_genes>`: replace `<expressed_genes>` with the path to your text file storing a complete list of expressed genes/proteins (see [Optional input](#optional-input) for details). If not specified, all genes will be considered as expressed.
 - `-n <binary_interactome>`: replace `<binary_interactome>` with the path to a text file containing a complete list of existing protein-protein interactions (see [Optional input](#optional-input) for details). If not specified, Net3D will use the high quality binary interactome of Homo sapiens curated by HINT (http://hint.yulab.org/).
 - `-o <output_path>`: replace `<output_path>` with a path where the output files will be put. If not specified, the output files will be stored in `./output/`.
 - `-L <logfile_path>`: replace `<logfile_path>` with a path where the log file will be put. If not specified, the log file will be stored in `./log/`.
