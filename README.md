@@ -75,9 +75,9 @@ Type your command in the following format. The content in `[]` are optional.
 - `-L <logfile_path>`: replace `<logfile_path>` with a directory where the log file will be stored. If not specified, the log file will be stored in `./log/`.
 - `-t <threads>`: replace `<threads>` with a postive integer. This argument specifies the number of threads to use. If not specified, Net3D will use five threads.
 	
-Example :
+Example command (please run it to check if Net3D is working normally):
 
-	python Net3D.py -m example/input/mutations.maf -R low -I test -X example/input/expressed_genes.txt -n example/input/interactome.txt
+	python Net3D.py -m example/input/mutations.maf -R low -I test -X example/input/expressed_genes.txt -n example/input/interactome.txt -t 10
 
 ## Output files
 If -o <output_path> is not specified, the output files will be stored in Net3D/output/. Otherwise the output files will be stored in the specified path. 
