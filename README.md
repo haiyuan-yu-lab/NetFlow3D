@@ -83,7 +83,7 @@ An example of your command (please run the following command to see if Net3D is 
 Net3D will output the following files. `{job_name}` will be replaced by the name you specified. If you run the example command, `{job_name}` will be replaced by `test`. 
 - `{job_name}`_signatures.txt
 
-	This a tab-separated file containing all the selection signatures identified by Net3D. The first line is a header. Eight columns are present:
+	This a tab-separated file containing the selection signatures identified by Net3D. The first line is a header. Eight columns are present:
 	1. Signature_ID
 	2. Type
 	4. Affected_genes
@@ -92,9 +92,18 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 	7. LoF_enrichment (`[NA]` means not applicable)
 	8. Raw_pvalue
 	9. Adjusted_pvalue
-  - 
-- `{job_name}`_drivers.txt:
-- `{job_name}`_subnetworks.txt:
-Three output files will be generated for each job, named as ****, **** and ****.
+
+- `{job_name}`_drivers.txt
+
+	This is a tab-separated file containing the potentionally functional mutations identified by Net3D. The first line is a header. The columns include:
+	1. All columns in the input MAF file
+	2. UniProt
+	3. Signature_ID (If a mutation is involved in multiple signatures, the signature IDs will be separated by comma)
+
+- `{job_name}`_subnetworks.txt
+
+	This is a tab-separated file containing the subnetworks identified by Net3D. The first line is a header. Two columns are present:
+	1. Subnetwork_genes	
+	2. Subnetwork_size
 
 
