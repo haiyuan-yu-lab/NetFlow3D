@@ -86,12 +86,12 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 	This a tab-separated file containing all the selection signatures identified by Net3D. The first line is a header. Eight columns are present:
 	1. Signature_ID
 	2. Type
-	3. Affected_genes
-	4. Structure_source
-	5. Mutation_frequency (Format: `{amino acid residue}:{number of samples}`)
-	6. LoF_enrichment (`[NA]` means not applicable)
-	7. Raw_pvalue
-	8. Adjusted_pvalue
+	4. Affected_genes
+	5. Structure_source (`[NA]` means not applicable)
+	6. Mutation_frequency (Format: `{amino acid residue}:{number of samples}`, separated by `,`)
+	7. LoF_enrichment (`[NA]` means not applicable)
+	8. Raw_pvalue
+	9. Adjusted_pvalue
   - 
 - `{job_name}`_drivers.txt:
 - `{job_name}`_subnetworks.txt:
