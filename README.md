@@ -88,7 +88,7 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 	2. Type
 	3. Affected_genes
 	4. Structure_source
-	5. Mutation_frequency (format: amino_acid_residue}:number_of_samples)
+	5. Mutation_frequency (format: amino_acid_residue:number_of_samples)
   - 
 - `{job_name}`_drivers.txt:
 - `{job_name}`_subnetworks.txt:
