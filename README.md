@@ -23,7 +23,7 @@ The Python Standard Library and the following packages:
 ### Required input
 - A Mutation Annotation Format (MAF) file (https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format)
 
-	Necessary columns:
+	Required columns:
 	<ul>
 	<li>Hugo_Symbol</li>
 	<li>Variant_Classification</li>
