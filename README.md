@@ -92,7 +92,7 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 
 		The content format in this column depends on the content in "Type":
 		- If the content in "Type" is “LoF_IntraProtein_Enriched”, the format of this column is `{gene}:{number of LoF mutations in all samples}`
-		- Otherwise, the format of this column is `{residue1}:{number of mutated samples},{residue2}:{number of mutated samples},...`.
+		- Otherwise, the format of this column is `{residue1}:{number of mutated samples},{residue2}:{number of mutated samples},...`
 	9. LoF_enrichment (`[NA]` means not applicable)
 	10. Raw_pvalue
 	11. Adjusted_pvalue
