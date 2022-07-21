@@ -102,7 +102,7 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 	This is a tab-separated file containing the potentionally functional mutations identified by Net3D. The first line is a header. The columns include:
 	1. All columns in the input MAF file
 	2. UniProt
-	3. Signature_ID (Indicating the selection signature where the mutation is involved. If a mutation is involved in multiple signatures, the signature IDs will be separated by comma)
+	3. Signature_ID (This column indicates the selection signature where a mutation is involved. If a mutation is involved in multiple signatures, the signature IDs will be separated by comma)
 
 - `{job_name}`_subnetworks.txt
 
