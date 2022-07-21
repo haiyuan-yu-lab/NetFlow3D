@@ -1,5 +1,5 @@
 # Net3D
-Net3D 是用来decode somatic mutations干嘛的。 我们还有一个web server也可以用来run Net3D on your data. 如果你用它请cite paper link。
+Net3D 是用来decode somatic mutations干嘛的。 我们还有一个web server也可以用来run Net3D on your data. If you find our tool helpful, please cite.
 
 ## Installation
 Net3D is available on PyPI, which means you can install it with the following command:
