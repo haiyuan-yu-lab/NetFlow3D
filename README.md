@@ -90,7 +90,7 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 	5. Structure_source (`[NA]` means not applicable)
 	6. Mutation_frequency 
 
-		(Format: `{amino acid residue}:{number of mutated samples}` separated by comma for non-truncating signatures. `{gene}:{number of LoF mutations in all samples}` for LoF signatures.)
+		The content format in this column depends on the content in **Type**:(Format: `{amino acid residue}:{number of mutated samples}` separated by comma for non-truncating signatures. `{gene}:{number of LoF mutations in all samples}` for LoF signatures.)
 	9. LoF_enrichment (`[NA]` means not applicable)
 	10. Raw_pvalue
 	11. Adjusted_pvalue
