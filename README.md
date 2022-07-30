@@ -15,7 +15,7 @@ Alternatively, you can clone this repository to a local directory:
 The Python Standard Library and the following packages:
 - scipy
 - numpy
-- networkx (2.5 or later)
+- networkx (2.8.5 or later)
 - pandas
 - statsmodels
 
