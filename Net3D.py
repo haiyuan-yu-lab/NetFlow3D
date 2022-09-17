@@ -169,7 +169,7 @@ if __name__ == "__main__":
 	# Prepare mutation data
 	# ---------------------
 	try:
-		df = pd.read_csv(args.input_maf, sep = "\t", dtype = str)
+		df = pd.read_csv(args.input_maf, sep = "\t", dtype = str).dropna(subset = ["Hugo_Symbol"])
 	except:
 		funcs.remove_whole_dir(output_path)
 		sys.exit("Please check the input MAF file! (MAF file format: https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)")
