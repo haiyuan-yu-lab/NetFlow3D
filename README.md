@@ -101,7 +101,7 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 	9. Subnetwork_ID 
 	
 		- If a selection signature can be mapped to a subnetwork, this field will contain the information about the subnetwork
-		- If a selection signature can not be mapped to a subnetwork, this field will be blank
+		- If a selection signature can not be mapped to a subnetwork, this field will be `[NA]`
 - `{job_name}`_drivers.txt
 
 	This is a tab-separated file containing the potentionally functional mutations identified by Net3D. The first line is a header. The columns include:
