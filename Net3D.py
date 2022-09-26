@@ -581,8 +581,8 @@ if __name__ == "__main__":
 	df = df[df["Subnetwork_size"] > 1]
 	df.to_csv(args.output_path + args.job_name + "_subnetworks.txt", sep = "\t", header = True, index = None)
 	df_sig = pd.read_csv(args.output_path + args.job_name + "_signatures.txt", sep = "\t", dtype = str)
-	df_sig["Subnetwork_ID"] = df_sig["Affected_genes"].apply(lambda x: get_subnetwork(x, df["Subnetwork_genes"].tolist()))
-	index = df_sig["Subnetwork_ID"].isna()
+	df_sig["Subnetwork_ID"] = df_sig["Affected_genes"].apply(lambda x: get_subnetwork(x, df["Subnetwork_genes"].tolist())).fillna("[NA]")
+	index = df_sig["Subnetwork_ID"] == "[NA]"
 	df_sig = pd.concat([df_sig[~index], df_sig[index]])
 	df_sig.to_csv(args.output_path + args.job_name + "_signatures.txt", sep = "\t", header = True, index = None)
 	############################################################################################################################################
