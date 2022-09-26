@@ -1,3 +1,0 @@
-Hugo_Symbol	Chromosome	Start_Position	End_Position	Reference_Allele	Tumor_Seq_Allele1	Tumor_Seq_Allele2	Variant_Classification	Codons	ENSP	Protein_position	Tumor_Sample_Barcode	UniProt	Signature_ID
-GDF10	chr10	47310264	47310264	T	T	C	Missense_Mutation	cTg/cCg	ENSP00000464145	263	sample1	P55107	GDF10_NonTrunc1
-TUBGCP5	chr15	22999851	22999851	A	A	G	Missense_Mutation	tTg/tCg	ENSP00000480316	1015	sample8	Q96RT8	TUBGCP5_NonTrunc1
