@@ -96,13 +96,16 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 	9. LoF_enrichment (`[NA]` means not applicable)
 	10. Raw_pvalue
 	11. Adjusted_pvalue
-
+	12. Subnetwork_ID 
+	
+		- If a selection signature can be mapped to a subnetwork, this field will contain the information about the subnetwork
+		- If a selection signature can not be mapped to a subnetwork, this field will be blank
 - `{job_name}`_drivers.txt
 
 	This is a tab-separated file containing the potentionally functional mutations identified by Net3D. The first line is a header. The columns include:
 	1. All columns in the input MAF file
 	2. UniProt
-	3. Signature_ID (This column indicates the selection signature where a mutation is involved. If a mutation is involved in multiple selection signatures, their IDs will be separated by comma.)
+	3. Signature_ID (This column indicates the selection signature where a mutation is involved. If a mutation is involved in multiple selection signatures, their IDs will be separated by comma)
 
 - `{job_name}`_subnetworks.txt
 
