@@ -86,17 +86,17 @@ Net3D will output the following files. `{job_name}` will be replaced by the name
 	This a tab-separated file containing the selection signatures identified by Net3D. The first line is a header. Eight columns are present:
 	1. Signature_ID
 	2. Type
-	4. Affected_genes
-	5. Structure_source (`[NA]` means not applicable)
-	6. Mutation_frequency 
+	3. Affected_genes
+	4. Structure_source (`[NA]` means not applicable)
+	5. Mutation_frequency 
 
 		The content format in this column depends on the content in "Type":
 		- If the content in "Type" is “LoF_IntraProtein_Enriched”, the format of this column is `{gene}:{# of LoF mutations in all samples}`
 		- Otherwise, the format of this column is `{residue1}:{# of mutated samples},{residue2}:{# of mutated samples},...`
-	9. LoF_enrichment (`[NA]` means not applicable)
-	10. Raw_pvalue
-	11. Adjusted_pvalue
-	12. Subnetwork_ID 
+	6. LoF_enrichment (`[NA]` means not applicable)
+	7. Raw_pvalue
+	8. Adjusted_pvalue
+	9. Subnetwork_ID 
 	
 		- If a selection signature can be mapped to a subnetwork, this field will contain the information about the subnetwork
 		- If a selection signature can not be mapped to a subnetwork, this field will be blank
