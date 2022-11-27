@@ -1,15 +1,15 @@
-# Net3D
-Net3D 是用来decode somatic mutations干嘛的。 我们还有一个web server也可以用来run Net3D on your data. If you find our tool helpful, please cite.
+# NetFlow3D
+NetFlow3D 是用来decode somatic mutations干嘛的。 我们还有一个web server也可以用来run Net3D on your data. If you find our tool helpful, please cite.
 
 ## Installation
-Net3D is available on PyPI, which means you can install it with the following command:
+NetFlow3D is available on PyPI, which means you can install it with the following command:
 
 	pip install Net3D
 
 Alternatively, you can clone this repository to a local directory:
 
-	git clone https://github.com/zzyingying753/Net3D.git
-	cd Net3D
+	git clone https://github.com/zzyingying753/NetFlow3D.git
+	cd NetFlow3D
 
 ## Prerequisites
 The Python Standard Library and the following packages:
