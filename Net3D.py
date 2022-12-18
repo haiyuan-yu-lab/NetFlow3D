@@ -50,6 +50,8 @@ def get_clusterID_for_a_lof_multirun(args):
 def get_one_delta_multirun(args):
 	return funcs.get_one_delta(*args)
 
+file_path = os.path.dirname(os.path.abspath(__file__))
+
 if __name__ == "__main__":
 	# user input
 	parser = argparse.ArgumentParser(description = description)
@@ -58,22 +60,22 @@ if __name__ == "__main__":
 	parser.add_argument('-I','--job_name', required = True, type = str, help = 'Please specify a name for your job. The output files will be stored in a folder with this name')
 	parser.add_argument('-t','--threads', type = int, default = 5, help = '[OPTIONAL] The number of threads to use. By default 5')
 	parser.add_argument('-X','--expressed_genes', type = str, default = None, help = '[OPTIONAL] A text file with the genes expressed in your context. Each row stands for a gene (HUGO/ENSP/UniProt IDs are accepted). By default all genes are considered as expressed')
-	parser.add_argument('-n','--binary_interactome', type = str, default = "./metadata/HomoSapiens_interactome_HINThq.txt", help = '[OPTIONAL] A text file with protein-protein interactions. Each row stands for an interaction (IDs should be separated by tab. HUGO/ENSP/UniProt IDs are accepted). Please include all existing interactions in your context. By default we use the human binary interactome from HINT (http://hint.yulab.org/download/HomoSapiens/binary/hq/)')
-	parser.add_argument('-o','--output_path', type = str, default = "./output/", help = '[OPTIONAL] Path to the job folder. If not specified, the job folder will be stored in the default output folder')
-	parser.add_argument('-L','--logfile_path', type = str, default = "./log/", help = '[OPTIONAL] Path to the log file. If not specified, the log file will be stored in the default log folder')
+	parser.add_argument('-n','--binary_interactome', type = str, default = file_path + "/metadata/HomoSapiens_interactome_HINThq.txt", help = '[OPTIONAL] A text file with protein-protein interactions. Each row stands for an interaction (IDs should be separated by tab. HUGO/ENSP/UniProt IDs are accepted). Please include all existing interactions in your context. By default we use the human binary interactome from HINT (http://hint.yulab.org/download/HomoSapiens/binary/hq/)')
+	parser.add_argument('-o','--output_path', type = str, default = file_path + "/output/", help = '[OPTIONAL] Path to the job folder. If not specified, the job folder will be stored in the default output folder')
+	parser.add_argument('-L','--logfile_path', type = str, default = file_path + "/log/", help = '[OPTIONAL] Path to the log file. If not specified, the log file will be stored in the default log folder')
 	
 	# native files
-	parser.add_argument('-M','--gene_mutability_file', type = str, default = "./metadata/Gene_mutability.txt", help = '[OPTIONAL] Average mutability of trinucleotides in each gene (native file)')
-	parser.add_argument('-T','--trinuc_mutability_file', type = str, default = "./metadata/Tri_Mutability.txt", help = '[OPTIONAL] Exome-wide mutability of 32 trinucleotides (native file)')
-	parser.add_argument('-l','--prolen_file', type = str, default = "./metadata/uniprot2prolen.json", help = '[OPTIONAL] A sequence length map of human proteins (native file)')
-	parser.add_argument('-g','--gene2uniprot_file', type = str, default = "./metadata/gene2uniprot.json", help = '[OPTIONAL] A UniProt ID map of human genes (native file)')
-	parser.add_argument('-P','--ensp2uniprot_file', type = str, default = "./metadata/ensp2uniprot.json", help = '[OPTIONAL] ID conversion between ENSP and UniProt (native file)')
-	parser.add_argument('-G','--ensg2uniprot_file', type = str, default = "./metadata/ensg2uniprot.json", help = '[OPTIONAL] ID conversion between ENSG and UniProt (native file)')
-	parser.add_argument('-c','--enst2uniprot_file', type = str, default = "./metadata/enst2uniprot.json", help = '[OPTIONAL] ID conversion between ENST and UniProt (native file)')
-	parser.add_argument('-i','--ires_file', type = str, default = "./metadata/HomoSapiens_interfaces_PIONEER.txt", help = '[OPTIONAL] Protein-protein interaction interfaces predicted by PIONEER (native file)')
-	parser.add_argument('-a','--PDB_intra_resource', type = str, default = "./graph/PDB_intra/", help = '[OPTIONAL] Intra-chain residue-residue distances derived from PDB structures (native resource)')
-	parser.add_argument('-e','--PDB_inter_resource', type = str, default = "./graph/PDB_inter/", help = '[OPTIONAL] Inter-chain residue-residue distances derived from PDB structures (native resource)')
-	parser.add_argument('-d','--AF2_intra_resource', type = str, default = "./graph/AF2_pLDDT0/", help = '[OPTIONAL] Intra-chain residue-residue distances derived from AlphaFold structures (native resource)')
+	parser.add_argument('-M','--gene_mutability_file', type = str, default = file_path + "/metadata/Gene_mutability.txt", help = '[OPTIONAL] Average mutability of trinucleotides in each gene (native file)')
+	parser.add_argument('-T','--trinuc_mutability_file', type = str, default = file_path + "/metadata/Tri_Mutability.txt", help = '[OPTIONAL] Exome-wide mutability of 32 trinucleotides (native file)')
+	parser.add_argument('-l','--prolen_file', type = str, default = file_path + "/metadata/uniprot2prolen.json", help = '[OPTIONAL] A sequence length map of human proteins (native file)')
+	parser.add_argument('-g','--gene2uniprot_file', type = str, default = file_path + "/metadata/gene2uniprot.json", help = '[OPTIONAL] A UniProt ID map of human genes (native file)')
+	parser.add_argument('-P','--ensp2uniprot_file', type = str, default = file_path + "/metadata/ensp2uniprot.json", help = '[OPTIONAL] ID conversion between ENSP and UniProt (native file)')
+	parser.add_argument('-G','--ensg2uniprot_file', type = str, default = file_path + "/metadata/ensg2uniprot.json", help = '[OPTIONAL] ID conversion between ENSG and UniProt (native file)')
+	parser.add_argument('-c','--enst2uniprot_file', type = str, default = file_path + "/metadata/enst2uniprot.json", help = '[OPTIONAL] ID conversion between ENST and UniProt (native file)')
+	parser.add_argument('-i','--ires_file', type = str, default = file_path + "/metadata/HomoSapiens_interfaces_PIONEER.txt", help = '[OPTIONAL] Protein-protein interaction interfaces predicted by PIONEER (native file)')
+	parser.add_argument('-a','--PDB_intra_resource', type = str, default = file_path + "/graph/PDB_intra/", help = '[OPTIONAL] Intra-chain residue-residue distances derived from PDB structures (native resource)')
+	parser.add_argument('-e','--PDB_inter_resource', type = str, default = file_path + "/graph/PDB_inter/", help = '[OPTIONAL] Inter-chain residue-residue distances derived from PDB structures (native resource)')
+	parser.add_argument('-d','--AF2_intra_resource', type = str, default = file_path + "/graph/AF2_pLDDT0/", help = '[OPTIONAL] Intra-chain residue-residue distances derived from AlphaFold structures (native resource)')
 	
 	# default settings
 	parser.add_argument('-s','--significance_level', type = float, default = 0.05, help = '[OPTIONAL] Significance level. By default 0.05')
