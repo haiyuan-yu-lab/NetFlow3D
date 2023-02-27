@@ -1,11 +1,5 @@
 # NetFlow3D
-NetFlow3D is a computational tool aiming at interpreting how somatic mutations act across scales in cancer. If you find our tool helpful, please cite. You can also run NetFlow3D on [http://netflow3d.yulab.org].
-
-## Installation
-you can clone this repository to a local directory:
-
-	git clone https://github.com/zzyingying753/NetFlow3D.git
-	cd NetFlow3D
+NetFlow3D is a computational tool aiming at mapping how somatic mutations act across scales in cancer. If you find our tool helpful, please cite. You can also upload your data to our NetFlow3D web server (http://netflow3d.yulab.org) and run NetFlow3D there.
 
 ## Prerequisites
 The Python Standard Library and the following packages:
@@ -14,6 +8,16 @@ The Python Standard Library and the following packages:
 - networkx
 - pandas
 - statsmodels
+
+## Installation
+Clone this repository to a local directory:
+
+	git clone https://github.com/zzyingying753/NetFlow3D.git
+	cd NetFlow3D
+
+## Help messages
+
+	python NetFlow3D.py -h
 
 ## Prepare input files
 ### Required input
