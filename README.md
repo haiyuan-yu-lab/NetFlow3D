@@ -16,7 +16,7 @@ The Python Standard Library and the following packages:
 	python NetFlow3D.py -h
 	
 ## Usage
-Your command should be in the following format. The content in `[]` are optional.
+Your command should be in the following format (the contents in `[]` are optional):
 
 	python NetFlow3D.py -m <input_maf> -R <resolution> -I <job_name> [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-L <logfile_path>] [-t <threads>]
 
