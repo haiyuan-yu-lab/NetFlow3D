@@ -1,5 +1,5 @@
 description = '''
-- Net3D: identification of functional modules through structurome-guided network diffusion (currently only the human structurome is available)
+- NetFlow3D: identification of functional modules through structurome-guided network diffusion (currently only the human structurome is available)
 - Dependencies:
 	funcs.py
 - 
