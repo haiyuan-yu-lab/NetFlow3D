@@ -32,7 +32,7 @@ Your command should be in the following format (the contents in `[]` are optiona
 - `-L <logfile_path>`: replace `<logfile_path>` with a directory where the log file will be stored. If not specified, the log file will be stored in `./log/`.
 - `-t <threads>`: replace `<threads>` with a postive integer. This argument specifies the number of threads to use. If not specified, NetFlow3D will use five threads.
 	
-We provide example input files in `./example/input/`. An example of your command (please run the following command to see if NetFlow3D is working normally):
+We provide example input files in `./example/input/`. Here is an example of your command (please run the following command to see if NetFlow3D is working normally):
 
 	python NetFlow3D.py -m example/input/mutations.maf -R low -I test -X example/input/expressed_genes.txt -n example/input/interactome.txt -t 10
 	
