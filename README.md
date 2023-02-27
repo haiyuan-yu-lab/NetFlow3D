@@ -11,7 +11,7 @@ The Python Standard Library and the following packages:
 
 ## Installation
 
-	git clone https://github.com/zzyingying753/NetFlow3D.git
+	git clone https://github.com/hyulab/NetFlow3D.git
 	cd NetFlow3D
 	python NetFlow3D.py -h
 	
