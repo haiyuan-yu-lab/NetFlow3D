@@ -22,7 +22,7 @@ Your command should be in the following format (the contents in `[]` are optiona
 
 ### Required arguments
 - `-m <input_maf>`: replace `<input_maf>` with the path to your MAF file.
-- `-R <resolution>`: replace `<resolution>` with `low` or `high`. This argument specifies the resolution when identifying subnetworks with strong internal heat exchanges. By default, `low` is recommended. If set to `high`, large subnetworks may split into smaller subnetworks.
+- `-R <resolution>`: replace `<resolution>` with `low` or `high`. This argument specifies the resolution for identifying subnetworks with strong internal heat exchanges. By default, `low` is recommended. If set to `high`, large subnetworks may split into smaller subnetworks.
 - `-I <job_name>`: replace `<job_name>` with a name you preferred for the current job.
 
 ### Optional arguments
