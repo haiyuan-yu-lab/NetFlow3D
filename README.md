@@ -62,7 +62,7 @@ If you run the above command, the output files should be found in `./output/` wi
 	Other columns can also be present in the MAF file but they will not be used. 
 
 ### Optional input
-- A text file containing a complete list of genes/proteins expressed in the cells where the mutations occur. One ID per line. Gene name, Ensembl gene ID, Ensembl transcript ID, Ensembl protein ID, and UniProt ID are accepted. Example:
+- A text file containing a complete list of genes/proteins expressed in the contexts where the mutations occur. One ID per line. Gene name, Ensembl gene ID, Ensembl transcript ID, Ensembl protein ID, and UniProt ID are accepted. Example:
 
 	>ENSG00000163166<br>
 	>ENSG00000110422<br>
@@ -70,7 +70,7 @@ If you run the above command, the output files should be found in `./output/` wi
 	>ENSG00000180660<br>
 	>ENSG00000186635<br>
 
-- A text file containing a complete list of protein-protein interactions existing in the cells where the mutations occur. One interaction per line. Protein IDs should be separated by tab. Ensembl protein ID and UniProt ID are accepted. Example:
+- A text file containing a complete list of protein-protein interactions existing in the contexts where the mutations occur. One interaction per line. Protein IDs should be separated by tab. Ensembl protein ID and UniProt ID are accepted. Example:
 
 	>Q9H4A3&emsp;Q9HBL0<br>
 	>Q15654&emsp;Q15797<br>
@@ -80,10 +80,10 @@ If you run the above command, the output files should be found in `./output/` wi
 
 
 ## Output files
-NetFlow3D will output the following files. `{job_name}` will be replaced by the name you specified. If you run the example command, `{job_name}` will be replaced by `test`. 
+NetFlow3D will output the following files. `{job_name}` will be replaced by the job name you specified before. If you run the example command, `{job_name}` will be replaced by `test`. 
 - `{job_name}`_signatures.txt
 
-	This a tab-separated file containing the selection signatures identified by NetFlow3D. The first line is a header. Eight columns are present:
+	This a tab-separated file containing the significant 3D clusters and LOF enrichment signals identified by NetFlow3D. The first line is a header. Eight columns are present:
 	1. Signature_ID
 	2. Type
 	3. Affected_genes
@@ -91,26 +91,26 @@ NetFlow3D will output the following files. `{job_name}` will be replaced by the 
 	5. Mutation_frequency 
 
 		The content format in this column depends on the content in "Type":
-		- If the content in "Type" is “LoF_IntraProtein_Enriched”, the format of this column is `{gene}:{# of LoF mutations in all samples}`
-		- Otherwise, the format of this column is `{residue1}:{# of mutated samples},{residue2}:{# of mutated samples},...`
+		- If the content in "Type" is “LoF_IntraProtein_Enriched”, the format of this column is `{gene}:{number of LoF mutations in all samples}`
+		- Otherwise, the format of this column is `{residue1}:{number of mutated samples},{residue2}:{number of mutated samples},...`
 	6. LoF_enrichment (`[NA]` means not applicable)
 	7. Raw_pvalue
 	8. Adjusted_pvalue
 	9. Subnetwork_ID 
 	
-		- If a selection signature can be mapped to a subnetwork, this field will contain the information about the subnetwork
-		- If a selection signature can not be mapped to a subnetwork, this field will be `[NA]`
+		- If a significant 3D cluster or LOF enrichment signal can be mapped to a subnetwork, this field will contain the information about the subnetwork
+		- If a significant 3D cluster or LOF enrichment signal can not be mapped to a subnetwork, this field will be `[NA]`
 - `{job_name}`_drivers.txt
 
-	This is a tab-separated file containing the potentionally functional mutations identified by NetFlow3D. The first line is a header. The columns include:
+	This is a tab-separated file containing the candidate driver mutations identified by NetFlow3D. The first line is a header. The columns include:
 	1. All columns in the input MAF file
 	2. UniProt
-	3. Signature_ID (This column indicates the selection signature where a mutation is involved. If a mutation is involved in multiple selection signatures, their IDs will be separated by comma)
+	3. Signature_ID (This column contains the significant 3D cluster(s) or LOF enrichment signal by which a mutation is incorporated. If a mutation is incorporated by multiple significant 3D clusters, their IDs will be separated by comma)
 
 - `{job_name}`_subnetworks.txt
 
-	This is a tab-separated file containing the subnetworks with strong internal interconnectivity identified by NetFlow3D. Subnetworks including >=2 proteins will be reported. The first line is a header. Two columns are present:
+	This is a tab-separated file containing the subnetworks with strong internal heat exchanges identified by NetFlow3D. Subnetworks including >=2 proteins will be reported. The first line is a header. Two columns are present:
 	1. Subnetwork_genes	
-	2. Subnetwork_size
+	2. Subnetwork_size (i.e. number of proteins in the subnetwork)
 
 
