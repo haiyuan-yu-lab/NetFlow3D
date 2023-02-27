@@ -36,7 +36,7 @@ We provide example input files in `./example/input/`. Here is an example of your
 
 	python NetFlow3D.py -m example/input/mutations.maf -R low -I test -X example/input/expressed_genes.txt -n example/input/interactome.txt -t 10
 	
-If you run the above command correctly, the output files should be found in `./output/` with prefix `test_`. To get an idea of what the output files should look like, please see example output files in `./example/output/`.
+If you run the above command, the output files should be found in `./output/` with prefix `test_`. To get an idea of what the output files should look like, please see example output files in `./example/output/`.
 
 
 ## Prepare input files
