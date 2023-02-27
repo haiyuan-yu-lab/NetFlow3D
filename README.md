@@ -10,14 +10,11 @@ The Python Standard Library and the following packages:
 - statsmodels
 
 ## Installation
-Clone this repository to a local directory:
 
 	git clone https://github.com/zzyingying753/NetFlow3D.git
 	cd NetFlow3D
-
-## Help messages
-
 	python NetFlow3D.py -h
+	
 
 ## Prepare input files
 ### Required input
