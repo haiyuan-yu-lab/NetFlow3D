@@ -1,5 +1,5 @@
 # NetFlow3D
-NetFlow3D is a computational tool aiming at mapping how somatic mutations act across scales in cancer. If you find our tool helpful, please cite. You can also upload your data to our web server (http://netflow3d.yulab.org) and run NetFlow3D there.
+NetFlow3D is a computational tool aiming at mapping how somatic mutations act across scales in cancer. If you find our tool helpful, please cite. You can also upload your data to our web server (http://netflow3d.yulab.org) and run NetFlow3D there. If you find NetFlow3D helpful, please cite https://doi.org/10.1101/2023.03.06.531441.
 
 ## Prerequisites
 The Python Standard Library and the following packages:
