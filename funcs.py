@@ -14,6 +14,7 @@ import copy
 from os import path
 import logging
 import shutil
+from urllib.request import urlopen
 
 def calc_enr(c1, n1, c2, n2):
 	"""
@@ -70,6 +71,26 @@ def df_to_dict(df_file, header = None, from_col = None, to_col = None):
 	df2dict = {}
 	df["status"] = df.apply(lambda row: df_to_dict(row, from_col, to_col), axis = 1)
 	return df2dict
+
+
+def get_prolen(uniprot_list):
+	uniprot2len = {"O60344":811,"P62158":149,"P01233":165,"Q13748":450,"Q9P0W5":563,"Q5VU13":414,"Q9Y2S0":122,"Q3BBV1":5207,"Q30KQ2":79,"P30042":268,"A2BFH1":164, "Q9H2Q1":129, "Q494X1":144, "Q9UGB4":50, "Q9UBA6":126, "Q5JXX5":376, "Q9BZ01":182, "P0C7V5":454, "Q8WXC7":389, "Q4KN68":188, "Q5T1B1": 145, "Q9Y4X1": 527, "Q8IVM7": 164, "Q15513": 63, "B9ZVM9":353, "P04745": 511}
+	for element in uniprot_list:
+		if element not in uniprot2len:
+			try:
+				html = urlopen("http://www.uniprot.org/uniprot/" + element + ".fasta")
+				file = html.read().decode('utf-8')
+				length = float(len(''.join(file.strip('\n').split('\n')[1:])))
+				if length > 0:
+					a = length
+				else:
+					logging.warning("Unable to find the sequence length of " + element + "!")
+					a = np.nan
+			except:
+				logging.warning("Unable to find the sequence length of " + element + "!")
+				a = np.nan
+			uniprot2len[element] = a
+	return(uniprot2len)
 
 
 def split_consecutive_pos(pos):

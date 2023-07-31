@@ -193,7 +193,14 @@ if __name__ == "__main__":
 		funcs.remove_whole_dir(output_path)
 		sys.exit()
 	df["UniProt"] = df.apply(lambda x: funcs.get_uniprot(x, gene2uniprot, ensp2uniprot, enst2uniprot, ensg2uniprot), axis = 1)
+	logging.warning(str(df[df["UniProt"].isna()].shape[0]) + " entries do not have UniProt annotation!")
 	df = df.dropna(subset = ["UniProt"])
+	additional_prolen_dict = funcs.get_prolen(set(df["UniProt"]) - set(prolen_dict)) # Get the length of all UniProt entries
+	for uniprot in additional_prolen_dict:
+		if np.isnan(additional_prolen_dict[uniprot]) == False:
+			prolen_dict[uniprot] = additional_prolen_dict[uniprot]
+	df = df[df["UniProt"].isin(prolen_dict)]
+	############################################################################################################################################
 	if df.shape[0] == 0:
 		logging.warning("Could not map the mutations to any protein!")
 		funcs.remove_whole_dir(output_path)
@@ -292,7 +299,6 @@ if __name__ == "__main__":
 	# Identify selection signatures formed by LOF mutations
 	# -----------------------------------------------------
 	df_lof = df[df["Variant_Classification"].isin(lof)]
-	df_lof = df_lof[df_lof["UniProt"].isin(prolen_dict)]
 	df_lof_mut = copy.deepcopy(df_lof)
 	if df_lof.shape[0] > 0:
 		logging.info(str(df_lof.shape[0]) + " available loss-of-function mutation(s).")
