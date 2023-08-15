@@ -47,7 +47,7 @@ If you run the above command, the output files should be found in `./output/` wi
 	<ul>
 	<li>Hugo_Symbol</li>
 	<li>Variant_Classification</li>
-	<li>ENSP</li>
+	<li>ENSP or (UniProt)</li>
 	<li>Protein_position</li>
 	<li>Codons</li>
 	<li>Tumor_Sample_Barcode</li>
