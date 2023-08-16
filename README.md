@@ -54,6 +54,11 @@ If you run the above command, the output files should be found in `./output/` wi
 	<li>Tumor_Sample_Barcode</li>
 	</ul>
 
+	Optional column:
+	<ul>
+	<li>UniProt</li>
+ 	</ul>
+
 	Other columns can also be present in the MAF file but they will not be used. 
 
 ### Optional input
