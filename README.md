@@ -45,7 +45,6 @@ If you run the above command, the output files should be found in `./output/` wi
 
 	Required columns:
 	<ul>
-	<li>Hugo_Symbol</li>
 	<li>Variant_Classification</li>
 	<li>ENSP</li>
 	<li>Transcript_ID</li>
