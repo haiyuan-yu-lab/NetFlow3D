@@ -47,16 +47,12 @@ If you run the above command, the output files should be found in `./output/` wi
 	<ul>
 	<li>Hugo_Symbol</li>
 	<li>Variant_Classification</li>
-	<li>ENSP or (UniProt)</li>
+	<li>ENSP</li>
+	<li>Transcript_ID</li>
+	<li>Gene</li>
 	<li>Protein_position</li>
 	<li>Codons</li>
 	<li>Tumor_Sample_Barcode</li>
-	</ul>
-	
-	Optional columns:
-	<ul>
-	<li>Transcript_ID</li>
-	<li>Gene</li>
 	</ul>
 
 	Other columns can also be present in the MAF file but they will not be used. 
