@@ -8,6 +8,7 @@ The Python Standard Library and the following packages:
 - networkx
 - pandas
 - statsmodels
+- mygene
 
 ## Installation
 
