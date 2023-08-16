@@ -69,7 +69,7 @@ If you run the above command, the output files should be found in `./output/` wi
 	Other columns can also be present in the MAF file but they will not be used. 
 
 ### Optional input
-- A text file containing a complete list of genes/proteins expressed in the contexts where the mutations occur. One ID per line. Gene name, Ensembl gene ID, Ensembl transcript ID, Ensembl protein ID, and UniProt ID are accepted. Example:
+- A text file containing a complete list of genes/transcripts expressed in the contexts where the mutations occur. One ID per line. Ensembl gene ID and Ensembl transcript ID are accepted. Example:
 
 	>ENSG00000163166<br>
 	>ENSG00000110422<br>
