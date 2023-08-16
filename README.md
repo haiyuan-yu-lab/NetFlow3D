@@ -77,7 +77,7 @@ If you run the above command, the output files should be found in `./output/` wi
 	>ENSG00000180660<br>
 	>ENSG00000186635<br>
 
-- A text file containing a complete list of protein-protein interactions existing in the contexts where the mutations occur. One interaction per line. Protein IDs should be separated by tab. Ensembl protein ID and UniProt ID are accepted. Example:
+- A text file containing a complete list of protein-protein interactions existing in the contexts where the mutations occur. One interaction per line. Protein IDs should be separated by tab. Only UniProt ID is accepted. Example:
 
 	>Q9H4A3&emsp;Q9HBL0<br>
 	>Q15654&emsp;Q15797<br>
