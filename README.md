@@ -61,11 +61,6 @@ If you run the above command, the output files should be found in `./output/` wi
 	<li>Tumor_Sample_Barcode</li>
 	</ul>
 
-	Optional column:
-	<ul>
-	<li>UniProt (If this column exists, two required columns (ENSP, Transcript_ID) will not be used)</li>
- 	</ul>
-
 	Other columns can also be present in the MAF file but they will not be used. 
 
 ### Optional input
