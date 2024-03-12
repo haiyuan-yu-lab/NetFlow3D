@@ -15,6 +15,19 @@ from os import path
 import logging
 import shutil
 from urllib.request import urlopen
+import mygene
+from scipy.stats import poisson
+
+def extract_uniprot_ids(fasta_file):
+	uniprot_ids = []
+	with open(fasta_file, 'r') as file:
+		for line in file:
+			if line.startswith('>'):
+				# Split the header line and extract the UniProt ID
+				parts = line.split('|')
+				uniprot_id = parts[1]
+				uniprot_ids.append(uniprot_id)
+	return uniprot_ids
 
 def calc_enr(c1, n1, c2, n2):
 	"""
@@ -46,21 +59,9 @@ def calc_enr(c1, n1, c2, n2):
 	SE_log_enr = np.sqrt(1.0 / c1 - 1.0 / n1 + 1.0 / c2 - 1.0 / n2) # Calculated by the delta method.
 	SE_enr = SE_log_enr * enr
 	z = np.log(enr) / SE_log_enr
-	pval = scipy.stats.norm.sf(abs(z)) * 2
+	# pval = scipy.stats.norm.sf(abs(z)) * 2 # Two-sided p-value
+	pval = scipy.stats.norm.sf(z)  # One-sided p-value for greater
 	return [enr, SE_enr, pval]
-
-
-def get_uniprot(row, gene2uniprot, ensp2uniprot, enst2uniprot, ensg2uniprot):
-	if type(row["ENSP"]) == str and row["ENSP"].split(".")[0] in ensp2uniprot:
-		return ensp2uniprot[row["ENSP"].split(".")[0]]
-	elif ("Transcript_ID" in row) and type(row["Transcript_ID"]) == str and row["Transcript_ID"].split(".")[0] in enst2uniprot:
-		return enst2uniprot[row["Transcript_ID"].split(".")[0]][0]
-	elif ("Gene" in row) and type(row["Gene"]) == str and row["Gene"].split(".")[0] in ensg2uniprot:
-		return ensg2uniprot[row["Gene"].split(".")[0]][0]
-	elif type(row["Hugo_Symbol"]) == str and row["Hugo_Symbol"] in gene2uniprot:
-		return gene2uniprot[row["Hugo_Symbol"]]
-	else:
-		return np.nan
 
 
 def df_to_dict(df_file, header = None, from_col = None, to_col = None):
@@ -111,6 +112,15 @@ def split_consecutive_pos(pos):
 		return []
 
 
+def get_cluster_mutations(res, df_mis):
+	uniprot2res = defaultdict(set)
+	for x in res.split(","):
+		uniprot, pos = x.split("_")
+		uniprot2res[uniprot] = uniprot2res[uniprot].union({int(pos)})
+	df_mis = df_mis[df_mis["UniProt"].isin(uniprot2res) & df_mis.apply(lambda x: set(split_consecutive_pos(x["Protein_position"])).intersection(uniprot2res[x["UniProt"]]) != set())]
+	return ",".join(sorted(set(df_mis["#Uploaded_variation"])))
+
+
 def get_32_trinuc(trinuc, complement = {"A":"T", "T":"A", "C":"G", "G":"C"}):
 	if trinuc[1] in {"A", "G"}:
 		output = "".join([complement[element] for element in trinuc][::-1])
@@ -119,84 +129,81 @@ def get_32_trinuc(trinuc, complement = {"A":"T", "T":"A", "C":"G", "G":"C"}):
 	return output
 
 
-def get_res_annotation(df, prolen_dict, output_path):
+def get_res_annotation(df, output_path):
 	"""
 	Generate ShortVersion_mutation_data.txt, MUg.txt, and Patient_list.txt
 	"""
-	def gather_mutation_info(row, prolen):
-		ref = row["Codons"].split("/")[0].upper()
-		pos = split_consecutive_pos(row["Protein_position"])
-		if len(pos) > 0 and len(ref) == 3 * len(pos):
-			for i, element in enumerate(pos):
-				res2mutcount[(row["UniProt"], element)] = res2mutcount[(row["UniProt"], element)] + 1
-				if element <= prolen:
-					uniprot2mutcount[row["UniProt"]][element] = uniprot2mutcount[row["UniProt"]][element] + 1
-				
-				ref_tmp = ref[(3*i):(3*i+3)]
-				res2trinuc[(row["UniProt"], element)].append(ref_tmp)
-				res2mutinfo[(row["UniProt"], element)].append(":".join([row["Tumor_Sample_Barcode"], row["Hugo_Symbol"], ref_tmp]))
+	def gather_mutation_info(row):
+		for element in split_consecutive_pos(row["Protein_position"]):
+			res2mutcount[(row["UniProt"], element)] = res2mutcount[(row["UniProt"], element)] + 1
+			res2mutinfo[(row["UniProt"], element)].append("_".join([row["Chromosome"], row["Start_Position"], row["Tumor_Sample_Barcode"]]))
 		return True
 
 	# gather mutation information
 	res2mutcount = defaultdict(int)
-	uniprot2mutcount = defaultdict(lambda: defaultdict(int))
-	res2trinuc = defaultdict(list)
 	res2mutinfo = defaultdict(list)
-	df["status"] = df.apply(lambda row: gather_mutation_info(row, prolen_dict[row["UniProt"]]), axis = 1)
-	uniprot2gene = df[["UniProt", "Hugo_Symbol"]].drop_duplicates().groupby("UniProt").count()
+	df["status"] = df.apply(gather_mutation_info, axis = 1)
 
 	# ShortVersion_mutation_data.txt
 	f = open(output_path + "ShortVersion_mutation_data.txt", "w")
-	f.write("\t".join(["Uniprot", "Uniprot_Position", "Mutations", "Ref_Tri", "Mutation_info"]) + "\n")
+	f.write("\t".join(["Uniprot", "Uniprot_Position", "Mutations", "Mutation_info"]) + "\n")
 	for key in res2mutcount:
-		trinuc_dict = dict(Counter(res2trinuc[key]))
-		f.write("\t".join([key[0], str(key[1]), str(res2mutcount[key]), get_32_trinuc(sorted(trinuc_dict, key = trinuc_dict.get)[-1]), \
-			",".join(res2mutinfo[key])]) + "\n")
+		f.write("\t".join([key[0], str(key[1]), str(res2mutcount[key]), ",".join(sorted(set(res2mutinfo[key])))]) + "\n")
 	f.close()
 
-	# Patient_list.txt
-	sample_list = df["Tumor_Sample_Barcode"].unique().tolist()
-	f = open(output_path + "Patient_list.txt", "w")
-	f.write("#Tumor_Sample_Barcode" + "\n" + "\n".join(sample_list) + "\n")
-	f.close()
+	# # MUg.txt
+	# mutrate = pd.read_csv(bg_file, sep = "\t").dropna()
+	# average_rate = mutrate["MUg"].mean()
+	# mutrate = pd.merge(df[["Hugo_Symbol", "UniProt"]].dropna().drop_duplicates(), mutrate, on = "Hugo_Symbol")
+	# df_output = {"UniProt": [], "MUg": []}
+	# for x in set(df["UniProt"]):
+	# 	df_output["UniProt"].append(x)
+	# 	df_one = mutrate[mutrate["UniProt"] == x]
+	# 	if df_one.shape[0] == 0:
+	# 		df_output["MUg"].append(average_rate)
+	# 	elif df_one.shape[0] > 1:
+	# 		df_output["MUg"].append(df_one["MUg"].mean())
+	# 	else:
+	# 		df_output["MUg"].append(df_one["MUg"].tolist()[0])
+	# df_output = pd.DataFrame(df_output)
+	# df_output.to_csv(output_path + "MUg.txt", sep = "\t", header = True, index = None)
+	
+	# f = open(output_path + "MUg.txt", "w")
+	# f.write("\t".join(["UniProt", "MUg"]) + "\n")
+	# for key in df["UniProt"].unique():
+	# 	if key in uniprot2mutcount:
+	# 		quantile = float(pd.DataFrame(list(uniprot2mutcount[key].values())).quantile(q = 0.99, axis = 0))
+	# 		cutoff = max(quantile, 20 * uniprot2gene.loc[key]["Gene"])
+	# 		i = 0
+	# 		j = 0
+	# 		for res in uniprot2mutcount[key]:
+	# 			if uniprot2mutcount[key][res] > cutoff:
+	# 				i = i + 1
+	# 				j = j + uniprot2mutcount[key][res]
+	# 		mut_freq = (sum(uniprot2mutcount[key].values()) - j) / (len(sample_list) * uniprot2gene.loc[key]["Gene"] * (prolen_dict[key] - i))
+	# 		f.write("\t".join([key, str(mut_freq)]) + "\n")
+	# 	else:
+	# 		f.write("\t".join([key, str(0.1)]) + "\n")
+	# f.close()
 
-	# MUg.txt
-	f = open(output_path + "MUg.txt", "w")
-	f.write("\t".join(["#Uniprot", "MUg"]) + "\n")
-	for key in df["UniProt"].unique():
-		if key in uniprot2mutcount:
-			quantile = float(pd.DataFrame(list(uniprot2mutcount[key].values())).quantile(q = 0.99, axis = 0))
-			cutoff = max(quantile, 20 * uniprot2gene.loc[key]["Hugo_Symbol"])
-			i = 0
-			j = 0
-			for res in uniprot2mutcount[key]:
-				if uniprot2mutcount[key][res] > cutoff:
-					i = i + 1
-					j = j + uniprot2mutcount[key][res]
-			mut_freq = (sum(uniprot2mutcount[key].values()) - j) / (len(sample_list) * uniprot2gene.loc[key]["Hugo_Symbol"] * (prolen_dict[key] - i))
-			f.write("\t".join([key, str(mut_freq)]) + "\n")
-		else:
-			f.write("\t".join([key, str(0.1)]) + "\n")
-	f.close()
-
-	return [output_path + "ShortVersion_mutation_data.txt", output_path + "Patient_list.txt", output_path + "MUg.txt"]
+	return output_path + "ShortVersion_mutation_data.txt"
 
 
-def get_res_mutability(shortversion, uniprot2gene, gene2mutability, uniprot2mutability, trinuc2mutability, output):
-	df = pd.read_csv(shortversion, sep = "\t")
-	mg = {}
-	for element in df["Uniprot"].unique():
-		gene_mut = []
-		for item in uniprot2gene[element]:
-			if item in gene2mutability:
-				gene_mut.append(gene2mutability[item])
-		if len(gene_mut) > 0:
-			mg[element] = np.mean(gene_mut)
-		else:
-			mg[element] = np.mean(list(gene2mutability.values()))
-	df["res_mutability"] = df.apply(lambda row: trinuc2mutability[row["Ref_Tri"]] / mg[row["Uniprot"]] * uniprot2mutability[row["Uniprot"]], axis = 1)
-	df.to_csv(output, sep = "\t", index = None, header = True)
-	return output
+# def get_res_mutability(shortversion, uniprot2gene, gene2mutability, uniprot2mutability, trinuc2mutability, output):
+# 	df = pd.read_csv(shortversion, sep = "\t")
+# 	mg = {}
+# 	for element in df["Uniprot"].unique():
+# 		gene_mut = []
+# 		for item in uniprot2gene[element]:
+# 			if item in gene2mutability:
+# 				gene_mut.append(gene2mutability[item])
+# 		if len(gene_mut) > 0:
+# 			mg[element] = np.mean(gene_mut)
+# 		else:
+# 			mg[element] = np.mean(list(gene2mutability.values()))
+# 	df["res_mutability"] = df.apply(lambda row: trinuc2mutability[row["Ref_Tri"]] / mg[row["Uniprot"]] * uniprot2mutability[row["Uniprot"]], axis = 1)
+# 	df.to_csv(output, sep = "\t", index = None, header = True)
+# 	return output
 
 
 def get_graph_by_uniprot_binary(uniprot, uniprot2res, output_path, resource_dir_intra, resource_dir_inter = None, dist_intra = np.inf, \
@@ -300,22 +307,21 @@ def get_cluster_from_graph(graph_file, output):
 def get_cluster_from_interface(uniprot2res, ires_file, binary_interactome, output):
 	def get_mutated_cluster(row, uniprot2res):
 		output1 = []
-		for element in row["P1_IRES"].split(","):
-			uniprot, res = element.split("_")
-			if int(res) in uniprot2res[uniprot]:
-				output1.append(element)
+		if type(row["P1_IRES"]) == str:
+			for element in row["P1_IRES"].split(","):
+				uniprot, res = element.split("_")
+				if int(res) in uniprot2res[uniprot]:
+					output1.append(element)
 		output2 = []
-		for element in row["P2_IRES"].split(","):
-			uniprot, res = element.split("_")
-			if int(res) in uniprot2res[uniprot]:
-				output2.append(element)
-		if len(output1) > 0 and len(output2) > 0:
-			return ",".join(sorted(set(output1 + output2)))
-		else:
-			return np.nan
+		if type(row["P2_IRES"]) == str:
+			for element in row["P2_IRES"].split(","):
+				uniprot, res = element.split("_")
+				if int(res) in uniprot2res[uniprot]:
+					output2.append(element)
+		return ",".join(sorted(set(output1 + output2)))
 
 	# get interface residues
-	df_pioneer = pd.read_csv(ires_file, sep = "\t", dtype = str).dropna(subset = ["P1_IRES", "P2_IRES"])
+	df_pioneer = pd.read_csv(ires_file, sep = "\t", dtype = str).dropna(subset = ["P1_IRES", "P2_IRES"], how = "all")
 	df_pioneer = df_pioneer[df_pioneer["Interaction"].isin(binary_interactome)]
 
 	# get mutated clusters
@@ -323,135 +329,163 @@ def get_cluster_from_interface(uniprot2res, ires_file, binary_interactome, outpu
 		return None
 	else:
 		df_pioneer["Mutated_residues"] = df_pioneer.apply(lambda x: get_mutated_cluster(x, uniprot2res), axis = 1)
-		df_pioneer = df_pioneer.dropna(subset = ["Mutated_residues"])
-		if df_pioneer.shape[0] > 0:
-			df_pioneer["Structure_source"] = "PIONEER"
-			df_pioneer[["Mutated_residues", "Structure_source", "Interaction"]].to_csv(output, sep = "\t", header = None, index = None)
-			return output
-		else:
-			return None
+		df_pioneer = df_pioneer[df_pioneer["Mutated_residues"] != ""]
+		df_pioneer["Structure_source"] = "PIONEER"
+		df_pioneer[["Mutated_residues", "Structure_source", "Interaction"]].to_csv(output, sep = "\t", header = None, index = None)
+		return output
 
 
-def get_cluster_pval(mutres_file, cluster_file, sample_size, output):
+# def get_cluster_from_interface(uniprot2res, ires_file, binary_interactome, output):
+# 	def get_mutated_cluster(row, uniprot2res):
+# 		output1 = []
+# 		for element in row["P1_IRES"].split(","):
+# 			uniprot, res = element.split("_")
+# 			if int(res) in uniprot2res[uniprot]:
+# 				output1.append(element)
+# 		output2 = []
+# 		for element in row["P2_IRES"].split(","):
+# 			uniprot, res = element.split("_")
+# 			if int(res) in uniprot2res[uniprot]:
+# 				output2.append(element)
+# 		if len(output1) > 0 and len(output2) > 0:
+# 			return ",".join(sorted(set(output1 + output2)))
+# 		else:
+# 			return np.nan
+
+# 	# get interface residues
+# 	df_pioneer = pd.read_csv(ires_file, sep = "\t", dtype = str).dropna(subset = ["P1_IRES", "P2_IRES"])
+# 	df_pioneer = df_pioneer[df_pioneer["Interaction"].isin(binary_interactome)]
+# 	test_num = df_pioneer.shape[0]
+
+# 	# get mutated clusters
+# 	if df_pioneer.shape[0] == 0:
+# 		return None
+# 	else:
+# 		df_pioneer["Mutated_residues"] = df_pioneer.apply(lambda x: get_mutated_cluster(x, uniprot2res), axis = 1)
+# 		df_pioneer = df_pioneer.dropna(subset = ["Mutated_residues"])
+# 		if df_pioneer.shape[0] > 0:
+# 			df_pioneer["Structure_source"] = "PIONEER"
+# 			df_pioneer[["Mutated_residues", "Structure_source", "Interaction"]].to_csv(output, sep = "\t", header = None, index = None)
+# 			return [output, test_num]
+# 		else:
+# 			return None
+
+
+def get_cluster_pval(mutres_file, cluster_file, sample_size, output, uniprot2mutcount, prolen_dict, factor_for_unknown_genes):
 	def get_uniprot(res):
 		uniprot = sorted(set([item.split("_")[0] for item in res.split(",")]))
 		return ",".join(uniprot)
 	def get_cluster_value(res, dictionary):
-		values = []
-		for element in res.split(","):
-			values.append(str(dictionary[element]))
-		return ",".join(values)
-	def get_mutated_samples(res_mutatedsample):
-		total_sample = []
-		for element in res_mutatedsample.split(","):
-			total_sample.extend(element.split("|"))
-		return len(set(total_sample))
-	def get_cluster_mutability(res_mutability):
-		final_pval = 1
-		for element in res_mutability.split(","):
-			final_pval = final_pval * (1 - float(element))
-		return 1 - final_pval
+		if type(res) == str:
+			values = []
+			for element in res.split(","):
+				values.append(str(dictionary[element]))
+			return ",".join(values)
+		else:
+			return np.nan
+	def get_total_mut(res, dictionary):
+		if type(res) == str:
+			output = []
+			for element in res.split(","):
+				output.extend(dictionary[element])
+			return len(set(output))
+		else:
+			return 0
+	def get_expected_mutcount(res):
+		uniprot2res = defaultdict(list)
+		if type(res) == str:
+			for x in res.split(","):
+				uniprot, pos = x.split("_")
+				uniprot2res[uniprot].append(pos)
+		expected = 0
+		for x in uniprot2res:
+			if x in uniprot2mutcount:
+				expected = expected + uniprot2mutcount[x] * sample_size * (len(uniprot2res[x]) / prolen_dict[x])
+			else:
+				expected = expected + factor_for_unknown_genes * len(uniprot2res[x]) * 3 * sample_size
+		return expected
 
 	# load mutated residues
-	df_mut = pd.read_csv(mutres_file, sep = "\t", usecols = ["Uniprot", "Uniprot_Position", "Mutations", "res_mutability", "Ref_Tri", "Mutation_info"], \
-		dtype = {"Uniprot_Position": int, "Mutations": str})
-	
-	# set a lower boundary for the mutability of residues in rarely mutated genes
-	p_lowerlimit = df_mut["res_mutability"].quantile(q = 0.2)
-	df_mut.loc[df_mut["res_mutability"] < p_lowerlimit, "res_mutability"] = p_lowerlimit
+	df_mut = pd.read_csv(mutres_file, sep = "\t", dtype = {"Uniprot_Position": int, "Mutations": str})
 
 	# annotate background mutability and observed mutation count for the clusters
 	df_mut["res"] = df_mut.apply(lambda row: row["Uniprot"] + "_" + str(row["Uniprot_Position"]), axis = 1)
-	res2mutability = {}
 	res2mutcount = {}
-	res2trinuc = {}
-	res2sample = {}
-	res_mutability = df_mut["res_mutability"].tolist()
+	res2mutinfo = {}
 	res_mutcount = df_mut["Mutations"].tolist()
-	res_trinuc = df_mut["Ref_Tri"].tolist()
 	res_mutinfo = df_mut["Mutation_info"].tolist()
 	for i, element in enumerate(df_mut["res"].tolist()):
-		res2mutability[element] = res_mutability[i]
 		res2mutcount[element] = res_mutcount[i]
-		res2trinuc[element] = res_trinuc[i]
-		res2sample[element] = "|".join([item.split(":")[0] for item in res_mutinfo[i].split(",")])
+		res2mutinfo[element] = res_mutinfo[i].split(",")
 	df_cluster = pd.read_csv(cluster_file, sep = "\t", header = None).rename(columns = {0: "Residues", 1: "Structure_source", 2: "Uniprots"})
 	if "Uniprots" not in df_cluster.columns:
 		df_cluster["Uniprots"] = df_cluster["Residues"].apply(get_uniprot)
-	df_cluster["res_mutability"] = df_cluster["Residues"].apply(lambda x: get_cluster_value(x, res2mutability))
 	df_cluster["Mutation_count"] = df_cluster["Residues"].apply(lambda x: get_cluster_value(x, res2mutcount))
-	df_cluster["res_trinuc"] = df_cluster["Residues"].apply(lambda x: get_cluster_value(x, res2trinuc))
-	df_cluster["Mutated_sample"] = df_cluster["Residues"].apply(lambda x: get_cluster_value(x, res2sample))
-	df_cluster["sample_mutcount"] = df_cluster["Mutated_sample"].apply(get_mutated_samples)
-	df_cluster["cluster_mutability"] = df_cluster["res_mutability"].apply(get_cluster_mutability)
-	df_cluster["Raw_pvalue"] = df_cluster.apply(lambda row: scipy.stats.binom_test(row["sample_mutcount"], sample_size, row["cluster_mutability"], alternative = "greater"), axis = 1)
+	df_cluster["Observed_mut"] = df_cluster["Residues"].apply(lambda x: get_total_mut(x, res2mutinfo))
+	df_cluster["Expected_mut"] = df_cluster["Residues"].apply(get_expected_mutcount)
+	df_cluster["Raw_pvalue"] = df_cluster.apply(lambda row: poisson.sf(row["Observed_mut"] - 1, row["Expected_mut"]), axis = 1)
+	# df_cluster[["InFrame_enrichment", "se", "Raw_pvalue"]] = pd.DataFrame(df_cluster.apply(lambda row: calc_enr(row["Observed_mut"], total_mut_observed, row["Expected_mut"], total_mut_expected), axis = 1).tolist(), index = df_cluster.index)
 	df_cluster.to_csv(output, sep = "\t", index = None, header = True)
 	return output
 
 
-def get_sig_cluster_intra(pval_file_PDB, pval_file_AlphaFold2, pdb_intra_resource, sig_cutoff = 0.05):
-	def whether_retain(row):
-		G = nx.read_graphml(pdb_intra_resource + row["Uniprots"] + ".graphml.gz")
-		if set(row["Residues"].split(",")).intersection(set(G.nodes())) == set():
-			return True
-		else:
-			return False
+def get_sig_cluster_structure(pval_file_PDB_intra, pval_file_PDB_inter, pval_file_AlphaFold2, all_uniprots, prolen_dict):
+	def whether_retain(res, uniprot2res):
+		for x in res.split(","):
+			uniprot, pos = x.split("_")
+			if pos in uniprot2res[uniprot]:
+				return False
+		return True
 
-	if pval_file_PDB != None:
-		df_pdb = pd.read_csv(pval_file_PDB, sep = "\t", dtype = {"Mutation_count": str})
-		df_pdb["Adjusted_pvalue"] = df_pdb["Raw_pvalue"].apply(lambda x: x * df_pdb.shape[0])
-		df_pdb = df_pdb[df_pdb["Adjusted_pvalue"] < sig_cutoff]
-		pdb_uniprots = df_pdb["Uniprots"].tolist()
+	uniprot2res = defaultdict(list)
+	if pval_file_PDB_intra != None:
+		df_pdb_intra = pd.read_csv(pval_file_PDB_intra, sep = "\t", dtype = {"Mutation_count": str})
+		df_pdb_intra["Type"] = "InFrame_IntraProtein_Cluster"
+		for x in df_pdb_intra["Residues"]:
+			for y in x.split(","):
+				uniprot, pos = y.split("_")
+				uniprot2res[uniprot].append(pos)
 	else:
-		df_pdb = pd.DataFrame()
-		pdb_uniprots = []
-	logging.info(str(df_pdb.shape[0]) + " significant intra-protein clusters are identfied using PDB structures.")
-	
+		df_pdb_intra = pd.DataFrame()
 	if pval_file_AlphaFold2 != None:
 		df_af2 = pd.read_csv(pval_file_AlphaFold2, sep = "\t", dtype = {"Mutation_count": str})
-		df_af2["Adjusted_pvalue"] = df_af2["Raw_pvalue"].apply(lambda x: x * df_af2.shape[0])
-		df_af2 = df_af2[df_af2["Adjusted_pvalue"] < sig_cutoff]
-		df1 = df_af2[~df_af2["Uniprots"].isin(pdb_uniprots)]
-		df2 = df_af2[df_af2["Uniprots"].isin(pdb_uniprots)]
-		df2 = df2[df2.apply(whether_retain, axis = 1)]
+		df1 = df_af2[~df_af2["Uniprots"].isin(uniprot2res)]
+		df2 = df_af2[df_af2["Uniprots"].isin(uniprot2res)]
+		df2 = df2[df2["Residues"].apply(lambda x: whether_retain(x, uniprot2res))]
 		df_af2 = pd.concat([df1, df2])
+		df_af2["Type"] = "InFrame_IntraProtein_Cluster"
+		for x in df_af2["Residues"]:
+			for y in x.split(","):
+				uniprot, pos = y.split("_")
+				uniprot2res[uniprot].append(pos)
 	else:
 		df_af2 = pd.DataFrame()
-	logging.info(str(df_af2.shape[0]) + " significant intra-protein clusters are identfied using AlphaFold2 structures.")
-
-	if pd.concat([df_pdb, df_af2]).shape[0] > 0:
-		df_final = pd.concat([df_pdb, df_af2])[["Structure_source", "Uniprots", "Residues", "Mutated_sample", "Mutation_count", "Raw_pvalue", "Adjusted_pvalue"]]
-		df_final["Type"] = "NonTrunc_IntraProtein_Cluster"
+	if pval_file_PDB_inter != None:
+		df_pdb_inter = pd.read_csv(pval_file_PDB_inter, sep = "\t", dtype = {"Mutation_count": str})
+		df_pdb_inter["Type"] = "InFrame_InterProtein_Cluster"
 	else:
-		df_final = pd.DataFrame({"Type": [], "Structure_source": [], "Uniprots": [], "Residues": [], "Mutated_sample": [], "Mutation_count": [], \
+		df_pdb_inter = pd.DataFrame()
+	df_final = pd.concat([df_pdb_intra, df_af2, df_pdb_inter])
+	test_num = df_final.shape[0]
+	# # -------------------------------
+	# # consider whether add this
+	# for x in all_uniprots:
+	# 	test_num = test_num + (prolen_dict[x] - len(uniprot2res[x]))
+	# # -------------------------------
+	if df_final.shape[0] > 0:
+		df_final["Adjusted_pvalue"] = df_final["Raw_pvalue"].apply(lambda x: min(x * test_num, 1))
+		df_final = df_final[["Type", "Structure_source", "Uniprots", "Residues", "Mutation_count", "Raw_pvalue", "Adjusted_pvalue"]]
+	else:
+		df_final = pd.DataFrame({"Type": [], "Structure_source": [], "Uniprots": [], "Residues": [], "Mutation_count": [], \
 			"Raw_pvalue": [], "Adjusted_pvalue": []})
 	return df_final
 
 
-def get_sig_cluster_inter(pval_file_PDB, pval_file_PIONEER, sig_cutoff = 0.05):
-	if pval_file_PDB != None:
-		df_pdb = pd.read_csv(pval_file_PDB, sep = "\t", dtype = {"Mutation_count": str})
-		df_pdb["Adjusted_pvalue"] = df_pdb["Raw_pvalue"].apply(lambda x: x * df_pdb.shape[0])
-		df_pdb = df_pdb[df_pdb["Adjusted_pvalue"] < sig_cutoff]
-	else:
-		df_pdb = pd.DataFrame()
-	logging.info(str(df_pdb.shape[0]) + " significant inter-protein clusters are identfied using PDB structures.")
-	
-	if pval_file_PIONEER != None:
-		df_pio = pd.read_csv(pval_file_PIONEER, sep = "\t", dtype = {"Mutation_count": str})
-		df_pio["Adjusted_pvalue"] = df_pio["Raw_pvalue"].apply(lambda x: x * df_pio.shape[0]) 
-		df_pio = df_pio[df_pio["Adjusted_pvalue"] < sig_cutoff]
-	else:
-		df_pio = pd.DataFrame()
-	logging.info(str(df_pio.shape[0]) + " significant inter-protein clusters are identfied using PIONEER-predicted interfaces.")
-	
-	if pd.concat([df_pdb, df_pio]).shape[0] > 0:
-		df_final = pd.concat([df_pdb, df_pio])[["Structure_source", "Uniprots", "Residues", "Mutated_sample", "Mutation_count", "Raw_pvalue", "Adjusted_pvalue"]]
-		df_final["Type"] = "NonTrunc_InterProtein_Cluster"
-	else:
-		df_final = pd.DataFrame({"Type": [], "Structure_source": [], "Uniprots": [], "Residues": [], "Mutated_sample": [], "Mutation_count": [], \
-			"Raw_pvalue": [], "Adjusted_pvalue": []})
-	return df_final
+def get_sig_cluster_interface(pval_file_PIONEER):
+	df_pio = pd.read_csv(pval_file_PIONEER, sep = "\t", dtype = {"Mutation_count": str})
+	df_pio["Adjusted_pvalue"] = df_pio["Raw_pvalue"].apply(lambda x: min(x * df_pio.shape[0], 1))
+	df_pio["Type"] = "InFrame_InterProtein_Cluster"
+	return df_pio[["Type", "Structure_source", "Uniprots", "Residues", "Mutation_count", "Raw_pvalue", "Adjusted_pvalue"]]
 
 
 def binary_interaction(uniprots):
@@ -572,6 +606,91 @@ def get_initial_distribution(G_original, pairs, ones, lof, heat_source_score, ed
 	nx.write_graphml(G, output)
 	return G
 
+def get_initial_distribution_alternate(G_original, final_output_intra_pdb, final_output_intra_af2, final_output_inter_pdb, final_output_inter_pioneer, final_output_intra_lof, output, intercept, weighted_edge = True):
+	def get_uniprot2pval(row):
+		if type(row["Residues"]) == str:
+			for uniprot in {x.split("_")[0] for x in row["Residues"].split(",")}:
+				uniprot2pval[uniprot].append(row["Raw_pvalue"])
+		return True
+	def get_interaction2pval(row):
+		interaction2pval[tuple(sorted(row["Uniprots"].split(",")))].append(row["Raw_pvalue"])
+		return True
+
+	# initialization
+	G = copy.deepcopy(G_original)
+	for u,v in G.edges():
+		G[u][v]["weight"] = intercept
+	for u in G.nodes():
+		G.nodes[u]["heat_score"] = 0.0
+
+	# set edge weight
+	if weighted_edge == True:
+		interaction2pval = defaultdict(list)
+		for file in [final_output_inter_pdb, final_output_inter_pioneer]:
+			df = pd.read_csv(file, sep = "\t")
+			df["status"] = df.apply(get_interaction2pval, axis = 1)
+		for u,v in interaction2pval:
+			if G.has_edge(u,v):
+				G[u][v]["weight"] = G[u][v]["weight"] + min(-np.log10(min(interaction2pval[(u,v)])), 300)
+
+	# set node weight
+	uniprot2pval = defaultdict(list)
+	for file in [final_output_intra_pdb, final_output_intra_af2, final_output_inter_pdb, final_output_inter_pioneer]:
+		df = pd.read_csv(file, sep = "\t")
+		df["status"] = df.apply(get_uniprot2pval, axis = 1)
+	for uniprot in set(uniprot2pval).intersection(set(G.nodes())):
+		G.nodes[uniprot]["heat_score"] = min(-np.log10(min(uniprot2pval[uniprot])), 300)
+	uniprot2pval = df_to_dict(final_output_intra_lof, header = 0, from_col = "Uniprots", to_col = "Raw_pvalue")
+	for uniprot in set(uniprot2pval).intersection(set(G.nodes())):
+		G.nodes[uniprot]["heat_score"] = G.nodes[uniprot]["heat_score"] + min(-np.log10(uniprot2pval[uniprot]), 300)
+
+	# write output
+	G = format_graph(G)
+	nx.write_graphml(G, output)
+	return G
+
+
+def get_initial_distribution_alternate_sig(G_original, df_intra, df_inter, df_lof, intercept, output):
+	def get_uniprot2pval(row):
+		for uniprot in row["Uniprots"].split(","):
+			uniprot2pval[uniprot].append(row["Raw_pvalue"])
+		return True
+	def get_interaction2pval(row):
+		interaction2pval[tuple(sorted(row["Uniprots"].split(",")))].append(row["Raw_pvalue"])
+		return True
+
+	# initialization
+	G = copy.deepcopy(G_original)
+	for u,v in G.edges():
+		G[u][v]["weight"] = intercept
+	for u in G.nodes():
+		G.nodes[u]["heat_score"] = 0.0
+
+	# set edge weight
+	interaction2pval = defaultdict(list)
+	df_inter["status"] = df_inter.apply(get_interaction2pval, axis = 1)
+	for u,v in interaction2pval:
+		if G.has_edge(u,v):
+			G[u][v]["weight"] = G[u][v]["weight"] + min(-np.log10(min(interaction2pval[(u,v)])), 300)
+
+	# set node weight
+	df_inframe = pd.concat([df_intra, df_inter])
+	uniprot2pval = defaultdict(list)
+	df_inframe["status"] = df_inframe.apply(get_uniprot2pval, axis = 1)
+	for uniprot in uniprot2pval:
+		if uniprot in G:
+			G.nodes[uniprot]["heat_score"] = G.nodes[uniprot]["heat_score"] + min(-np.log10(min(uniprot2pval[uniprot])), 300)
+	uniprot2pval = defaultdict(list)
+	df_lof["status"] = df_lof.apply(get_uniprot2pval, axis = 1)
+	for uniprot in uniprot2pval:
+		if uniprot in G:
+			G.nodes[uniprot]["heat_score"] = G.nodes[uniprot]["heat_score"] + min(-np.log10(min(uniprot2pval[uniprot])), 300)
+
+	# write output
+	G = format_graph(G)
+	nx.write_graphml(G, output)
+	return G
+
 
 def get_suitable_delta(G, beta, size_cutoff, output, upper_bound = 1, lower_bound = 0):
 	"""
@@ -646,9 +765,12 @@ def get_suitable_delta(G, beta, size_cutoff, output, upper_bound = 1, lower_boun
 
 def get_one_delta(G_original, delta_output, restart_prob, max_subnetwork_size, seed):
 	G = copy.deepcopy(G_original)
-	nx.double_edge_swap(G, nswap = len(G.edges()), max_tries = 200000, seed = seed)
-	for u,v in G.edges():
-		G[u][v]["weight"] = 1.0
+	weight_list = [info["weight"] for u,v,info in G.edges(data = True)]
+	random.seed(seed)
+	random.shuffle(weight_list)
+	nx.double_edge_swap(G, nswap = len(G.edges()), max_tries = 500000, seed = seed)
+	for i,(u,v) in enumerate(G.edges()):
+		G[u][v]["weight"] = weight_list[i]
 	get_suitable_delta(G, beta = restart_prob, size_cutoff = max_subnetwork_size, output = delta_output)
 	return
 
