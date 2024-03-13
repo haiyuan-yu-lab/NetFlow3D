@@ -101,8 +101,8 @@ NetFlow3D will output the following and files and a folder. `{job_name}` will be
 - `{job_name}/`
 
 	This is a folder containing intermediate files by NetFlow3D:
-	1. `initial_state_intercept1.0_lowres_edgeweightTrue.graphml.gz`: input of the network propagation model in NetFlow3D.
-	2. `final_state_intercept1.0_lowres_edgeweightTrue.graphml.gz`: output of the network propagation model in NetFlow3D.
+	1. `initial_state_intercept1.0_lowres_edgeweightTrue.graphml.gz`: input to the network propagation model in NetFlow3D.
+	2. `final_state_intercept1.0_lowres_edgeweightTrue.graphml.gz`: output from the network propagation model in NetFlow3D.
 	3. `choose_delta_intercept1.0_lowres_edgeweightTrue.txt`: δ's from randomized input
 	4. `ShortVersion_mutation_data.txt`: mutation information summarized to each residue
 	5. `PIONEER_inter_pvalue.txt`, `PDB_intra_pvalue.txt`, `PDB_inter_pvalue.txt`, `AlphaFold2_intra_pvalue_pLDDT0.txt`: 3D cluster information.
