@@ -9,7 +9,7 @@ The Python Standard Library and the following packages:
 - pandas (version 1.5.2)
 - statsmodels (version 0.13.5)
 
-## Installation
+## Installation (~30min)
 
 	git clone https://github.com/hyulab/NetFlow3D.git
 	cd NetFlow3D
