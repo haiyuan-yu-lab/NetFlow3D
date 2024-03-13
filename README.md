@@ -86,7 +86,7 @@ NetFlow3D will output the following and files and a folder. `{job_name}` will be
 	7. Mutation_frequency 
 
 		The content format in this column depends on the content in "Type":
-		- If the content in "Type" is “LoF_IntraProtein_Enriched”, the format of this column is `{gene}:{number of LoF mutations in all samples}`
+		- If the content in "Type" is “LoF_IntraProtein_Enriched”, the format of this column is `{UniProt ID}:{number of LoF mutations in all samples}`
 		- Otherwise, the format of this column is `{residue1}:{number of mutated samples},{residue2}:{number of mutated samples},...`
 	8. LoF_enrichment (`[NA]` means not applicable)
 	9. Raw_pvalue
@@ -94,15 +94,19 @@ NetFlow3D will output the following and files and a folder. `{job_name}` will be
 
 - `{job_name}`_subnetworks_intercept1.0_lowres_edgeweightTrue.txt
 
-	This is a tab-separated file containing the subnetworks with strong internal heat exchanges identified by NetFlow3D. Subnetworks including >=2 proteins will be reported. The first line is a header. Two columns are present:
+	This is a tab-separated file containing the interconnected modules identified by NetFlow3D. Two columns are present:
 	1. Subnetwork_UniProts	
-	2. Subnetwork_size (i.e. number of proteins in the subnetwork)
+	2. Subnetwork_size (i.e. number of proteins in the interconnected module)
 
-- `{job_name}`_drivers.txt
+- `{job_name}/`
 
-	This is a tab-separated file containing the candidate driver mutations identified by NetFlow3D. The first line is a header. The columns include:
-	1. All columns in the input MAF file
-	2. UniProt
-	3. Signature_ID (This column contains the significant 3D cluster(s) or LOF enrichment signal by which a mutation is incorporated. If a mutation is incorporated by multiple significant 3D clusters, their IDs will be separated by comma)
+	This is a folder containing intermediate files by NetFlow3D:
+	1. `initial_state_intercept1.0_lowres_edgeweightTrue.graphml.gz`: input of the network propagation model in NetFlow3D.
+	2. `final_state_intercept1.0_lowres_edgeweightTrue.graphml.gz`: output of the network propagation model in NetFlow3D.
+	3. `choose_delta_intercept1.0_lowres_edgeweightTrue.txt`: δ's from randomized input
+	4. `ShortVersion_mutation_data.txt`: mutation information summarized to each residue
+	5. `PIONEER_inter_pvalue.txt`, `PDB_intra_pvalue.txt`, `PDB_inter_pvalue.txt`, `AlphaFold2_intra_pvalue_pLDDT0.txt`: 3D cluster information.
+	6.  `All_intra_LoF_pvalue.txt`: LOF enrichment information.
+	7. `PDB_graph`, `AlphaFold2_graph_pLDDT0`: residue-residue contact map.
 
 
