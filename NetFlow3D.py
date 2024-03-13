@@ -21,6 +21,7 @@ import statsmodels.stats.multitest
 import sys
 from itertools import combinations
 from scipy.stats import poisson
+import shutil
 
 def eliminate_redundancy(df_one):
 	if df_one.shape[0] > 1:
@@ -643,6 +644,12 @@ if __name__ == "__main__":
 
 
 	# ############################################################################################################################################
+	os.remove(output_path + "PIONEER_clusters.txt")
+	os.remove(output_path + "Intra_protein_clusters_PDB.txt")
+	os.remove(output_path + "Inter_protein_clusters_PDB.txt")
+	os.remove(output_path + "Intra_protein_clusters_AlphaFold2.txt")
+	shutil.rmtree(output_path + "PDB_cluster")
+	shutil.rmtree(output_path + "AlphaFold2_cluster")
 	# # remove intermediate files
 	# # -------------------------
 	# funcs.remove_whole_dir(output_path)
