@@ -45,16 +45,11 @@ If you run the above command, the output should be found in `./output/`, includi
 	<ul>
 	<li>Chromosome</li>
 	<li>Start_Position</li>
-	<li>Strand</li>
-	<li>Reference_Allele</li>
-	<li>Tumor_Seq_Allele1</li>
- 	<li>Tumor_Seq_Allele2</li>
 	<li>Variant_Classification</li>
 	<li>ENSP</li>
 	<li>Transcript_ID</li>
 	<li>Gene</li>
 	<li>Protein_position</li>
-	<li>Codons</li>
 	<li>Tumor_Sample_Barcode</li>
 	</ul>
 
