@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="Q96ID5_282"/>
+<node id="Q96ID5_101"/>
+<node id="Q96ID5_280"/>
+<node id="Q96ID5_350"/>
+<edge source="Q96ID5_282" target="Q96ID5_280">
+  <data key="d0">2.817750095335313</data>
+  <data key="d1">Q96ID5_280:AF-Q96ID5-F1-model_v4.pdb_A_280;Q96ID5_282:AF-Q96ID5-F1-model_v4.pdb_A_282</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>

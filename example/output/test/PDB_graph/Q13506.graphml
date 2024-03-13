@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="Q13506_301"/>
+<node id="Q13506_289"/>
+<node id="Q13506_282"/>
+<node id="Q13506_263"/>
+<node id="Q13506_208"/>
+<node id="Q13506_256"/>
+<edge source="Q13506_301" target="Q13506_282">
+  <data key="d0">5.794854622479561</data>
+  <data key="d1">Q13506_282:2YUF_A_101;Q13506_301:2YUF_A_120</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q13506_301" target="Q13506_256">
+  <data key="d0">4.792657931571294</data>
+  <data key="d1">Q13506_301:2YUF_A_120;Q13506_256:2YUF_A_75</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q13506_263" target="Q13506_256">
+  <data key="d0">2.8860777750262043</data>
+  <data key="d1">Q13506_256:2YUF_A_75;Q13506_263:2YUF_A_82</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>

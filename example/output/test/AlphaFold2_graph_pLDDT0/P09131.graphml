@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="P09131_291"/>
+<node id="P09131_442"/>
+<node id="P09131_11"/>
+<node id="P09131_113"/>
+<node id="P09131_265"/>
+<node id="P09131_245"/>
+<node id="P09131_399"/>
+<node id="P09131_311"/>
+<node id="P09131_429"/>
+<node id="P09131_410"/>
+<node id="P09131_295"/>
+<node id="P09131_75"/>
+<node id="P09131_193"/>
+<node id="P09131_72"/>
+<node id="P09131_414"/>
+<node id="P09131_424"/>
+<node id="P09131_199"/>
+<node id="P09131_308"/>
+<node id="P09131_475"/>
+<node id="P09131_36"/>
+<node id="P09131_240"/>
+<node id="P09131_280"/>
+<node id="P09131_441"/>
+<node id="P09131_300"/>
+<node id="P09131_425"/>
+<node id="P09131_21"/>
+<node id="P09131_111"/>
+<node id="P09131_172"/>
+<node id="P09131_106"/>
+<node id="P09131_26"/>
+<node id="P09131_208"/>
+<node id="P09131_157"/>
+<node id="P09131_415"/>
+<node id="P09131_163"/>
+<node id="P09131_127"/>
+<node id="P09131_372"/>
+<node id="P09131_310"/>
+<node id="P09131_264"/>
+<node id="P09131_189"/>
+<node id="P09131_446"/>
+<node id="P09131_223"/>
+<node id="P09131_101"/>
+<node id="P09131_214"/>
+<node id="P09131_423"/>
+<edge source="P09131_291" target="P09131_265">
+  <data key="d0">3.5966598822663793</data>
+  <data key="d1">P09131_265:AF-P09131-F1-model_v4.pdb_A_265;P09131_291:AF-P09131-F1-model_v4.pdb_A_291</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_291" target="P09131_295">
+  <data key="d0">2.780027453119972</data>
+  <data key="d1">P09131_295:AF-P09131-F1-model_v4.pdb_A_295;P09131_291:AF-P09131-F1-model_v4.pdb_A_291</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_442" target="P09131_441">
+  <data key="d0">1.3326625913670591</data>
+  <data key="d1">P09131_442:AF-P09131-F1-model_v4.pdb_A_442;P09131_441:AF-P09131-F1-model_v4.pdb_A_441</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_442" target="P09131_446">
+  <data key="d0">2.5946759330762834</data>
+  <data key="d1">P09131_446:AF-P09131-F1-model_v4.pdb_A_446;P09131_442:AF-P09131-F1-model_v4.pdb_A_442</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_113" target="P09131_111">
+  <data key="d0">3.1576140233653103</data>
+  <data key="d1">P09131_113:AF-P09131-F1-model_v4.pdb_A_113;P09131_111:AF-P09131-F1-model_v4.pdb_A_111</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_265" target="P09131_423">
+  <data key="d0">4.97498766495963</data>
+  <data key="d1">P09131_423:AF-P09131-F1-model_v4.pdb_A_423;P09131_265:AF-P09131-F1-model_v4.pdb_A_265</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_265" target="P09131_425">
+  <data key="d0">2.8712704591733833</data>
+  <data key="d1">P09131_425:AF-P09131-F1-model_v4.pdb_A_425;P09131_265:AF-P09131-F1-model_v4.pdb_A_265</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_265" target="P09131_264">
+  <data key="d0">1.3480540547916517</data>
+  <data key="d1">P09131_264:AF-P09131-F1-model_v4.pdb_A_264;P09131_265:AF-P09131-F1-model_v4.pdb_A_265</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_265" target="P09131_295">
+  <data key="d0">3.850556312662496</data>
+  <data key="d1">P09131_265:AF-P09131-F1-model_v4.pdb_A_265;P09131_295:AF-P09131-F1-model_v4.pdb_A_295</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_265" target="P09131_424">
+  <data key="d0">3.7940617237786287</data>
+  <data key="d1">P09131_424:AF-P09131-F1-model_v4.pdb_A_424;P09131_265:AF-P09131-F1-model_v4.pdb_A_265</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_245" target="P09131_310">
+  <data key="d0">4.073888865004257</data>
+  <data key="d1">P09131_245:AF-P09131-F1-model_v4.pdb_A_245;P09131_310:AF-P09131-F1-model_v4.pdb_A_310</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_245" target="P09131_240">
+  <data key="d0">4.842800498357691</data>
+  <data key="d1">P09131_240:AF-P09131-F1-model_v4.pdb_A_240;P09131_245:AF-P09131-F1-model_v4.pdb_A_245</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_311" target="P09131_308">
+  <data key="d0">3.078468782210577</data>
+  <data key="d1">P09131_311:AF-P09131-F1-model_v4.pdb_A_311;P09131_308:AF-P09131-F1-model_v4.pdb_A_308</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_311" target="P09131_310">
+  <data key="d0">1.340860797060579</data>
+  <data key="d1">P09131_310:AF-P09131-F1-model_v4.pdb_A_310;P09131_311:AF-P09131-F1-model_v4.pdb_A_311</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_429" target="P09131_425">
+  <data key="d0">3.2514689732469946</data>
+  <data key="d1">P09131_425:AF-P09131-F1-model_v4.pdb_A_425;P09131_429:AF-P09131-F1-model_v4.pdb_A_429</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_429" target="P09131_264">
+  <data key="d0">3.5070316103412673</data>
+  <data key="d1">P09131_429:AF-P09131-F1-model_v4.pdb_A_429;P09131_264:AF-P09131-F1-model_v4.pdb_A_264</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_429" target="P09131_446">
+  <data key="d0">5.780945787392555</data>
+  <data key="d1">P09131_429:AF-P09131-F1-model_v4.pdb_A_429;P09131_446:AF-P09131-F1-model_v4.pdb_A_446</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_410" target="P09131_414">
+  <data key="d0">2.967327646944621</data>
+  <data key="d1">P09131_410:AF-P09131-F1-model_v4.pdb_A_410;P09131_414:AF-P09131-F1-model_v4.pdb_A_414</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_410" target="P09131_415">
+  <data key="d0">5.135345252935789</data>
+  <data key="d1">P09131_410:AF-P09131-F1-model_v4.pdb_A_410;P09131_415:AF-P09131-F1-model_v4.pdb_A_415</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_295" target="P09131_264">
+  <data key="d0">5.290596251602812</data>
+  <data key="d1">P09131_295:AF-P09131-F1-model_v4.pdb_A_295;P09131_264:AF-P09131-F1-model_v4.pdb_A_264</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_295" target="P09131_300">
+  <data key="d0">3.3367881683535</data>
+  <data key="d1">P09131_300:AF-P09131-F1-model_v4.pdb_A_300;P09131_295:AF-P09131-F1-model_v4.pdb_A_295</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_193" target="P09131_189">
+  <data key="d0">5.458686018160841</data>
+  <data key="d1">P09131_189:AF-P09131-F1-model_v4.pdb_A_189;P09131_193:AF-P09131-F1-model_v4.pdb_A_193</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_414" target="P09131_415">
+  <data key="d0">1.3391242933571603</data>
+  <data key="d1">P09131_415:AF-P09131-F1-model_v4.pdb_A_415;P09131_414:AF-P09131-F1-model_v4.pdb_A_414</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_424" target="P09131_423">
+  <data key="d0">1.3248327168248852</data>
+  <data key="d1">P09131_424:AF-P09131-F1-model_v4.pdb_A_424;P09131_423:AF-P09131-F1-model_v4.pdb_A_423</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_424" target="P09131_425">
+  <data key="d0">1.3310817439068434</data>
+  <data key="d1">P09131_424:AF-P09131-F1-model_v4.pdb_A_424;P09131_425:AF-P09131-F1-model_v4.pdb_A_425</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_424" target="P09131_264">
+  <data key="d0">4.262587288186492</data>
+  <data key="d1">P09131_424:AF-P09131-F1-model_v4.pdb_A_424;P09131_264:AF-P09131-F1-model_v4.pdb_A_264</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_308" target="P09131_310">
+  <data key="d0">3.245336198575377</data>
+  <data key="d1">P09131_310:AF-P09131-F1-model_v4.pdb_A_310;P09131_308:AF-P09131-F1-model_v4.pdb_A_308</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_280" target="P09131_415">
+  <data key="d0">5.833708713960081</data>
+  <data key="d1">P09131_280:AF-P09131-F1-model_v4.pdb_A_280;P09131_415:AF-P09131-F1-model_v4.pdb_A_415</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_441" target="P09131_446">
+  <data key="d0">4.762825521607424</data>
+  <data key="d1">P09131_446:AF-P09131-F1-model_v4.pdb_A_446;P09131_441:AF-P09131-F1-model_v4.pdb_A_441</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_425" target="P09131_423">
+  <data key="d0">4.130449372762964</data>
+  <data key="d1">P09131_423:AF-P09131-F1-model_v4.pdb_A_423;P09131_425:AF-P09131-F1-model_v4.pdb_A_425</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P09131_425" target="P09131_264">
+  <data key="d0">3.8055948035579243</data>
+  <data key="d1">P09131_425:AF-P09131-F1-model_v4.pdb_A_425;P09131_264:AF-P09131-F1-model_v4.pdb_A_264</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>

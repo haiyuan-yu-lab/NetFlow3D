@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="Q8NI32_76"/>
+<node id="Q8NI32_60"/>
+<node id="Q8NI32_105"/>
+<node id="Q8NI32_65"/>
+<node id="Q8NI32_152"/>
+<node id="Q8NI32_70"/>
+<node id="Q8NI32_121"/>
+<node id="Q8NI32_75"/>
+<node id="Q8NI32_68"/>
+<edge source="Q8NI32_76" target="Q8NI32_70">
+  <data key="d0">5.605947391325836</data>
+  <data key="d1">Q8NI32_70:6ZSO_A_111;Q8NI32_76:6ZSO_A_117</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_76" target="Q8NI32_68">
+  <data key="d0">5.179095328003061</data>
+  <data key="d1">Q8NI32_68:6ZSO_A_109;Q8NI32_76:6ZSO_A_117</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_76" target="Q8NI32_65">
+  <data key="d0">5.384405392882261</data>
+  <data key="d1">Q8NI32_65:6ZSO_A_106;Q8NI32_76:6ZSO_A_117</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_76" target="Q8NI32_75">
+  <data key="d0">1.3284465171047397</data>
+  <data key="d1">Q8NI32_76:6ZSO_A_117;Q8NI32_75:6ZSO_A_116</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_105" target="Q8NI32_70">
+  <data key="d0">2.2890444440850093</data>
+  <data key="d1">Q8NI32_105:6ZSO_A_146;Q8NI32_70:6ZSO_A_111</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_105" target="Q8NI32_65">
+  <data key="d0">3.9843739917489116</data>
+  <data key="d1">Q8NI32_105:6ZSO_A_146;Q8NI32_65:6ZSO_A_106</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_105" target="Q8NI32_68">
+  <data key="d0">2.1960352630322726</data>
+  <data key="d1">Q8NI32_105:6ZSO_A_146;Q8NI32_68:6ZSO_A_109</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_65" target="Q8NI32_70">
+  <data key="d0">5.906121133694391</data>
+  <data key="d1">Q8NI32_65:6ZSO_A_106;Q8NI32_70:6ZSO_A_111</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_65" target="Q8NI32_68">
+  <data key="d0">2.7563793356378663</data>
+  <data key="d1">Q8NI32_68:6ZSO_A_109;Q8NI32_65:6ZSO_A_106</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_65" target="Q8NI32_75">
+  <data key="d0">3.8915598050340683</data>
+  <data key="d1">Q8NI32_65:6ZSO_A_106;Q8NI32_75:6ZSO_A_116</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_70" target="Q8NI32_68">
+  <data key="d0">2.2850219488447054</data>
+  <data key="d1">Q8NI32_68:6ZSO_A_109;Q8NI32_70:6ZSO_A_111</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_70" target="Q8NI32_75">
+  <data key="d0">4.007023674183351</data>
+  <data key="d1">Q8NI32_70:6ZSO_A_111;Q8NI32_75:6ZSO_A_116</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NI32_75" target="Q8NI32_68">
+  <data key="d0">4.688635514156104</data>
+  <data key="d1">Q8NI32_68:6ZSO_A_109;Q8NI32_75:6ZSO_A_116</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>

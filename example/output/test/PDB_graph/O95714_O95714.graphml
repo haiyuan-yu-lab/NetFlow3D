@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="O95714_634"/>
+<node id="O95714_588"/>
+<node id="O95714_592"/>
+<node id="O95714_559"/>
+<node id="O95714_612"/>
+<node id="O95714_4304"/>
+<node id="O95714_4306"/>
+<node id="O95714_4138"/>
+<node id="O95714_4142"/>
+<node id="O95714_1256"/>
+<node id="O95714_1254"/>
+<node id="O95714_1259"/>
+<node id="O95714_566"/>
+<node id="O95714_607"/>
+<node id="O95714_555"/>
+<node id="O95714_1280"/>
+<node id="O95714_1282"/>
+<node id="O95714_4307"/>
+<node id="O95714_4308"/>
+<node id="O95714_4255"/>
+<node id="O95714_4179"/>
+<node id="O95714_4178"/>
+<node id="O95714_4175"/>
+<node id="O95714_4188"/>
+<node id="O95714_4241"/>
+<node id="O95714_4237"/>
+<node id="O95714_636"/>
+<node id="O95714_639"/>
+<node id="O95714_4263"/>
+<node id="O95714_3988"/>
+<node id="O95714_4002"/>
+<node id="O95714_4000"/>
+<node id="O95714_4065"/>
+<node id="O95714_4016"/>
+<node id="O95714_4050"/>
+<node id="O95714_4063"/>
+<node id="O95714_4021"/>
+<node id="O95714_695"/>
+<node id="O95714_684"/>
+<node id="O95714_1268"/>
+<node id="O95714_1273"/>
+<node id="O95714_599"/>
+<node id="O95714_597"/>
+<node id="O95714_4097"/>
+<node id="O95714_736"/>
+<node id="O95714_746"/>
+<node id="O95714_4143"/>
+<node id="O95714_664"/>
+<node id="O95714_4114"/>
+<node id="O95714_4116"/>
+<node id="O95714_4123"/>
+<node id="O95714_4134"/>
+<node id="O95714_521"/>
+<node id="O95714_526"/>
+<node id="O95714_4088"/>
+<node id="O95714_656"/>
+<node id="O95714_655"/>
+<node id="O95714_4011"/>
+<node id="O95714_4209"/>
+<node id="O95714_1221"/>
+<node id="O95714_511"/>
+<node id="O95714_478"/>
+<node id="O95714_4077"/>
+<node id="O95714_4245"/>
+<node id="O95714_4274"/>
+<node id="O95714_429"/>
+<node id="O95714_4155"/>
+<node id="O95714_659"/>
+<node id="O95714_4299"/>
+<node id="O95714_470"/>
+<node id="O95714_4225"/>
+<node id="O95714_3969"/>
+<node id="O95714_459"/>
+<node id="O95714_424"/>
+<edge source="O95714_634" target="O95714_588">
+  <data key="d0">5.840822528912849</data>
+  <data key="d1">O95714_588:4L1M_A_588;O95714_634:4L1M_C_634</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="O95714_634" target="O95714_592">
+  <data key="d0">6.6982519078526614</data>
+  <data key="d1">O95714_634:4L1M_B_634;O95714_592:4L1M_C_592</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="O95714_634" target="O95714_636">
+  <data key="d0">3.1478868443321457</data>
+  <data key="d1">O95714_636:4L1M_B_636;O95714_634:4L1M_B_634</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_634" target="O95714_684">
+  <data key="d0">5.570128192959208</data>
+  <data key="d1">O95714_684:4L1M_B_684;O95714_634:4L1M_B_634</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_592" target="O95714_526">
+  <data key="d0">5.302505731402539</data>
+  <data key="d1">O95714_526:4L1M_B_526;O95714_592:4L1M_B_592</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_559" target="O95714_612">
+  <data key="d0">5.641145005408591</data>
+  <data key="d1">O95714_612:4L1M_B_612;O95714_559:4L1M_B_559</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_612" target="O95714_636">
+  <data key="d0">5.482522193952156</data>
+  <data key="d1">O95714_636:4L1M_A_636;O95714_612:4L1M_A_612</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_612" target="O95714_664">
+  <data key="d0">5.799347751924345</data>
+  <data key="d1">O95714_612:4L1M_C_612;O95714_664:4L1M_C_664</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4304" target="O95714_4306">
+  <data key="d0">4.533937882563012</data>
+  <data key="d1">O95714_4306:3KCI_A_4306;O95714_4304:3KCI_A_4304</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4306" target="O95714_4307">
+  <data key="d0">1.3291486262795398</data>
+  <data key="d1">O95714_4307:3KCI_A_4307;O95714_4306:3KCI_A_4306</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4306" target="O95714_4308">
+  <data key="d0">4.686005224136638</data>
+  <data key="d1">O95714_4308:3KCI_A_4308;O95714_4306:3KCI_A_4306</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4306" target="O95714_4263">
+  <data key="d0">4.313214184461971</data>
+  <data key="d1">O95714_4306:3KCI_A_4306;O95714_4263:3KCI_A_4263</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4306" target="O95714_4255">
+  <data key="d0">4.022032004315498</data>
+  <data key="d1">O95714_4255:3KCI_A_4255;O95714_4306:3KCI_A_4306</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4138" target="O95714_4142">
+  <data key="d0">5.968094812432737</data>
+  <data key="d1">O95714_4138:3KCI_A_4138;O95714_4142:3KCI_A_4142</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4142" target="O95714_4143">
+  <data key="d0">1.3316355827771968</data>
+  <data key="d1">O95714_4143:3KCI_A_4143;O95714_4142:3KCI_A_4142</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_1256" target="O95714_1254">
+  <data key="d0">3.8751689620914047</data>
+  <data key="d1">O95714_1256:2KEO_A_72;O95714_1254:2KEO_A_70</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_1256" target="O95714_1259">
+  <data key="d0">1.8804497107732636</data>
+  <data key="d1">O95714_1256:2KEO_A_72;O95714_1259:2KEO_A_75</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_566" target="O95714_607">
+  <data key="d0">3.719382533070287</data>
+  <data key="d1">O95714_607:4L1M_A_607;O95714_566:4L1M_A_566</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_566" target="O95714_555">
+  <data key="d0">3.0729019675443117</data>
+  <data key="d1">O95714_555:4L1M_C_555;O95714_566:4L1M_C_566</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_607" target="O95714_555">
+  <data key="d0">3.6103265779802287</data>
+  <data key="d1">O95714_607:4L1M_A_607;O95714_555:4L1M_A_555</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_1280" target="O95714_1282">
+  <data key="d0">3.806027969433482</data>
+  <data key="d1">O95714_1282:2KEO_A_98;O95714_1280:2KEO_A_96</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4307" target="O95714_4308">
+  <data key="d0">1.3295082059848786</data>
+  <data key="d1">O95714_4307:3KCI_A_4307;O95714_4308:3KCI_A_4308</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4307" target="O95714_4255">
+  <data key="d0">3.8381544913904624</data>
+  <data key="d1">O95714_4307:3KCI_A_4307;O95714_4255:3KCI_A_4255</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4308" target="O95714_4255">
+  <data key="d0">3.726678056790533</data>
+  <data key="d1">O95714_4308:3KCI_A_4308;O95714_4255:3KCI_A_4255</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4255" target="O95714_4263">
+  <data key="d0">4.9794441277729105</data>
+  <data key="d1">O95714_4255:3KCI_A_4255;O95714_4263:3KCI_A_4263</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4179" target="O95714_4178">
+  <data key="d0">1.334003656809489</data>
+  <data key="d1">O95714_4178:3KCI_A_4178;O95714_4179:3KCI_A_4179</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4179" target="O95714_4175">
+  <data key="d0">4.77756572299969</data>
+  <data key="d1">O95714_4175:3KCI_A_4175;O95714_4179:3KCI_A_4179</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4179" target="O95714_4188">
+  <data key="d0">5.930493695160542</data>
+  <data key="d1">O95714_4179:3KCI_A_4179;O95714_4188:3KCI_A_4188</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4178" target="O95714_4237">
+  <data key="d0">5.946487165830085</data>
+  <data key="d1">O95714_4237:3KCI_A_4237;O95714_4178:3KCI_A_4178</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4178" target="O95714_4175">
+  <data key="d0">2.8674161607375837</data>
+  <data key="d1">O95714_4178:3KCI_A_4178;O95714_4175:3KCI_A_4175</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4175" target="O95714_4237">
+  <data key="d0">3.776356037161396</data>
+  <data key="d1">O95714_4237:3KCI_A_4237;O95714_4175:3KCI_A_4175</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4188" target="O95714_4123">
+  <data key="d0">5.875725030655484</data>
+  <data key="d1">O95714_4123:3KCI_A_4123;O95714_4188:3KCI_A_4188</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4241" target="O95714_4237">
+  <data key="d0">3.8211630456565002</data>
+  <data key="d1">O95714_4237:3KCI_A_4237;O95714_4241:3KCI_A_4241</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_636" target="O95714_639">
+  <data key="d0">5.920905493800527</data>
+  <data key="d1">O95714_636:4L1M_A_636;O95714_639:4L1M_A_639</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_3988" target="O95714_4002">
+  <data key="d0">3.781259929231601</data>
+  <data key="d1">O95714_3988:3KCI_A_3988;O95714_4002:3KCI_A_4002</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_3988" target="O95714_4000">
+  <data key="d0">2.722726326320999</data>
+  <data key="d1">O95714_4000:3KCI_A_4000;O95714_3988:3KCI_A_3988</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4002" target="O95714_4000">
+  <data key="d0">4.3126286600557115</data>
+  <data key="d1">O95714_4000:3KCI_A_4000;O95714_4002:3KCI_A_4002</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4065" target="O95714_4016">
+  <data key="d0">4.47795102504059</data>
+  <data key="d1">O95714_4016:3KCI_A_4016;O95714_4065:3KCI_A_4065</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4065" target="O95714_4050">
+  <data key="d0">3.6057648238879505</data>
+  <data key="d1">O95714_4065:3KCI_A_4065;O95714_4050:3KCI_A_4050</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4065" target="O95714_4063">
+  <data key="d0">4.385208537544807</data>
+  <data key="d1">O95714_4065:3KCI_A_4065;O95714_4063:3KCI_A_4063</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4016" target="O95714_4021">
+  <data key="d0">5.279882722250149</data>
+  <data key="d1">O95714_4021:3KCI_A_4021;O95714_4016:3KCI_A_4016</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4016" target="O95714_4050">
+  <data key="d0">4.980570293376667</data>
+  <data key="d1">O95714_4016:3KCI_A_4016;O95714_4050:3KCI_A_4050</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4016" target="O95714_4063">
+  <data key="d0">2.9121070585588846</data>
+  <data key="d1">O95714_4016:3KCI_A_4016;O95714_4063:3KCI_A_4063</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4016" target="O95714_4011">
+  <data key="d0">3.155579103854842</data>
+  <data key="d1">O95714_4011:3KCI_A_4011;O95714_4016:3KCI_A_4016</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4050" target="O95714_4097">
+  <data key="d0">5.912779059217884</data>
+  <data key="d1">O95714_4050:3KCI_A_4050;O95714_4097:3KCI_A_4097</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4050" target="O95714_4063">
+  <data key="d0">3.151836621257127</data>
+  <data key="d1">O95714_4050:3KCI_A_4050;O95714_4063:3KCI_A_4063</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_695" target="O95714_684">
+  <data key="d0">3.593884117203671</data>
+  <data key="d1">O95714_684:4L1M_A_684;O95714_695:4L1M_A_695</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_1268" target="O95714_1273">
+  <data key="d0">5.112317519264437</data>
+  <data key="d1">O95714_1268:2KEO_A_84;O95714_1273:2KEO_A_89</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_599" target="O95714_597">
+  <data key="d0">3.104303085091647</data>
+  <data key="d1">O95714_599:4L1M_C_599;O95714_597:4L1M_C_597</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_736" target="O95714_746">
+  <data key="d0">2.828099934993514</data>
+  <data key="d1">O95714_736:4L1M_A_736;O95714_746:4L1M_A_746</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4114" target="O95714_4116">
+  <data key="d0">4.729315986135086</data>
+  <data key="d1">O95714_4116:3KCI_A_4116;O95714_4114:3KCI_A_4114</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4114" target="O95714_4123">
+  <data key="d0">2.7009204561285203</data>
+  <data key="d1">O95714_4123:3KCI_A_4123;O95714_4114:3KCI_A_4114</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4114" target="O95714_4134">
+  <data key="d0">3.8287719048352877</data>
+  <data key="d1">O95714_4114:3KCI_A_4114;O95714_4134:3KCI_A_4134</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4116" target="O95714_4123">
+  <data key="d0">3.423290171457127</data>
+  <data key="d1">O95714_4116:3KCI_A_4116;O95714_4123:3KCI_A_4123</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_4134" target="O95714_4088">
+  <data key="d0">3.8169893212726915</data>
+  <data key="d1">O95714_4134:3KCI_A_4134;O95714_4088:3KCI_A_4088</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_521" target="O95714_526">
+  <data key="d0">3.178394169796597</data>
+  <data key="d1">O95714_526:4L1M_A_526;O95714_521:4L1M_A_521</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="O95714_656" target="O95714_655">
+  <data key="d0">1.3252692140413327</data>
+  <data key="d1">O95714_655:4L1M_B_655;O95714_656:4L1M_B_656</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>

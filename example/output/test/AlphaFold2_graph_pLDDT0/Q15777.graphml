@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="Q15777_2"/>
+<node id="Q15777_230"/>
+<node id="Q15777_178"/>
+<node id="Q15777_248"/>
+<node id="Q15777_170"/>
+<node id="Q15777_25"/>
+<node id="Q15777_95"/>
+<node id="Q15777_126"/>
+<node id="Q15777_187"/>
+<node id="Q15777_101"/>
+<node id="Q15777_275"/>
+<node id="Q15777_115"/>
+<node id="Q15777_21"/>
+<node id="Q15777_271"/>
+<node id="Q15777_262"/>
+<node id="Q15777_276"/>
+<node id="Q15777_59"/>
+<node id="Q15777_224"/>
+<node id="Q15777_89"/>
+<node id="Q15777_168"/>
+<node id="Q15777_28"/>
+<edge source="Q15777_178" target="Q15777_187">
+  <data key="d0">5.776881778416574</data>
+  <data key="d1">Q15777_178:AF-Q15777-F1-model_v4.pdb_A_178;Q15777_187:AF-Q15777-F1-model_v4.pdb_A_187</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q15777_178" target="Q15777_115">
+  <data key="d0">3.258650780576541</data>
+  <data key="d1">Q15777_115:AF-Q15777-F1-model_v4.pdb_A_115;Q15777_178:AF-Q15777-F1-model_v4.pdb_A_178</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q15777_170" target="Q15777_168">
+  <data key="d0">4.394109306268715</data>
+  <data key="d1">Q15777_170:AF-Q15777-F1-model_v4.pdb_A_170;Q15777_168:AF-Q15777-F1-model_v4.pdb_A_168</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q15777_25" target="Q15777_28">
+  <data key="d0">3.4231479613516247</data>
+  <data key="d1">Q15777_28:AF-Q15777-F1-model_v4.pdb_A_28;Q15777_25:AF-Q15777-F1-model_v4.pdb_A_25</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q15777_25" target="Q15777_21">
+  <data key="d0">2.8893571121564325</data>
+  <data key="d1">Q15777_25:AF-Q15777-F1-model_v4.pdb_A_25;Q15777_21:AF-Q15777-F1-model_v4.pdb_A_21</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q15777_95" target="Q15777_89">
+  <data key="d0">2.879844912875586</data>
+  <data key="d1">Q15777_89:AF-Q15777-F1-model_v4.pdb_A_89;Q15777_95:AF-Q15777-F1-model_v4.pdb_A_95</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q15777_126" target="Q15777_187">
+  <data key="d0">4.020436102100491</data>
+  <data key="d1">Q15777_187:AF-Q15777-F1-model_v4.pdb_A_187;Q15777_126:AF-Q15777-F1-model_v4.pdb_A_126</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q15777_275" target="Q15777_276">
+  <data key="d0">1.338108169191962</data>
+  <data key="d1">Q15777_275:AF-Q15777-F1-model_v4.pdb_A_275;Q15777_276:AF-Q15777-F1-model_v4.pdb_A_276</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>

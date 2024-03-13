@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="P80075_72"/>
+<node id="P80075_86"/>
+<node id="P80075_45"/>
+<node id="P80075_88"/>
+<node id="P80075_98"/>
+<node id="P80075_60"/>
+<node id="P80075_76"/>
+<edge source="P80075_86" target="P80075_45">
+  <data key="d0">2.810554172240455</data>
+  <data key="d1">P80075_86:1ESR_A_63;P80075_45:1ESR_A_22</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P80075_86" target="P80075_88">
+  <data key="d0">3.267916304806627</data>
+  <data key="d1">P80075_88:1ESR_A_65;P80075_86:1ESR_A_63</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>

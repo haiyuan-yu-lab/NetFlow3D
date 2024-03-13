@@ -242,8 +242,8 @@ if __name__ == "__main__":
 	except:
 		funcs.remove_whole_dir(output_path)
 		sys.exit("Please check the input MAF file! (MAF file format: https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)")
-	if {"Chromosome", "Start_Position", "Reference_Allele", "Tumor_Seq_Allele2", "Variant_Classification", "Tumor_Sample_Barcode", "Protein_position", "ENSP", "Transcript_ID", "Gene"} - set(df.columns.tolist()) != set():
-		logging.error("Please check the input MAF file! The following columns must be included: Chromosome, Start_Position, Reference_Allele, Tumor_Seq_Allele2, Tumor_Sample_Barcode, Protein_position, Variant_Classification, ENSP, Transcript_ID, Gene. (MAF file format: https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)")
+	if {"Chromosome", "Start_Position", "Variant_Classification", "Tumor_Sample_Barcode", "Protein_position", "ENSP", "Transcript_ID", "Gene"} - set(df.columns.tolist()) != set():
+		logging.error("Please check the input MAF file! The following columns must be included: Chromosome, Start_Position, Tumor_Sample_Barcode, Protein_position, Variant_Classification, ENSP, Transcript_ID, Gene. (MAF file format: https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)")
 		funcs.remove_whole_dir(output_path)
 		sys.exit()
 	if set(df["Variant_Classification"].dropna().tolist()) - {"Frame_Shift_Del", "Frame_Shift_Ins", "In_Frame_Del", "In_Frame_Ins", "Missense_Mutation", "Nonsense_Mutation", "Silent", "Splice_Site", "Translation_Start_Site", "Nonstop_Mutation", "RNA", "Targeted_Region", "Intron", "IGR", "5'UTR", "3'UTR", "5'Flank", "3'Flank", "De_novo_Start_InFrame", "De_novo_Start_OutOfFrame"} != set():
@@ -279,7 +279,6 @@ if __name__ == "__main__":
 		funcs.remove_whole_dir(output_path)
 		pd.DataFrame({"Subnetwork_UniProts": [], "Subnetwork_size": []}).to_csv(args.output_path + args.job_name + "_subnetworks.txt", sep = "\t", header = True, index = None)
 		pd.DataFrame({"Signature_ID": [], "Type": [], "Uniprots": [], "Structure_source": [], "Mutation_frequency": [], "Raw_pvalue": [], "Adjusted_pvalue": []}).to_csv(args.output_path + args.job_name + "_signatures.txt", sep = "\t", header = True, index = None)
-		pd.DataFrame({"Chromosome": [], "Start_Position": [], "End_Position": [], "Reference_Allele": [], "Tumor_Seq_Allele1": [], "Tumor_Seq_Allele2": [], "Variant_Classification": [], "Codons": [], "ENSP": [], "Protein_position": [], "Tumor_Sample_Barcode": [], "UniProt": [], "Signature_ID": []}).to_csv(args.output_path + args.job_name + "_drivers.txt", sep = "\t", header = True, index = None)
 		sys.exit()
 	############################################################################################################################################
 	
@@ -324,7 +323,6 @@ if __name__ == "__main__":
 			funcs.remove_whole_dir(output_path)
 			pd.DataFrame({"Subnetwork_UniProts": [], "Subnetwork_size": []}).to_csv(args.output_path + args.job_name + "_subnetworks.txt", sep = "\t", header = True, index = None)
 			pd.DataFrame({"Signature_ID": [], "Type": [], "Uniprots": [], "Structure_source": [], "Mutation_frequency": [], "Raw_pvalue": [], "Adjusted_pvalue": []}).to_csv(args.output_path + args.job_name + "_signatures.txt", sep = "\t", header = True, index = None)
-			pd.DataFrame({"Chromosome": [], "Start_Position": [], "End_Position": [], "Reference_Allele": [], "Tumor_Seq_Allele1": [], "Tumor_Seq_Allele2": [], "Variant_Classification": [], "Codons": [], "ENSP": [], "Protein_position": [], "Tumor_Sample_Barcode": [], "UniProt": [], "Signature_ID": []}).to_csv(args.output_path + args.job_name + "_drivers.txt", sep = "\t", header = True, index = None)
 			sys.exit()
 	############################################################################################################################################
 
@@ -415,8 +413,7 @@ if __name__ == "__main__":
 	############################################################################################################################################
 	# Identify selection signatures formed by in-frame mutations
 	# ----------------------------------------------------------------
-	df_mis = df[df["Variant_Classification"].isin(inframe)].dropna(subset = ["Protein_position", "Codons"])
-	df_mis = df_mis[df_mis["Codons"].apply(lambda x: set(x.split("/")[0].upper()) - {"A", "T", "C", "G"} == set())]
+	df_mis = df[df["Variant_Classification"].isin(inframe)].dropna(subset = ["Protein_position"])
 	df_mis["Protein_position"] = df_mis["Protein_position"].apply(lambda x: x.split("/")[0])
 	df_mis_mut = copy.deepcopy(df_mis)
 	if df_mis.shape[0] == 0:

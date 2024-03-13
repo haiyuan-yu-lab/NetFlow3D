@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="Q9Y282_356"/>
+<node id="Q9Y282_274"/>
+<node id="Q9Y282_381"/>
+<node id="Q9Y282_311"/>
+<node id="Q9Y282_111"/>
+<node id="Q9Y282_75"/>
+<node id="Q9Y282_48"/>
+<node id="Q9Y282_139"/>
+<node id="Q9Y282_155"/>
+<node id="Q9Y282_104"/>
+<node id="Q9Y282_336"/>
+<node id="Q9Y282_26"/>
+<node id="Q9Y282_276"/>
+<node id="Q9Y282_202"/>
+<node id="Q9Y282_53"/>
+<node id="Q9Y282_298"/>
+<node id="Q9Y282_107"/>
+<node id="Q9Y282_34"/>
+<node id="Q9Y282_178"/>
+<node id="Q9Y282_314"/>
+<node id="Q9Y282_121"/>
+<node id="Q9Y282_64"/>
+<node id="Q9Y282_254"/>
+<node id="Q9Y282_116"/>
+<node id="Q9Y282_245"/>
+<node id="Q9Y282_132"/>
+<node id="Q9Y282_141"/>
+<node id="Q9Y282_260"/>
+<node id="Q9Y282_41"/>
+<edge source="Q9Y282_274" target="Q9Y282_276">
+  <data key="d0">3.916719006154342</data>
+  <data key="d1">Q9Y282_276:AF-Q9Y282-F1-model_v4.pdb_A_276;Q9Y282_274:AF-Q9Y282-F1-model_v4.pdb_A_274</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_311" target="Q9Y282_314">
+  <data key="d0">5.411495983886233</data>
+  <data key="d1">Q9Y282_311:AF-Q9Y282-F1-model_v4.pdb_A_311;Q9Y282_314:AF-Q9Y282-F1-model_v4.pdb_A_314</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_75" target="Q9Y282_245">
+  <data key="d0">2.8003229357366752</data>
+  <data key="d1">Q9Y282_75:AF-Q9Y282-F1-model_v4.pdb_A_75;Q9Y282_245:AF-Q9Y282-F1-model_v4.pdb_A_245</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_48" target="Q9Y282_53">
+  <data key="d0">4.914596132601036</data>
+  <data key="d1">Q9Y282_53:AF-Q9Y282-F1-model_v4.pdb_A_53;Q9Y282_48:AF-Q9Y282-F1-model_v4.pdb_A_48</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_139" target="Q9Y282_141">
+  <data key="d0">3.3058032314779595</data>
+  <data key="d1">Q9Y282_139:AF-Q9Y282-F1-model_v4.pdb_A_139;Q9Y282_141:AF-Q9Y282-F1-model_v4.pdb_A_141</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_155" target="Q9Y282_141">
+  <data key="d0">4.781857510034357</data>
+  <data key="d1">Q9Y282_141:AF-Q9Y282-F1-model_v4.pdb_A_141;Q9Y282_155:AF-Q9Y282-F1-model_v4.pdb_A_155</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_104" target="Q9Y282_121">
+  <data key="d0">3.8148321904014693</data>
+  <data key="d1">Q9Y282_104:AF-Q9Y282-F1-model_v4.pdb_A_104;Q9Y282_121:AF-Q9Y282-F1-model_v4.pdb_A_121</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_104" target="Q9Y282_202">
+  <data key="d0">2.8079949807288545</data>
+  <data key="d1">Q9Y282_202:AF-Q9Y282-F1-model_v4.pdb_A_202;Q9Y282_104:AF-Q9Y282-F1-model_v4.pdb_A_104</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_336" target="Q9Y282_53">
+  <data key="d0">3.523842628652398</data>
+  <data key="d1">Q9Y282_336:AF-Q9Y282-F1-model_v4.pdb_A_336;Q9Y282_53:AF-Q9Y282-F1-model_v4.pdb_A_53</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_298" target="Q9Y282_260">
+  <data key="d0">5.0389265122290885</data>
+  <data key="d1">Q9Y282_298:AF-Q9Y282-F1-model_v4.pdb_A_298;Q9Y282_260:AF-Q9Y282-F1-model_v4.pdb_A_260</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_107" target="Q9Y282_116">
+  <data key="d0">4.43758831339564</data>
+  <data key="d1">Q9Y282_116:AF-Q9Y282-F1-model_v4.pdb_A_116;Q9Y282_107:AF-Q9Y282-F1-model_v4.pdb_A_107</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_254" target="Q9Y282_260">
+  <data key="d0">3.800572164319266</data>
+  <data key="d1">Q9Y282_254:AF-Q9Y282-F1-model_v4.pdb_A_254;Q9Y282_260:AF-Q9Y282-F1-model_v4.pdb_A_260</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q9Y282_132" target="Q9Y282_141">
+  <data key="d0">5.431943924835289</data>
+  <data key="d1">Q9Y282_141:AF-Q9Y282-F1-model_v4.pdb_A_141;Q9Y282_132:AF-Q9Y282-F1-model_v4.pdb_A_132</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>

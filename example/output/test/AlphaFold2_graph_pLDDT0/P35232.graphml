@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="P35232_156"/>
+<node id="P35232_59"/>
+<node id="P35232_167"/>
+<node id="P35232_116"/>
+<node id="P35232_187"/>
+<node id="P35232_216"/>
+<node id="P35232_197"/>
+<node id="P35232_108"/>
+<node id="P35232_120"/>
+<node id="P35232_70"/>
+<node id="P35232_182"/>
+<node id="P35232_117"/>
+<node id="P35232_162"/>
+<node id="P35232_240"/>
+<node id="P35232_152"/>
+<node id="P35232_164"/>
+<node id="P35232_230"/>
+<node id="P35232_176"/>
+<node id="P35232_97"/>
+<node id="P35232_210"/>
+<node id="P35232_209"/>
+<node id="P35232_185"/>
+<node id="P35232_151"/>
+<edge source="P35232_156" target="P35232_151">
+  <data key="d0">4.964477240246045</data>
+  <data key="d1">P35232_151:AF-P35232-F1-model_v4.pdb_A_151;P35232_156:AF-P35232-F1-model_v4.pdb_A_156</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_156" target="P35232_152">
+  <data key="d0">3.0678957812483474</data>
+  <data key="d1">P35232_156:AF-P35232-F1-model_v4.pdb_A_156;P35232_152:AF-P35232-F1-model_v4.pdb_A_152</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_167" target="P35232_151">
+  <data key="d0">5.2516791105470375</data>
+  <data key="d1">P35232_167:AF-P35232-F1-model_v4.pdb_A_167;P35232_151:AF-P35232-F1-model_v4.pdb_A_151</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_116" target="P35232_120">
+  <data key="d0">3.1578202832262177</data>
+  <data key="d1">P35232_120:AF-P35232-F1-model_v4.pdb_A_120;P35232_116:AF-P35232-F1-model_v4.pdb_A_116</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_116" target="P35232_117">
+  <data key="d0">1.3354638860884316</data>
+  <data key="d1">P35232_117:AF-P35232-F1-model_v4.pdb_A_117;P35232_116:AF-P35232-F1-model_v4.pdb_A_116</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_187" target="P35232_185">
+  <data key="d0">3.3731009434475716</data>
+  <data key="d1">P35232_187:AF-P35232-F1-model_v4.pdb_A_187;P35232_185:AF-P35232-F1-model_v4.pdb_A_185</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_187" target="P35232_182">
+  <data key="d0">5.164741818427272</data>
+  <data key="d1">P35232_187:AF-P35232-F1-model_v4.pdb_A_187;P35232_182:AF-P35232-F1-model_v4.pdb_A_182</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_120" target="P35232_117">
+  <data key="d0">4.404166474802746</data>
+  <data key="d1">P35232_117:AF-P35232-F1-model_v4.pdb_A_117;P35232_120:AF-P35232-F1-model_v4.pdb_A_120</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_70" target="P35232_97">
+  <data key="d0">3.873601850630956</data>
+  <data key="d1">P35232_70:AF-P35232-F1-model_v4.pdb_A_70;P35232_97:AF-P35232-F1-model_v4.pdb_A_97</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_182" target="P35232_185">
+  <data key="d0">3.645265055396806</data>
+  <data key="d1">P35232_185:AF-P35232-F1-model_v4.pdb_A_185;P35232_182:AF-P35232-F1-model_v4.pdb_A_182</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_162" target="P35232_97">
+  <data key="d0">4.642470443090844</data>
+  <data key="d1">P35232_97:AF-P35232-F1-model_v4.pdb_A_97;P35232_162:AF-P35232-F1-model_v4.pdb_A_162</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_162" target="P35232_164">
+  <data key="d0">4.270522346740942</data>
+  <data key="d1">P35232_164:AF-P35232-F1-model_v4.pdb_A_164;P35232_162:AF-P35232-F1-model_v4.pdb_A_162</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_152" target="P35232_151">
+  <data key="d0">1.3319237637479702</data>
+  <data key="d1">P35232_151:AF-P35232-F1-model_v4.pdb_A_151;P35232_152:AF-P35232-F1-model_v4.pdb_A_152</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_164" target="P35232_97">
+  <data key="d0">2.8378230681346612</data>
+  <data key="d1">P35232_97:AF-P35232-F1-model_v4.pdb_A_97;P35232_164:AF-P35232-F1-model_v4.pdb_A_164</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P35232_210" target="P35232_209">
+  <data key="d0">1.3361708825763299</data>
+  <data key="d1">P35232_210:AF-P35232-F1-model_v4.pdb_A_210;P35232_209:AF-P35232-F1-model_v4.pdb_A_209</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>

@@ -15,7 +15,6 @@ from os import path
 import logging
 import shutil
 from urllib.request import urlopen
-import mygene
 from scipy.stats import poisson
 
 def extract_uniprot_ids(fasta_file):
