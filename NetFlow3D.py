@@ -112,7 +112,6 @@ if __name__ == "__main__":
 	# user input
 	parser = argparse.ArgumentParser(description = description)
 	parser.add_argument('-m','--input_maf', required = True, type = str, help = 'Mutation data in MAF format (MAF file format: https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)')
-	parser.add_argument('-R','--resolution', required = True, type = str, help = 'high or low. If set to high, smaller subnetworks are favored. If set to low, larger subnetworks are favored.')
 	parser.add_argument('-I','--job_name', required = True, type = str, help = 'Please specify a name for your job. The output files will be stored in a folder with this name')
 	parser.add_argument('-t','--threads', type = int, default = 5, help = '[OPTIONAL] The number of threads to use. By default 5')
 	parser.add_argument('-X','--expressed_genes', type = str, default = None, help = '[OPTIONAL] A text file with the genes expressed in your context. Each row stands for a gene (HUGO/ENSP/UniProt IDs are accepted). By default all genes are considered as expressed')
@@ -135,6 +134,7 @@ if __name__ == "__main__":
 	parser.add_argument('-c','--canonical_isoform', type = str, default = file_path + "/metadata/UP000005640_9606.fasta", help = '[OPTIONAL] Canonical isoforms. (native file)')
 	
 	# default settings
+	parser.add_argument('-R','--resolution', type = str, default = "low", help = '[OPTIONAL] high or low. If set to high, smaller subnetworks are favored. If set to low, larger subnetworks are favored.')
 	parser.add_argument('-S', '--no_structurome', action = 'store_true', help = "[OPTIONAL] Do not leverage the Human Protein Structurome.")
 	parser.add_argument('-N','--no_network', action = 'store_true', help = '[OPTIONAL] Do not perform network analysis.')
 	parser.add_argument('-s','--significance_level', type = float, default = 0.001, help = '[OPTIONAL] Significance level. By default 0.001')
