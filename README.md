@@ -22,21 +22,19 @@ Your command should be in the following format (the contents in `[]` are optiona
 
 ### Required arguments
 - `-m <input_maf>`: replace `<input_maf>` with the path to your MAF file.
-- `-R <resolution>`: replace `<resolution>` with `low` or `high`. This argument specifies the resolution for identifying subnetworks with strong internal heat exchanges. By default, `low` is recommended. If set to `high`, large subnetworks may be split into smaller subnetworks.
 - `-I <job_name>`: replace `<job_name>` with a name you preferred for the current job.
 
 ### Optional arguments
 - `-X <expressed_genes>`: replace `<expressed_genes>` with the path to your file which stores a complete list of expressed genes/proteins (see [Optional input](#optional-input) for how to generate the file). If not specified, all genes/proteins will be considered expressed.
 - `-n <binary_interactome>`: replace `<binary_interactome>` with the path to your file which stores a complete list of existing protein-protein interactions (see [Optional input](#optional-input) for how to generate the file). If not specified, NetFlow3D will use the high quality binary interactome of Homo sapiens curated by HINT (http://hint.yulab.org/).
 - `-o <output_path>`: replace `<output_path>` with a directory where the output files will be stored. If not specified, the output files will be stored in `./output/`.
-- `-L <logfile_path>`: replace `<logfile_path>` with a directory where the log file will be stored. If not specified, the log file will be stored in `./log/`.
 - `-t <threads>`: replace `<threads>` with a postive integer. This argument specifies the number of threads to use. If not specified, NetFlow3D will use 5 threads.
 	
 We provide example input files in `./example/input/`. Here is an example of your command (please run the following command to see if NetFlow3D is working normally):
 
-	python NetFlow3D.py -m example/input/mutations.maf -R low -I test -X example/input/expressed_genes.txt -n example/input/interactome.txt -t 10
+	python NetFlow3D.py -m example/input/mutations.maf -I test -X example/input/expressed_genes.txt -n example/input/interactome.txt -t 10
 	
-If you run the above command, the output files should be found in `./output/` with prefix `test_`. To get an idea of what the output files should look like, please see example output files in `./example/output/`.
+If you run the above command, the output should be found in `./output/`, including `test_signatures.txt`, `test_subnetworks_intercept1.0_lowres_edgeweightTrue.txt`, and a folder `test/`. To get an idea of what the output files should look like, please see example output files in `./example/output/`.
 
 
 ## Prepare input files
