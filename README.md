@@ -30,7 +30,7 @@ Your command should be in the following format (the contents in `[]` are optiona
 - `-o <output_path>`: replace `<output_path>` with a directory where the output files will be stored. If not specified, the output files will be stored in `./output/`.
 - `-t <threads>`: replace `<threads>` with a postive integer. This argument specifies the number of threads to use. If not specified, NetFlow3D will use 5 threads.
 	
-We provide example input files in `./example/input/`. Here is an example of your command (please run the following command to see if NetFlow3D is working normally, taking about 1 miniute to finish):
+We provide example input files in `./example/input/`. Here is an example of your command (please run the following command to see if NetFlow3D is working normally, taking ~1min):
 
 	python NetFlow3D.py -m example/input/mutations.maf -I test -X example/input/expressed_genes.txt -n example/input/interactome.txt -t 10
 	
