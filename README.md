@@ -74,37 +74,35 @@ If you run the above command, the output should be found in `./output/`, includi
 
 
 ## Output files
-NetFlow3D will output the following files. `{job_name}` will be replaced by the job name you specified before. If you run the example command, `{job_name}` will be replaced by `test`. 
+NetFlow3D will output the following and files and a folder. `{job_name}` will be replaced by the job name you specified before. If you run the example command, `{job_name}` will be replaced by `test`. 
 - `{job_name}`_signatures.txt
 
 	This a tab-separated file containing the significant 3D clusters and LOF enrichment signals identified by NetFlow3D. The first line is a header. Eight columns are present:
 	1. Signature_ID
 	2. Type
-	3. Affected_genes
-	4. Structure_source (`[NA]` means not applicable)
-	5. Mutation_frequency 
+	3. Uniprots
+	4. Canonical_isoform
+	6. Structure_source (`[NA]` means not applicable)
+	7. Mutation_frequency 
 
 		The content format in this column depends on the content in "Type":
 		- If the content in "Type" is “LoF_IntraProtein_Enriched”, the format of this column is `{gene}:{number of LoF mutations in all samples}`
 		- Otherwise, the format of this column is `{residue1}:{number of mutated samples},{residue2}:{number of mutated samples},...`
-	6. LoF_enrichment (`[NA]` means not applicable)
-	7. Raw_pvalue
-	8. Adjusted_pvalue
-	9. Subnetwork_ID 
-	
-		- If a significant 3D cluster or LOF enrichment signal can be mapped to a subnetwork, this field will contain the information about the subnetwork
-		- If a significant 3D cluster or LOF enrichment signal can not be mapped to a subnetwork, this field will be `[NA]`
+	8. LoF_enrichment (`[NA]` means not applicable)
+	9. Raw_pvalue
+	10. Adjusted_pvalue
+
+- `{job_name}`_subnetworks_intercept1.0_lowres_edgeweightTrue.txt
+
+	This is a tab-separated file containing the subnetworks with strong internal heat exchanges identified by NetFlow3D. Subnetworks including >=2 proteins will be reported. The first line is a header. Two columns are present:
+	1. Subnetwork_UniProts	
+	2. Subnetwork_size (i.e. number of proteins in the subnetwork)
+
 - `{job_name}`_drivers.txt
 
 	This is a tab-separated file containing the candidate driver mutations identified by NetFlow3D. The first line is a header. The columns include:
 	1. All columns in the input MAF file
 	2. UniProt
 	3. Signature_ID (This column contains the significant 3D cluster(s) or LOF enrichment signal by which a mutation is incorporated. If a mutation is incorporated by multiple significant 3D clusters, their IDs will be separated by comma)
-
-- `{job_name}`_subnetworks.txt
-
-	This is a tab-separated file containing the subnetworks with strong internal heat exchanges identified by NetFlow3D. Subnetworks including >=2 proteins will be reported. The first line is a header. Two columns are present:
-	1. Subnetwork_genes	
-	2. Subnetwork_size (i.e. number of proteins in the subnetwork)
 
 
