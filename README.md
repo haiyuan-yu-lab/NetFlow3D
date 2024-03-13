@@ -3,12 +3,11 @@ NetFlow3D is a computational tool aiming at mapping how somatic mutations act ac
 
 ## Prerequisites
 The Python Standard Library and the following packages:
-- scipy
-- numpy
-- networkx
-- pandas
-- statsmodels
-- 
+- scipy (version 1.9.3)
+- numpy (version 1.23.5)
+- networkx (version 2.8.8)
+- pandas (version 1.5.2)
+- statsmodels (version 0.13.5)
 
 ## Installation
 
