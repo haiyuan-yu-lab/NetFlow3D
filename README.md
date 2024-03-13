@@ -18,7 +18,7 @@ The Python Standard Library and the following packages:
 ## Usage
 Your command should be in the following format (the contents in `[]` are optional):
 
-	python NetFlow3D.py -m <input_maf> -R <resolution> -I <job_name> [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-L <logfile_path>] [-t <threads>]
+	python NetFlow3D.py -m <input_maf> -I <job_name> [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-t <threads>]
 
 ### Required arguments
 - `-m <input_maf>`: replace `<input_maf>` with the path to your MAF file.
