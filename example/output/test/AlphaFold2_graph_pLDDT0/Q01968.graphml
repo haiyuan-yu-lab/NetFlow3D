@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="Q01968_286"/>
+<node id="Q01968_884"/>
+<node id="Q01968_226"/>
+<node id="Q01968_245"/>
+<node id="Q01968_260"/>
+<node id="Q01968_777"/>
+<node id="Q01968_713"/>
+<node id="Q01968_162"/>
+<node id="Q01968_195"/>
+<node id="Q01968_666"/>
+<node id="Q01968_315"/>
+<node id="Q01968_206"/>
+<node id="Q01968_786"/>
+<node id="Q01968_77"/>
+<node id="Q01968_850"/>
+<node id="Q01968_680"/>
+<node id="Q01968_819"/>
+<node id="Q01968_52"/>
+<node id="Q01968_105"/>
+<node id="Q01968_484"/>
+<node id="Q01968_99"/>
+<node id="Q01968_840"/>
+<node id="Q01968_409"/>
+<node id="Q01968_604"/>
+<node id="Q01968_833"/>
+<node id="Q01968_886"/>
+<node id="Q01968_547"/>
+<node id="Q01968_159"/>
+<node id="Q01968_834"/>
+<node id="Q01968_579"/>
+<node id="Q01968_555"/>
+<node id="Q01968_346"/>
+<node id="Q01968_513"/>
+<node id="Q01968_158"/>
+<node id="Q01968_759"/>
+<node id="Q01968_103"/>
+<node id="Q01968_527"/>
+<node id="Q01968_485"/>
+<node id="Q01968_219"/>
+<node id="Q01968_901"/>
+<node id="Q01968_212"/>
+<node id="Q01968_152"/>
+<node id="Q01968_562"/>
+<node id="Q01968_737"/>
+<node id="Q01968_497"/>
+<node id="Q01968_376"/>
+<node id="Q01968_544"/>
+<node id="Q01968_258"/>
+<node id="Q01968_572"/>
+<node id="Q01968_66"/>
+<node id="Q01968_516"/>
+<node id="Q01968_635"/>
+<node id="Q01968_686"/>
+<node id="Q01968_708"/>
+<node id="Q01968_361"/>
+<node id="Q01968_619"/>
+<node id="Q01968_384"/>
+<node id="Q01968_748"/>
+<node id="Q01968_603"/>
+<node id="Q01968_500"/>
+<node id="Q01968_231"/>
+<node id="Q01968_831"/>
+<node id="Q01968_209"/>
+<node id="Q01968_295"/>
+<node id="Q01968_255"/>
+<node id="Q01968_300"/>
+<node id="Q01968_770"/>
+<node id="Q01968_288"/>
+<node id="Q01968_781"/>
+<node id="Q01968_549"/>
+<node id="Q01968_310"/>
+<node id="Q01968_278"/>
+<node id="Q01968_502"/>
+<node id="Q01968_765"/>
+<node id="Q01968_365"/>
+<node id="Q01968_363"/>
+<node id="Q01968_385"/>
+<node id="Q01968_558"/>
+<node id="Q01968_69"/>
+<node id="Q01968_110"/>
+<node id="Q01968_556"/>
+<node id="Q01968_180"/>
+<node id="Q01968_607"/>
+<node id="Q01968_415"/>
+<node id="Q01968_594"/>
+<node id="Q01968_614"/>
+<node id="Q01968_246"/>
+<node id="Q01968_898"/>
+<node id="Q01968_242"/>
+<node id="Q01968_812"/>
+<node id="Q01968_156"/>
+<node id="Q01968_698"/>
+<node id="Q01968_178"/>
+<node id="Q01968_216"/>
+<node id="Q01968_160"/>
+<node id="Q01968_849"/>
+<node id="Q01968_687"/>
+<node id="Q01968_470"/>
+<node id="Q01968_38"/>
+<node id="Q01968_210"/>
+<node id="Q01968_559"/>
+<node id="Q01968_545"/>
+<node id="Q01968_318"/>
+<node id="Q01968_896"/>
+<node id="Q01968_863"/>
+<node id="Q01968_240"/>
+<node id="Q01968_331"/>
+<node id="Q01968_722"/>
+<node id="Q01968_880"/>
+<node id="Q01968_3"/>
+<node id="Q01968_457"/>
+<node id="Q01968_714"/>
+<node id="Q01968_85"/>
+<edge source="Q01968_286" target="Q01968_288">
+  <data key="d0">3.281137256876839</data>
+  <data key="d1">Q01968_286:AF-Q01968-F1-model_v4.pdb_A_286;Q01968_288:AF-Q01968-F1-model_v4.pdb_A_288</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_884" target="Q01968_886">
+  <data key="d0">3.410589890332527</data>
+  <data key="d1">Q01968_884:AF-Q01968-F1-model_v4.pdb_A_884;Q01968_886:AF-Q01968-F1-model_v4.pdb_A_886</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_884" target="Q01968_880">
+  <data key="d0">3.2027577529187843</data>
+  <data key="d1">Q01968_884:AF-Q01968-F1-model_v4.pdb_A_884;Q01968_880:AF-Q01968-F1-model_v4.pdb_A_880</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_884" target="Q01968_812">
+  <data key="d0">5.5947449007820556</data>
+  <data key="d1">Q01968_884:AF-Q01968-F1-model_v4.pdb_A_884;Q01968_812:AF-Q01968-F1-model_v4.pdb_A_812</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_226" target="Q01968_231">
+  <data key="d0">5.31038022606252</data>
+  <data key="d1">Q01968_231:AF-Q01968-F1-model_v4.pdb_A_231;Q01968_226:AF-Q01968-F1-model_v4.pdb_A_226</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_245" target="Q01968_246">
+  <data key="d0">1.3315126909217259</data>
+  <data key="d1">Q01968_246:AF-Q01968-F1-model_v4.pdb_A_246;Q01968_245:AF-Q01968-F1-model_v4.pdb_A_245</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_245" target="Q01968_527">
+  <data key="d0">3.2815560405656883</data>
+  <data key="d1">Q01968_527:AF-Q01968-F1-model_v4.pdb_A_527;Q01968_245:AF-Q01968-F1-model_v4.pdb_A_245</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_260" target="Q01968_258">
+  <data key="d0">3.330791526742299</data>
+  <data key="d1">Q01968_258:AF-Q01968-F1-model_v4.pdb_A_258;Q01968_260:AF-Q01968-F1-model_v4.pdb_A_260</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_260" target="Q01968_516">
+  <data key="d0">3.0895955832075574</data>
+  <data key="d1">Q01968_516:AF-Q01968-F1-model_v4.pdb_A_516;Q01968_260:AF-Q01968-F1-model_v4.pdb_A_260</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_777" target="Q01968_781">
+  <data key="d0">5.447101917308659</data>
+  <data key="d1">Q01968_781:AF-Q01968-F1-model_v4.pdb_A_781;Q01968_777:AF-Q01968-F1-model_v4.pdb_A_777</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_713" target="Q01968_714">
+  <data key="d0">1.3373048009890844</data>
+  <data key="d1">Q01968_713:AF-Q01968-F1-model_v4.pdb_A_713;Q01968_714:AF-Q01968-F1-model_v4.pdb_A_714</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_713" target="Q01968_708">
+  <data key="d0">5.3406462708780715</data>
+  <data key="d1">Q01968_708:AF-Q01968-F1-model_v4.pdb_A_708;Q01968_713:AF-Q01968-F1-model_v4.pdb_A_713</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_162" target="Q01968_160">
+  <data key="d0">4.053672583345155</data>
+  <data key="d1">Q01968_160:AF-Q01968-F1-model_v4.pdb_A_160;Q01968_162:AF-Q01968-F1-model_v4.pdb_A_162</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_206" target="Q01968_210">
+  <data key="d0">3.3823729753261653</data>
+  <data key="d1">Q01968_206:AF-Q01968-F1-model_v4.pdb_A_206;Q01968_210:AF-Q01968-F1-model_v4.pdb_A_210</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_206" target="Q01968_209">
+  <data key="d0">3.2673992108995353</data>
+  <data key="d1">Q01968_209:AF-Q01968-F1-model_v4.pdb_A_209;Q01968_206:AF-Q01968-F1-model_v4.pdb_A_206</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_786" target="Q01968_781">
+  <data key="d0">5.4499168522013095</data>
+  <data key="d1">Q01968_781:AF-Q01968-F1-model_v4.pdb_A_781;Q01968_786:AF-Q01968-F1-model_v4.pdb_A_786</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_786" target="Q01968_765">
+  <data key="d0">3.1590509272449636</data>
+  <data key="d1">Q01968_786:AF-Q01968-F1-model_v4.pdb_A_786;Q01968_765:AF-Q01968-F1-model_v4.pdb_A_765</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_786" target="Q01968_759">
+  <data key="d0">5.274342229427949</data>
+  <data key="d1">Q01968_786:AF-Q01968-F1-model_v4.pdb_A_786;Q01968_759:AF-Q01968-F1-model_v4.pdb_A_759</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_850" target="Q01968_849">
+  <data key="d0">1.3380533727203492</data>
+  <data key="d1">Q01968_849:AF-Q01968-F1-model_v4.pdb_A_849;Q01968_850:AF-Q01968-F1-model_v4.pdb_A_850</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_680" target="Q01968_687">
+  <data key="d0">5.768809060739206</data>
+  <data key="d1">Q01968_680:AF-Q01968-F1-model_v4.pdb_A_680;Q01968_687:AF-Q01968-F1-model_v4.pdb_A_687</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_680" target="Q01968_579">
+  <data key="d0">3.4686658882856722</data>
+  <data key="d1">Q01968_579:AF-Q01968-F1-model_v4.pdb_A_579;Q01968_680:AF-Q01968-F1-model_v4.pdb_A_680</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_819" target="Q01968_901">
+  <data key="d0">4.6704460583882605</data>
+  <data key="d1">Q01968_901:AF-Q01968-F1-model_v4.pdb_A_901;Q01968_819:AF-Q01968-F1-model_v4.pdb_A_819</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_105" target="Q01968_66">
+  <data key="d0">3.783796117016133</data>
+  <data key="d1">Q01968_105:AF-Q01968-F1-model_v4.pdb_A_105;Q01968_66:AF-Q01968-F1-model_v4.pdb_A_66</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_105" target="Q01968_110">
+  <data key="d0">5.099685131802503</data>
+  <data key="d1">Q01968_110:AF-Q01968-F1-model_v4.pdb_A_110;Q01968_105:AF-Q01968-F1-model_v4.pdb_A_105</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_105" target="Q01968_103">
+  <data key="d0">3.4146822775299572</data>
+  <data key="d1">Q01968_105:AF-Q01968-F1-model_v4.pdb_A_105;Q01968_103:AF-Q01968-F1-model_v4.pdb_A_103</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_484" target="Q01968_485">
+  <data key="d0">1.338214670383164</data>
+  <data key="d1">Q01968_484:AF-Q01968-F1-model_v4.pdb_A_484;Q01968_485:AF-Q01968-F1-model_v4.pdb_A_485</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_409" target="Q01968_361">
+  <data key="d0">3.509224321759114</data>
+  <data key="d1">Q01968_409:AF-Q01968-F1-model_v4.pdb_A_409;Q01968_361:AF-Q01968-F1-model_v4.pdb_A_361</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_604" target="Q01968_603">
+  <data key="d0">1.3367684872248073</data>
+  <data key="d1">Q01968_604:AF-Q01968-F1-model_v4.pdb_A_604;Q01968_603:AF-Q01968-F1-model_v4.pdb_A_603</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_604" target="Q01968_607">
+  <data key="d0">2.9847352701852023</data>
+  <data key="d1">Q01968_604:AF-Q01968-F1-model_v4.pdb_A_604;Q01968_607:AF-Q01968-F1-model_v4.pdb_A_607</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_833" target="Q01968_834">
+  <data key="d0">1.3294844400529935</data>
+  <data key="d1">Q01968_834:AF-Q01968-F1-model_v4.pdb_A_834;Q01968_833:AF-Q01968-F1-model_v4.pdb_A_833</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_833" target="Q01968_831">
+  <data key="d0">3.3577014445942277</data>
+  <data key="d1">Q01968_831:AF-Q01968-F1-model_v4.pdb_A_831;Q01968_833:AF-Q01968-F1-model_v4.pdb_A_833</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_886" target="Q01968_812">
+  <data key="d0">3.6473947108661005</data>
+  <data key="d1">Q01968_886:AF-Q01968-F1-model_v4.pdb_A_886;Q01968_812:AF-Q01968-F1-model_v4.pdb_A_812</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_547" target="Q01968_544">
+  <data key="d0">3.2805584132434533</data>
+  <data key="d1">Q01968_547:AF-Q01968-F1-model_v4.pdb_A_547;Q01968_544:AF-Q01968-F1-model_v4.pdb_A_544</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_547" target="Q01968_549">
+  <data key="d0">3.2892267143861744</data>
+  <data key="d1">Q01968_549:AF-Q01968-F1-model_v4.pdb_A_549;Q01968_547:AF-Q01968-F1-model_v4.pdb_A_547</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_547" target="Q01968_545">
+  <data key="d0">3.365302784968968</data>
+  <data key="d1">Q01968_547:AF-Q01968-F1-model_v4.pdb_A_547;Q01968_545:AF-Q01968-F1-model_v4.pdb_A_545</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_159" target="Q01968_160">
+  <data key="d0">1.3285430826215847</data>
+  <data key="d1">Q01968_160:AF-Q01968-F1-model_v4.pdb_A_160;Q01968_159:AF-Q01968-F1-model_v4.pdb_A_159</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_159" target="Q01968_158">
+  <data key="d0">1.3302509960459148</data>
+  <data key="d1">Q01968_158:AF-Q01968-F1-model_v4.pdb_A_158;Q01968_159:AF-Q01968-F1-model_v4.pdb_A_159</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_834" target="Q01968_831">
+  <data key="d0">3.1910072230043367</data>
+  <data key="d1">Q01968_831:AF-Q01968-F1-model_v4.pdb_A_831;Q01968_834:AF-Q01968-F1-model_v4.pdb_A_834</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_555" target="Q01968_556">
+  <data key="d0">1.340343309282452</data>
+  <data key="d1">Q01968_556:AF-Q01968-F1-model_v4.pdb_A_556;Q01968_555:AF-Q01968-F1-model_v4.pdb_A_555</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_555" target="Q01968_558">
+  <data key="d0">3.5899603275620753</data>
+  <data key="d1">Q01968_558:AF-Q01968-F1-model_v4.pdb_A_558;Q01968_555:AF-Q01968-F1-model_v4.pdb_A_555</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_555" target="Q01968_559">
+  <data key="d0">2.9840599871018982</data>
+  <data key="d1">Q01968_555:AF-Q01968-F1-model_v4.pdb_A_555;Q01968_559:AF-Q01968-F1-model_v4.pdb_A_559</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_555" target="Q01968_219">
+  <data key="d0">2.678511312481194</data>
+  <data key="d1">Q01968_219:AF-Q01968-F1-model_v4.pdb_A_219;Q01968_555:AF-Q01968-F1-model_v4.pdb_A_555</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_346" target="Q01968_376">
+  <data key="d0">5.496690656965842</data>
+  <data key="d1">Q01968_376:AF-Q01968-F1-model_v4.pdb_A_376;Q01968_346:AF-Q01968-F1-model_v4.pdb_A_346</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_346" target="Q01968_385">
+  <data key="d0">2.7159178825516825</data>
+  <data key="d1">Q01968_385:AF-Q01968-F1-model_v4.pdb_A_385;Q01968_346:AF-Q01968-F1-model_v4.pdb_A_346</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_513" target="Q01968_502">
+  <data key="d0">5.70781102724206</data>
+  <data key="d1">Q01968_502:AF-Q01968-F1-model_v4.pdb_A_502;Q01968_513:AF-Q01968-F1-model_v4.pdb_A_513</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_513" target="Q01968_500">
+  <data key="d0">3.348112064581909</data>
+  <data key="d1">Q01968_500:AF-Q01968-F1-model_v4.pdb_A_500;Q01968_513:AF-Q01968-F1-model_v4.pdb_A_513</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_513" target="Q01968_527">
+  <data key="d0">3.4369017779550974</data>
+  <data key="d1">Q01968_513:AF-Q01968-F1-model_v4.pdb_A_513;Q01968_527:AF-Q01968-F1-model_v4.pdb_A_527</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_513" target="Q01968_470">
+  <data key="d0">4.208697852627232</data>
+  <data key="d1">Q01968_470:AF-Q01968-F1-model_v4.pdb_A_470;Q01968_513:AF-Q01968-F1-model_v4.pdb_A_513</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_158" target="Q01968_160">
+  <data key="d0">4.1697027293395035</data>
+  <data key="d1">Q01968_158:AF-Q01968-F1-model_v4.pdb_A_158;Q01968_160:AF-Q01968-F1-model_v4.pdb_A_160</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_158" target="Q01968_156">
+  <data key="d0">4.607986737017386</data>
+  <data key="d1">Q01968_156:AF-Q01968-F1-model_v4.pdb_A_156;Q01968_158:AF-Q01968-F1-model_v4.pdb_A_158</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_527" target="Q01968_516">
+  <data key="d0">4.377390432585099</data>
+  <data key="d1">Q01968_527:AF-Q01968-F1-model_v4.pdb_A_527;Q01968_516:AF-Q01968-F1-model_v4.pdb_A_516</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_527" target="Q01968_500">
+  <data key="d0">5.358092062859934</data>
+  <data key="d1">Q01968_500:AF-Q01968-F1-model_v4.pdb_A_500;Q01968_527:AF-Q01968-F1-model_v4.pdb_A_527</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_527" target="Q01968_246">
+  <data key="d0">2.938538620499464</data>
+  <data key="d1">Q01968_246:AF-Q01968-F1-model_v4.pdb_A_246;Q01968_527:AF-Q01968-F1-model_v4.pdb_A_527</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_219" target="Q01968_558">
+  <data key="d0">2.7437763238473356</data>
+  <data key="d1">Q01968_219:AF-Q01968-F1-model_v4.pdb_A_219;Q01968_558:AF-Q01968-F1-model_v4.pdb_A_558</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_219" target="Q01968_216">
+  <data key="d0">3.461612990906356</data>
+  <data key="d1">Q01968_219:AF-Q01968-F1-model_v4.pdb_A_219;Q01968_216:AF-Q01968-F1-model_v4.pdb_A_216</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_901" target="Q01968_898">
+  <data key="d0">3.856659799925409</data>
+  <data key="d1">Q01968_898:AF-Q01968-F1-model_v4.pdb_A_898;Q01968_901:AF-Q01968-F1-model_v4.pdb_A_901</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_212" target="Q01968_210">
+  <data key="d0">3.842396213755015</data>
+  <data key="d1">Q01968_212:AF-Q01968-F1-model_v4.pdb_A_212;Q01968_210:AF-Q01968-F1-model_v4.pdb_A_210</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_562" target="Q01968_558">
+  <data key="d0">3.303930739120758</data>
+  <data key="d1">Q01968_562:AF-Q01968-F1-model_v4.pdb_A_562;Q01968_558:AF-Q01968-F1-model_v4.pdb_A_558</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_562" target="Q01968_594">
+  <data key="d0">4.999672495358515</data>
+  <data key="d1">Q01968_594:AF-Q01968-F1-model_v4.pdb_A_594;Q01968_562:AF-Q01968-F1-model_v4.pdb_A_562</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_562" target="Q01968_559">
+  <data key="d0">3.2916242966482137</data>
+  <data key="d1">Q01968_562:AF-Q01968-F1-model_v4.pdb_A_562;Q01968_559:AF-Q01968-F1-model_v4.pdb_A_559</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_737" target="Q01968_687">
+  <data key="d0">4.138797843112614</data>
+  <data key="d1">Q01968_737:AF-Q01968-F1-model_v4.pdb_A_737;Q01968_687:AF-Q01968-F1-model_v4.pdb_A_687</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_497" target="Q01968_500">
+  <data key="d0">3.0879202730140665</data>
+  <data key="d1">Q01968_500:AF-Q01968-F1-model_v4.pdb_A_500;Q01968_497:AF-Q01968-F1-model_v4.pdb_A_497</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_544" target="Q01968_549">
+  <data key="d0">4.884259719069724</data>
+  <data key="d1">Q01968_549:AF-Q01968-F1-model_v4.pdb_A_549;Q01968_544:AF-Q01968-F1-model_v4.pdb_A_544</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_544" target="Q01968_545">
+  <data key="d0">1.3360072937729666</data>
+  <data key="d1">Q01968_545:AF-Q01968-F1-model_v4.pdb_A_545;Q01968_544:AF-Q01968-F1-model_v4.pdb_A_544</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_258" target="Q01968_300">
+  <data key="d0">3.6791193076951094</data>
+  <data key="d1">Q01968_258:AF-Q01968-F1-model_v4.pdb_A_258;Q01968_300:AF-Q01968-F1-model_v4.pdb_A_300</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_66" target="Q01968_85">
+  <data key="d0">4.997924782509178</data>
+  <data key="d1">Q01968_66:AF-Q01968-F1-model_v4.pdb_A_66;Q01968_85:AF-Q01968-F1-model_v4.pdb_A_85</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_635" target="Q01968_614">
+  <data key="d0">3.824780707048257</data>
+  <data key="d1">Q01968_635:AF-Q01968-F1-model_v4.pdb_A_635;Q01968_614:AF-Q01968-F1-model_v4.pdb_A_614</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_686" target="Q01968_687">
+  <data key="d0">1.3406964932248049</data>
+  <data key="d1">Q01968_687:AF-Q01968-F1-model_v4.pdb_A_687;Q01968_686:AF-Q01968-F1-model_v4.pdb_A_686</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_361" target="Q01968_363">
+  <data key="d0">3.873398469363795</data>
+  <data key="d1">Q01968_361:AF-Q01968-F1-model_v4.pdb_A_361;Q01968_363:AF-Q01968-F1-model_v4.pdb_A_363</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_384" target="Q01968_385">
+  <data key="d0">1.3404776424954825</data>
+  <data key="d1">Q01968_384:AF-Q01968-F1-model_v4.pdb_A_384;Q01968_385:AF-Q01968-F1-model_v4.pdb_A_385</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_603" target="Q01968_607">
+  <data key="d0">3.3317375190133314</data>
+  <data key="d1">Q01968_603:AF-Q01968-F1-model_v4.pdb_A_603;Q01968_607:AF-Q01968-F1-model_v4.pdb_A_607</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_500" target="Q01968_502">
+  <data key="d0">3.9754792574578874</data>
+  <data key="d1">Q01968_500:AF-Q01968-F1-model_v4.pdb_A_500;Q01968_502:AF-Q01968-F1-model_v4.pdb_A_502</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_500" target="Q01968_457">
+  <data key="d0">4.516658495685243</data>
+  <data key="d1">Q01968_457:AF-Q01968-F1-model_v4.pdb_A_457;Q01968_500:AF-Q01968-F1-model_v4.pdb_A_500</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_500" target="Q01968_246">
+  <data key="d0">3.9542458423546987</data>
+  <data key="d1">Q01968_500:AF-Q01968-F1-model_v4.pdb_A_500;Q01968_246:AF-Q01968-F1-model_v4.pdb_A_246</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_231" target="Q01968_415">
+  <data key="d0">5.577141416852154</data>
+  <data key="d1">Q01968_415:AF-Q01968-F1-model_v4.pdb_A_415;Q01968_231:AF-Q01968-F1-model_v4.pdb_A_231</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_209" target="Q01968_210">
+  <data key="d0">1.338276568880733</data>
+  <data key="d1">Q01968_210:AF-Q01968-F1-model_v4.pdb_A_210;Q01968_209:AF-Q01968-F1-model_v4.pdb_A_209</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_295" target="Q01968_300">
+  <data key="d0">4.867876251481559</data>
+  <data key="d1">Q01968_300:AF-Q01968-F1-model_v4.pdb_A_300;Q01968_295:AF-Q01968-F1-model_v4.pdb_A_295</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_770" target="Q01968_765">
+  <data key="d0">4.97470607631164</data>
+  <data key="d1">Q01968_770:AF-Q01968-F1-model_v4.pdb_A_770;Q01968_765:AF-Q01968-F1-model_v4.pdb_A_765</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_288" target="Q01968_318">
+  <data key="d0">4.61022005515818</data>
+  <data key="d1">Q01968_288:AF-Q01968-F1-model_v4.pdb_A_288;Q01968_318:AF-Q01968-F1-model_v4.pdb_A_318</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_549" target="Q01968_545">
+  <data key="d0">3.0231113672567695</data>
+  <data key="d1">Q01968_549:AF-Q01968-F1-model_v4.pdb_A_549;Q01968_545:AF-Q01968-F1-model_v4.pdb_A_545</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_310" target="Q01968_331">
+  <data key="d0">5.261139089454673</data>
+  <data key="d1">Q01968_331:AF-Q01968-F1-model_v4.pdb_A_331;Q01968_310:AF-Q01968-F1-model_v4.pdb_A_310</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_502" target="Q01968_457">
+  <data key="d0">3.70740507988159</data>
+  <data key="d1">Q01968_457:AF-Q01968-F1-model_v4.pdb_A_457;Q01968_502:AF-Q01968-F1-model_v4.pdb_A_502</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_365" target="Q01968_363">
+  <data key="d0">3.3392451694263334</data>
+  <data key="d1">Q01968_365:AF-Q01968-F1-model_v4.pdb_A_365;Q01968_363:AF-Q01968-F1-model_v4.pdb_A_363</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_365" target="Q01968_240">
+  <data key="d0">3.6566824547436663</data>
+  <data key="d1">Q01968_365:AF-Q01968-F1-model_v4.pdb_A_365;Q01968_240:AF-Q01968-F1-model_v4.pdb_A_240</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_558" target="Q01968_556">
+  <data key="d0">3.3866920772737745</data>
+  <data key="d1">Q01968_556:AF-Q01968-F1-model_v4.pdb_A_556;Q01968_558:AF-Q01968-F1-model_v4.pdb_A_558</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_558" target="Q01968_210">
+  <data key="d0">3.6922860853999606</data>
+  <data key="d1">Q01968_210:AF-Q01968-F1-model_v4.pdb_A_210;Q01968_558:AF-Q01968-F1-model_v4.pdb_A_558</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_558" target="Q01968_559">
+  <data key="d0">1.3369133333726129</data>
+  <data key="d1">Q01968_559:AF-Q01968-F1-model_v4.pdb_A_559;Q01968_558:AF-Q01968-F1-model_v4.pdb_A_558</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_556" target="Q01968_559">
+  <data key="d0">3.2851099287617753</data>
+  <data key="d1">Q01968_556:AF-Q01968-F1-model_v4.pdb_A_556;Q01968_559:AF-Q01968-F1-model_v4.pdb_A_559</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_180" target="Q01968_178">
+  <data key="d0">3.9346784788541473</data>
+  <data key="d1">Q01968_180:AF-Q01968-F1-model_v4.pdb_A_180;Q01968_178:AF-Q01968-F1-model_v4.pdb_A_178</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_898" target="Q01968_896">
+  <data key="d0">3.9015834708599897</data>
+  <data key="d1">Q01968_898:AF-Q01968-F1-model_v4.pdb_A_898;Q01968_896:AF-Q01968-F1-model_v4.pdb_A_896</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q01968_242" target="Q01968_240">
+  <data key="d0">3.7464438947334524</data>
+  <data key="d1">Q01968_240:AF-Q01968-F1-model_v4.pdb_A_240;Q01968_242:AF-Q01968-F1-model_v4.pdb_A_242</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>

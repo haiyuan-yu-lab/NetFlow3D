@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="Q8NDI1_209"/>
+<node id="Q8NDI1_735"/>
+<node id="Q8NDI1_301"/>
+<node id="Q8NDI1_155"/>
+<node id="Q8NDI1_17"/>
+<node id="Q8NDI1_1198"/>
+<node id="Q8NDI1_788"/>
+<node id="Q8NDI1_769"/>
+<node id="Q8NDI1_1084"/>
+<node id="Q8NDI1_967"/>
+<node id="Q8NDI1_727"/>
+<node id="Q8NDI1_797"/>
+<node id="Q8NDI1_4"/>
+<node id="Q8NDI1_754"/>
+<node id="Q8NDI1_759"/>
+<node id="Q8NDI1_48"/>
+<node id="Q8NDI1_477"/>
+<node id="Q8NDI1_758"/>
+<node id="Q8NDI1_1128"/>
+<node id="Q8NDI1_157"/>
+<node id="Q8NDI1_671"/>
+<node id="Q8NDI1_88"/>
+<node id="Q8NDI1_156"/>
+<node id="Q8NDI1_227"/>
+<node id="Q8NDI1_468"/>
+<node id="Q8NDI1_381"/>
+<node id="Q8NDI1_238"/>
+<node id="Q8NDI1_676"/>
+<node id="Q8NDI1_370"/>
+<node id="Q8NDI1_175"/>
+<node id="Q8NDI1_82"/>
+<node id="Q8NDI1_345"/>
+<node id="Q8NDI1_1012"/>
+<node id="Q8NDI1_137"/>
+<node id="Q8NDI1_178"/>
+<node id="Q8NDI1_578"/>
+<node id="Q8NDI1_911"/>
+<node id="Q8NDI1_1191"/>
+<node id="Q8NDI1_201"/>
+<node id="Q8NDI1_10"/>
+<node id="Q8NDI1_499"/>
+<node id="Q8NDI1_1028"/>
+<node id="Q8NDI1_718"/>
+<node id="Q8NDI1_556"/>
+<node id="Q8NDI1_163"/>
+<node id="Q8NDI1_851"/>
+<node id="Q8NDI1_371"/>
+<node id="Q8NDI1_103"/>
+<node id="Q8NDI1_332"/>
+<node id="Q8NDI1_507"/>
+<node id="Q8NDI1_335"/>
+<node id="Q8NDI1_893"/>
+<node id="Q8NDI1_464"/>
+<node id="Q8NDI1_579"/>
+<node id="Q8NDI1_63"/>
+<node id="Q8NDI1_847"/>
+<node id="Q8NDI1_751"/>
+<node id="Q8NDI1_794"/>
+<node id="Q8NDI1_12"/>
+<node id="Q8NDI1_313"/>
+<node id="Q8NDI1_545"/>
+<node id="Q8NDI1_977"/>
+<node id="Q8NDI1_1067"/>
+<node id="Q8NDI1_384"/>
+<node id="Q8NDI1_828"/>
+<node id="Q8NDI1_670"/>
+<node id="Q8NDI1_975"/>
+<node id="Q8NDI1_385"/>
+<node id="Q8NDI1_169"/>
+<node id="Q8NDI1_1096"/>
+<node id="Q8NDI1_503"/>
+<node id="Q8NDI1_1214"/>
+<node id="Q8NDI1_336"/>
+<node id="Q8NDI1_1071"/>
+<node id="Q8NDI1_836"/>
+<node id="Q8NDI1_518"/>
+<node id="Q8NDI1_729"/>
+<node id="Q8NDI1_198"/>
+<node id="Q8NDI1_568"/>
+<node id="Q8NDI1_1208"/>
+<node id="Q8NDI1_505"/>
+<node id="Q8NDI1_444"/>
+<node id="Q8NDI1_849"/>
+<node id="Q8NDI1_7"/>
+<node id="Q8NDI1_225"/>
+<node id="Q8NDI1_978"/>
+<node id="Q8NDI1_1047"/>
+<node id="Q8NDI1_1174"/>
+<node id="Q8NDI1_80"/>
+<node id="Q8NDI1_661"/>
+<node id="Q8NDI1_134"/>
+<node id="Q8NDI1_730"/>
+<node id="Q8NDI1_50"/>
+<node id="Q8NDI1_963"/>
+<node id="Q8NDI1_97"/>
+<node id="Q8NDI1_936"/>
+<node id="Q8NDI1_469"/>
+<node id="Q8NDI1_22"/>
+<node id="Q8NDI1_473"/>
+<node id="Q8NDI1_680"/>
+<node id="Q8NDI1_753"/>
+<node id="Q8NDI1_292"/>
+<node id="Q8NDI1_822"/>
+<node id="Q8NDI1_688"/>
+<node id="Q8NDI1_239"/>
+<node id="Q8NDI1_184"/>
+<node id="Q8NDI1_422"/>
+<node id="Q8NDI1_779"/>
+<edge source="Q8NDI1_155" target="Q8NDI1_156">
+  <data key="d0">1.33166038700651</data>
+  <data key="d1">Q8NDI1_155:AF-Q8NDI1-F1-model_v4.pdb_A_155;Q8NDI1_156:AF-Q8NDI1-F1-model_v4.pdb_A_156</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_155" target="Q8NDI1_157">
+  <data key="d0">4.455575439997114</data>
+  <data key="d1">Q8NDI1_155:AF-Q8NDI1-F1-model_v4.pdb_A_155;Q8NDI1_157:AF-Q8NDI1-F1-model_v4.pdb_A_157</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_155" target="Q8NDI1_22">
+  <data key="d0">5.104673658765926</data>
+  <data key="d1">Q8NDI1_22:AF-Q8NDI1-F1-model_v4.pdb_A_22;Q8NDI1_155:AF-Q8NDI1-F1-model_v4.pdb_A_155</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_17" target="Q8NDI1_157">
+  <data key="d0">4.468904930367953</data>
+  <data key="d1">Q8NDI1_17:AF-Q8NDI1-F1-model_v4.pdb_A_17;Q8NDI1_157:AF-Q8NDI1-F1-model_v4.pdb_A_157</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_17" target="Q8NDI1_82">
+  <data key="d0">3.900473615586529</data>
+  <data key="d1">Q8NDI1_17:AF-Q8NDI1-F1-model_v4.pdb_A_17;Q8NDI1_82:AF-Q8NDI1-F1-model_v4.pdb_A_82</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_727" target="Q8NDI1_729">
+  <data key="d0">4.662706826438135</data>
+  <data key="d1">Q8NDI1_727:AF-Q8NDI1-F1-model_v4.pdb_A_727;Q8NDI1_729:AF-Q8NDI1-F1-model_v4.pdb_A_729</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_4" target="Q8NDI1_7">
+  <data key="d0">3.0955864388769547</data>
+  <data key="d1">Q8NDI1_7:AF-Q8NDI1-F1-model_v4.pdb_A_7;Q8NDI1_4:AF-Q8NDI1-F1-model_v4.pdb_A_4</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_754" target="Q8NDI1_753">
+  <data key="d0">1.35902407660688</data>
+  <data key="d1">Q8NDI1_754:AF-Q8NDI1-F1-model_v4.pdb_A_754;Q8NDI1_753:AF-Q8NDI1-F1-model_v4.pdb_A_753</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_759" target="Q8NDI1_758">
+  <data key="d0">1.355257241628548</data>
+  <data key="d1">Q8NDI1_758:AF-Q8NDI1-F1-model_v4.pdb_A_758;Q8NDI1_759:AF-Q8NDI1-F1-model_v4.pdb_A_759</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_48" target="Q8NDI1_50">
+  <data key="d0">3.5712811312873836</data>
+  <data key="d1">Q8NDI1_48:AF-Q8NDI1-F1-model_v4.pdb_A_48;Q8NDI1_50:AF-Q8NDI1-F1-model_v4.pdb_A_50</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_477" target="Q8NDI1_464">
+  <data key="d0">4.808166792542398</data>
+  <data key="d1">Q8NDI1_477:AF-Q8NDI1-F1-model_v4.pdb_A_477;Q8NDI1_464:AF-Q8NDI1-F1-model_v4.pdb_A_464</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_157" target="Q8NDI1_156">
+  <data key="d0">1.3321040506915727</data>
+  <data key="d1">Q8NDI1_156:AF-Q8NDI1-F1-model_v4.pdb_A_156;Q8NDI1_157:AF-Q8NDI1-F1-model_v4.pdb_A_157</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_671" target="Q8NDI1_670">
+  <data key="d0">1.3481927509689404</data>
+  <data key="d1">Q8NDI1_671:AF-Q8NDI1-F1-model_v4.pdb_A_671;Q8NDI1_670:AF-Q8NDI1-F1-model_v4.pdb_A_670</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_88" target="Q8NDI1_12">
+  <data key="d0">3.1112229138370897</data>
+  <data key="d1">Q8NDI1_12:AF-Q8NDI1-F1-model_v4.pdb_A_12;Q8NDI1_88:AF-Q8NDI1-F1-model_v4.pdb_A_88</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_227" target="Q8NDI1_225">
+  <data key="d0">4.204042784933425</data>
+  <data key="d1">Q8NDI1_225:AF-Q8NDI1-F1-model_v4.pdb_A_225;Q8NDI1_227:AF-Q8NDI1-F1-model_v4.pdb_A_227</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_468" target="Q8NDI1_469">
+  <data key="d0">1.3350528430785111</data>
+  <data key="d1">Q8NDI1_469:AF-Q8NDI1-F1-model_v4.pdb_A_469;Q8NDI1_468:AF-Q8NDI1-F1-model_v4.pdb_A_468</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_238" target="Q8NDI1_239">
+  <data key="d0">1.3391820333149427</data>
+  <data key="d1">Q8NDI1_239:AF-Q8NDI1-F1-model_v4.pdb_A_239;Q8NDI1_238:AF-Q8NDI1-F1-model_v4.pdb_A_238</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_676" target="Q8NDI1_313">
+  <data key="d0">4.7860500329635345</data>
+  <data key="d1">Q8NDI1_676:AF-Q8NDI1-F1-model_v4.pdb_A_676;Q8NDI1_313:AF-Q8NDI1-F1-model_v4.pdb_A_313</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_370" target="Q8NDI1_371">
+  <data key="d0">1.366703697480243</data>
+  <data key="d1">Q8NDI1_371:AF-Q8NDI1-F1-model_v4.pdb_A_371;Q8NDI1_370:AF-Q8NDI1-F1-model_v4.pdb_A_370</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_175" target="Q8NDI1_178">
+  <data key="d0">5.28448034724411</data>
+  <data key="d1">Q8NDI1_178:AF-Q8NDI1-F1-model_v4.pdb_A_178;Q8NDI1_175:AF-Q8NDI1-F1-model_v4.pdb_A_175</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_82" target="Q8NDI1_80">
+  <data key="d0">3.5673818039966014</data>
+  <data key="d1">Q8NDI1_82:AF-Q8NDI1-F1-model_v4.pdb_A_82;Q8NDI1_80:AF-Q8NDI1-F1-model_v4.pdb_A_80</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_578" target="Q8NDI1_579">
+  <data key="d0">1.3354132001499561</data>
+  <data key="d1">Q8NDI1_578:AF-Q8NDI1-F1-model_v4.pdb_A_578;Q8NDI1_579:AF-Q8NDI1-F1-model_v4.pdb_A_579</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_201" target="Q8NDI1_198">
+  <data key="d0">3.5669856713653676</data>
+  <data key="d1">Q8NDI1_201:AF-Q8NDI1-F1-model_v4.pdb_A_201;Q8NDI1_198:AF-Q8NDI1-F1-model_v4.pdb_A_198</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_10" target="Q8NDI1_7">
+  <data key="d0">3.029211689526117</data>
+  <data key="d1">Q8NDI1_7:AF-Q8NDI1-F1-model_v4.pdb_A_7;Q8NDI1_10:AF-Q8NDI1-F1-model_v4.pdb_A_10</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_10" target="Q8NDI1_12">
+  <data key="d0">3.248229859590256</data>
+  <data key="d1">Q8NDI1_10:AF-Q8NDI1-F1-model_v4.pdb_A_10;Q8NDI1_12:AF-Q8NDI1-F1-model_v4.pdb_A_12</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_10" target="Q8NDI1_169">
+  <data key="d0">3.8585332847525353</data>
+  <data key="d1">Q8NDI1_169:AF-Q8NDI1-F1-model_v4.pdb_A_169;Q8NDI1_10:AF-Q8NDI1-F1-model_v4.pdb_A_10</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_499" target="Q8NDI1_503">
+  <data key="d0">2.903921027415643</data>
+  <data key="d1">Q8NDI1_503:AF-Q8NDI1-F1-model_v4.pdb_A_503;Q8NDI1_499:AF-Q8NDI1-F1-model_v4.pdb_A_499</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_851" target="Q8NDI1_849">
+  <data key="d0">2.8133771206831057</data>
+  <data key="d1">Q8NDI1_851:AF-Q8NDI1-F1-model_v4.pdb_A_851;Q8NDI1_849:AF-Q8NDI1-F1-model_v4.pdb_A_849</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_103" target="Q8NDI1_50">
+  <data key="d0">2.6846764851799674</data>
+  <data key="d1">Q8NDI1_50:AF-Q8NDI1-F1-model_v4.pdb_A_50;Q8NDI1_103:AF-Q8NDI1-F1-model_v4.pdb_A_103</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_507" target="Q8NDI1_505">
+  <data key="d0">3.305993139916553</data>
+  <data key="d1">Q8NDI1_507:AF-Q8NDI1-F1-model_v4.pdb_A_507;Q8NDI1_505:AF-Q8NDI1-F1-model_v4.pdb_A_505</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_507" target="Q8NDI1_503">
+  <data key="d0">3.055747153782266</data>
+  <data key="d1">Q8NDI1_507:AF-Q8NDI1-F1-model_v4.pdb_A_507;Q8NDI1_503:AF-Q8NDI1-F1-model_v4.pdb_A_503</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_335" target="Q8NDI1_336">
+  <data key="d0">1.3552507496372612</data>
+  <data key="d1">Q8NDI1_336:AF-Q8NDI1-F1-model_v4.pdb_A_336;Q8NDI1_335:AF-Q8NDI1-F1-model_v4.pdb_A_335</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_847" target="Q8NDI1_849">
+  <data key="d0">3.494496784716991</data>
+  <data key="d1">Q8NDI1_849:AF-Q8NDI1-F1-model_v4.pdb_A_849;Q8NDI1_847:AF-Q8NDI1-F1-model_v4.pdb_A_847</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_751" target="Q8NDI1_753">
+  <data key="d0">4.781946144860472</data>
+  <data key="d1">Q8NDI1_751:AF-Q8NDI1-F1-model_v4.pdb_A_751;Q8NDI1_753:AF-Q8NDI1-F1-model_v4.pdb_A_753</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_545" target="Q8NDI1_568">
+  <data key="d0">4.099983528355855</data>
+  <data key="d1">Q8NDI1_545:AF-Q8NDI1-F1-model_v4.pdb_A_545;Q8NDI1_568:AF-Q8NDI1-F1-model_v4.pdb_A_568</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_977" target="Q8NDI1_978">
+  <data key="d0">1.3499836280567004</data>
+  <data key="d1">Q8NDI1_978:AF-Q8NDI1-F1-model_v4.pdb_A_978;Q8NDI1_977:AF-Q8NDI1-F1-model_v4.pdb_A_977</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_977" target="Q8NDI1_975">
+  <data key="d0">4.7245400574267284</data>
+  <data key="d1">Q8NDI1_977:AF-Q8NDI1-F1-model_v4.pdb_A_977;Q8NDI1_975:AF-Q8NDI1-F1-model_v4.pdb_A_975</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_384" target="Q8NDI1_385">
+  <data key="d0">1.3637712434259581</data>
+  <data key="d1">Q8NDI1_384:AF-Q8NDI1-F1-model_v4.pdb_A_384;Q8NDI1_385:AF-Q8NDI1-F1-model_v4.pdb_A_385</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_169" target="Q8NDI1_7">
+  <data key="d0">3.6248714397855606</data>
+  <data key="d1">Q8NDI1_169:AF-Q8NDI1-F1-model_v4.pdb_A_169;Q8NDI1_7:AF-Q8NDI1-F1-model_v4.pdb_A_7</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_503" target="Q8NDI1_505">
+  <data key="d0">3.377134884400601</data>
+  <data key="d1">Q8NDI1_505:AF-Q8NDI1-F1-model_v4.pdb_A_505;Q8NDI1_503:AF-Q8NDI1-F1-model_v4.pdb_A_503</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_518" target="Q8NDI1_505">
+  <data key="d0">4.4121717472996025</data>
+  <data key="d1">Q8NDI1_505:AF-Q8NDI1-F1-model_v4.pdb_A_505;Q8NDI1_518:AF-Q8NDI1-F1-model_v4.pdb_A_518</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_729" target="Q8NDI1_730">
+  <data key="d0">1.3458120556124111</data>
+  <data key="d1">Q8NDI1_730:AF-Q8NDI1-F1-model_v4.pdb_A_730;Q8NDI1_729:AF-Q8NDI1-F1-model_v4.pdb_A_729</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_469" target="Q8NDI1_473">
+  <data key="d0">3.6486716685678506</data>
+  <data key="d1">Q8NDI1_473:AF-Q8NDI1-F1-model_v4.pdb_A_473;Q8NDI1_469:AF-Q8NDI1-F1-model_v4.pdb_A_469</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>

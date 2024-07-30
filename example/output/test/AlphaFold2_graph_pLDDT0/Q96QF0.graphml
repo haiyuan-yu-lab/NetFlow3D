@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="Q96QF0_476"/>
+<node id="Q96QF0_285"/>
+<node id="Q96QF0_12"/>
+<node id="Q96QF0_451"/>
+<node id="Q96QF0_409"/>
+<node id="Q96QF0_252"/>
+<node id="Q96QF0_131"/>
+<node id="Q96QF0_117"/>
+<node id="Q96QF0_17"/>
+<node id="Q96QF0_404"/>
+<node id="Q96QF0_48"/>
+<node id="Q96QF0_411"/>
+<node id="Q96QF0_372"/>
+<node id="Q96QF0_77"/>
+<node id="Q96QF0_226"/>
+<node id="Q96QF0_256"/>
+<node id="Q96QF0_417"/>
+<node id="Q96QF0_407"/>
+<node id="Q96QF0_389"/>
+<node id="Q96QF0_392"/>
+<node id="Q96QF0_340"/>
+<node id="Q96QF0_214"/>
+<node id="Q96QF0_5"/>
+<node id="Q96QF0_235"/>
+<node id="Q96QF0_360"/>
+<node id="Q96QF0_51"/>
+<node id="Q96QF0_257"/>
+<node id="Q96QF0_264"/>
+<node id="Q96QF0_173"/>
+<node id="Q96QF0_468"/>
+<node id="Q96QF0_251"/>
+<node id="Q96QF0_133"/>
+<node id="Q96QF0_31"/>
+<node id="Q96QF0_460"/>
+<node id="Q96QF0_317"/>
+<node id="Q96QF0_62"/>
+<node id="Q96QF0_111"/>
+<node id="Q96QF0_27"/>
+<node id="Q96QF0_295"/>
+<node id="Q96QF0_163"/>
+<node id="Q96QF0_210"/>
+<node id="Q96QF0_4"/>
+<node id="Q96QF0_461"/>
+<node id="Q96QF0_185"/>
+<node id="Q96QF0_412"/>
+<node id="Q96QF0_194"/>
+<node id="Q96QF0_452"/>
+<node id="Q96QF0_89"/>
+<node id="Q96QF0_105"/>
+<node id="Q96QF0_341"/>
+<node id="Q96QF0_419"/>
+<edge source="Q96QF0_451" target="Q96QF0_452">
+  <data key="d0">1.3353851828140466</data>
+  <data key="d1">Q96QF0_452:AF-Q96QF0-F1-model_v4.pdb_A_452;Q96QF0_451:AF-Q96QF0-F1-model_v4.pdb_A_451</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_409" target="Q96QF0_411">
+  <data key="d0">3.3286781898607245</data>
+  <data key="d1">Q96QF0_411:AF-Q96QF0-F1-model_v4.pdb_A_411;Q96QF0_409:AF-Q96QF0-F1-model_v4.pdb_A_409</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_409" target="Q96QF0_407">
+  <data key="d0">4.389535169141829</data>
+  <data key="d1">Q96QF0_409:AF-Q96QF0-F1-model_v4.pdb_A_409;Q96QF0_407:AF-Q96QF0-F1-model_v4.pdb_A_407</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_409" target="Q96QF0_412">
+  <data key="d0">4.113106278416357</data>
+  <data key="d1">Q96QF0_412:AF-Q96QF0-F1-model_v4.pdb_A_412;Q96QF0_409:AF-Q96QF0-F1-model_v4.pdb_A_409</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_409" target="Q96QF0_417">
+  <data key="d0">5.1542101937144364</data>
+  <data key="d1">Q96QF0_409:AF-Q96QF0-F1-model_v4.pdb_A_409;Q96QF0_417:AF-Q96QF0-F1-model_v4.pdb_A_417</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_409" target="Q96QF0_372">
+  <data key="d0">5.143392899896439</data>
+  <data key="d1">Q96QF0_409:AF-Q96QF0-F1-model_v4.pdb_A_409;Q96QF0_372:AF-Q96QF0-F1-model_v4.pdb_A_372</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_252" target="Q96QF0_256">
+  <data key="d0">2.905862548595571</data>
+  <data key="d1">Q96QF0_252:AF-Q96QF0-F1-model_v4.pdb_A_252;Q96QF0_256:AF-Q96QF0-F1-model_v4.pdb_A_256</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_252" target="Q96QF0_257">
+  <data key="d0">5.000482299071538</data>
+  <data key="d1">Q96QF0_252:AF-Q96QF0-F1-model_v4.pdb_A_252;Q96QF0_257:AF-Q96QF0-F1-model_v4.pdb_A_257</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_252" target="Q96QF0_251">
+  <data key="d0">1.3374893205063234</data>
+  <data key="d1">Q96QF0_252:AF-Q96QF0-F1-model_v4.pdb_A_252;Q96QF0_251:AF-Q96QF0-F1-model_v4.pdb_A_251</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_131" target="Q96QF0_133">
+  <data key="d0">4.22028112705403</data>
+  <data key="d1">Q96QF0_131:AF-Q96QF0-F1-model_v4.pdb_A_131;Q96QF0_133:AF-Q96QF0-F1-model_v4.pdb_A_133</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_404" target="Q96QF0_407">
+  <data key="d0">5.884303455500755</data>
+  <data key="d1">Q96QF0_407:AF-Q96QF0-F1-model_v4.pdb_A_407;Q96QF0_404:AF-Q96QF0-F1-model_v4.pdb_A_404</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_404" target="Q96QF0_419">
+  <data key="d0">3.300321653891688</data>
+  <data key="d1">Q96QF0_419:AF-Q96QF0-F1-model_v4.pdb_A_419;Q96QF0_404:AF-Q96QF0-F1-model_v4.pdb_A_404</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_404" target="Q96QF0_392">
+  <data key="d0">2.8580981200509252</data>
+  <data key="d1">Q96QF0_404:AF-Q96QF0-F1-model_v4.pdb_A_404;Q96QF0_392:AF-Q96QF0-F1-model_v4.pdb_A_392</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_411" target="Q96QF0_412">
+  <data key="d0">1.327177706754508</data>
+  <data key="d1">Q96QF0_411:AF-Q96QF0-F1-model_v4.pdb_A_411;Q96QF0_412:AF-Q96QF0-F1-model_v4.pdb_A_412</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_372" target="Q96QF0_407">
+  <data key="d0">2.707749809412628</data>
+  <data key="d1">Q96QF0_372:AF-Q96QF0-F1-model_v4.pdb_A_372;Q96QF0_407:AF-Q96QF0-F1-model_v4.pdb_A_407</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_256" target="Q96QF0_257">
+  <data key="d0">1.3332982602196044</data>
+  <data key="d1">Q96QF0_256:AF-Q96QF0-F1-model_v4.pdb_A_256;Q96QF0_257:AF-Q96QF0-F1-model_v4.pdb_A_257</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_256" target="Q96QF0_251">
+  <data key="d0">4.959713641249717</data>
+  <data key="d1">Q96QF0_256:AF-Q96QF0-F1-model_v4.pdb_A_256;Q96QF0_251:AF-Q96QF0-F1-model_v4.pdb_A_251</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_417" target="Q96QF0_407">
+  <data key="d0">3.2709888031738426</data>
+  <data key="d1">Q96QF0_417:AF-Q96QF0-F1-model_v4.pdb_A_417;Q96QF0_407:AF-Q96QF0-F1-model_v4.pdb_A_407</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_417" target="Q96QF0_419">
+  <data key="d0">3.5343423612795806</data>
+  <data key="d1">Q96QF0_417:AF-Q96QF0-F1-model_v4.pdb_A_417;Q96QF0_419:AF-Q96QF0-F1-model_v4.pdb_A_419</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_417" target="Q96QF0_389">
+  <data key="d0">3.347794489826682</data>
+  <data key="d1">Q96QF0_389:AF-Q96QF0-F1-model_v4.pdb_A_389;Q96QF0_417:AF-Q96QF0-F1-model_v4.pdb_A_417</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_407" target="Q96QF0_419">
+  <data key="d0">4.467983745959705</data>
+  <data key="d1">Q96QF0_407:AF-Q96QF0-F1-model_v4.pdb_A_407;Q96QF0_419:AF-Q96QF0-F1-model_v4.pdb_A_419</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_389" target="Q96QF0_419">
+  <data key="d0">5.996962861550245</data>
+  <data key="d1">Q96QF0_389:AF-Q96QF0-F1-model_v4.pdb_A_389;Q96QF0_419:AF-Q96QF0-F1-model_v4.pdb_A_419</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_340" target="Q96QF0_461">
+  <data key="d0">3.661661319382094</data>
+  <data key="d1">Q96QF0_340:AF-Q96QF0-F1-model_v4.pdb_A_340;Q96QF0_461:AF-Q96QF0-F1-model_v4.pdb_A_461</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_340" target="Q96QF0_341">
+  <data key="d0">1.330231596425454</data>
+  <data key="d1">Q96QF0_341:AF-Q96QF0-F1-model_v4.pdb_A_341;Q96QF0_340:AF-Q96QF0-F1-model_v4.pdb_A_340</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_214" target="Q96QF0_210">
+  <data key="d0">2.9255489806746042</data>
+  <data key="d1">Q96QF0_210:AF-Q96QF0-F1-model_v4.pdb_A_210;Q96QF0_214:AF-Q96QF0-F1-model_v4.pdb_A_214</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_5" target="Q96QF0_4">
+  <data key="d0">1.3399681166475472</data>
+  <data key="d1">Q96QF0_4:AF-Q96QF0-F1-model_v4.pdb_A_4;Q96QF0_5:AF-Q96QF0-F1-model_v4.pdb_A_5</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_468" target="Q96QF0_461">
+  <data key="d0">5.571746774323204</data>
+  <data key="d1">Q96QF0_468:AF-Q96QF0-F1-model_v4.pdb_A_468;Q96QF0_461:AF-Q96QF0-F1-model_v4.pdb_A_461</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_460" target="Q96QF0_461">
+  <data key="d0">1.3415833831427288</data>
+  <data key="d1">Q96QF0_460:AF-Q96QF0-F1-model_v4.pdb_A_460;Q96QF0_461:AF-Q96QF0-F1-model_v4.pdb_A_461</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_317" target="Q96QF0_461">
+  <data key="d0">3.6468577159578386</data>
+  <data key="d1">Q96QF0_461:AF-Q96QF0-F1-model_v4.pdb_A_461;Q96QF0_317:AF-Q96QF0-F1-model_v4.pdb_A_317</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>
