@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="edge" attr.name="source" attr.type="string"/>
+<key id="d0" for="edge" attr.name="distance" attr.type="double"/>
+<graph edgedefault="undirected"><node id="P61006_168"/>
+<node id="P61006_53"/>
+<node id="P61006_104"/>
+<node id="P61006_175"/>
+<node id="P61006_174"/>
+<node id="P61006_91"/>
+<node id="P61006_135"/>
+<node id="P61006_158"/>
+<node id="P61006_38"/>
+<node id="P61006_33"/>
+<node id="P61006_76"/>
+<node id="P61006_10"/>
+<node id="P61006_98"/>
+<node id="P61006_18"/>
+<node id="P61006_161"/>
+<node id="P61006_173"/>
+<node id="P61006_28"/>
+<node id="P61006_152"/>
+<node id="P61006_165"/>
+<node id="P61006_44"/>
+<node id="P61006_23"/>
+<node id="P61006_85"/>
+<node id="P61006_5"/>
+<node id="P61006_3"/>
+<node id="P61006_13"/>
+<node id="P61006_20"/>
+<node id="P61006_136"/>
+<edge source="P61006_168" target="P61006_53">
+  <data key="d0">4.774859299665804</data>
+  <data key="d1">P61006_53:4LHW_C_53;P61006_168:4LHW_D_168</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_168" target="P61006_165">
+  <data key="d0">3.0830680453469235</data>
+  <data key="d1">P61006_168:4LI0_A_168;P61006_165:4LI0_A_165</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_168" target="P61006_173">
+  <data key="d0">4.919891287022842</data>
+  <data key="d1">P61006_173:5SZI_A_173;P61006_168:5SZI_A_168</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_53" target="P61006_104">
+  <data key="d0">8.386959542859735</data>
+  <data key="d1">P61006_104:4LHW_A_104;P61006_53:4LHW_E_53</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_53" target="P61006_158">
+  <data key="d0">8.845461904527493</data>
+  <data key="d1">P61006_53:6ZSI_A_53;P61006_158:6ZSI_B_158</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_53" target="P61006_175">
+  <data key="d0">3.457316545471088</data>
+  <data key="d1">P61006_175:4LHW_C_175;P61006_53:4LHW_D_53</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_53" target="P61006_91">
+  <data key="d0">4.554565918343001</data>
+  <data key="d1">P61006_91:4LHV_A_91;P61006_53:4LHV_B_53</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_53" target="P61006_135">
+  <data key="d0">7.106024750022649</data>
+  <data key="d1">P61006_135:4LHW_D_135;P61006_53:4LHW_E_53</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_53" target="P61006_33">
+  <data key="d0">8.587390845845512</data>
+  <data key="d1">P61006_33:6STF_D_33;P61006_53:6STF_E_53</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_53" target="P61006_174">
+  <data key="d0">4.308250929465685</data>
+  <data key="d1">P61006_53:4LHV_C_53;P61006_174:4LHV_C_174</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_53" target="P61006_38">
+  <data key="d0">8.304086874917632</data>
+  <data key="d1">P61006_38:6STF_C_38;P61006_53:6STF_D_53</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_53" target="P61006_152">
+  <data key="d0">7.179385435698397</data>
+  <data key="d1">P61006_53:6ZSI_A_53;P61006_152:6ZSI_B_152</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_53" target="P61006_18">
+  <data key="d0">8.291917688571317</data>
+  <data key="d1">P61006_18:6STF_D_18;P61006_53:6STF_E_53</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_53" target="P61006_165">
+  <data key="d0">8.696743177017208</data>
+  <data key="d1">P61006_53:4LHW_C_53;P61006_165:4LHW_D_165</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_53" target="P61006_53">
+  <data key="d0">7.355162149019804</data>
+  <data key="d1">P61006_53:4LHW_C_53;P61006_53:4LHW_D_53</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_104" target="P61006_175">
+  <data key="d0">6.04221391095359</data>
+  <data key="d1">P61006_104:4LHW_D_104;P61006_175:4LHW_E_175</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_104" target="P61006_174">
+  <data key="d0">8.549684129079619</data>
+  <data key="d1">P61006_104:4LHW_D_104;P61006_174:4LHW_E_174</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_104" target="P61006_91">
+  <data key="d0">7.165256608179732</data>
+  <data key="d1">P61006_104:4LHW_A_104;P61006_91:4LHW_D_91</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_104" target="P61006_135">
+  <data key="d0">6.5422212744159625</data>
+  <data key="d1">P61006_104:4LHW_A_104;P61006_135:4LHW_D_135</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_175" target="P61006_135">
+  <data key="d0">8.761283605214347</data>
+  <data key="d1">P61006_135:4LHW_D_135;P61006_175:4LHW_E_175</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_175" target="P61006_174">
+  <data key="d0">1.3045762957713931</data>
+  <data key="d1">P61006_174:6SQ2_B_174;P61006_175:6SQ2_B_175</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_175" target="P61006_173">
+  <data key="d0">2.8797333408676025</data>
+  <data key="d1">P61006_173:6SQ2_B_173;P61006_175:6SQ2_B_175</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_174" target="P61006_158">
+  <data key="d0">7.6174498581742185</data>
+  <data key="d1">P61006_174:6ZSI_A_174;P61006_158:6ZSI_B_158</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_174" target="P61006_135">
+  <data key="d0">6.796841579332448</data>
+  <data key="d1">P61006_135:4LHW_D_135;P61006_174:4LHW_E_174</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_174" target="P61006_173">
+  <data key="d0">1.3034537548653111</data>
+  <data key="d1">P61006_174:6SQ2_B_174;P61006_173:6SQ2_B_173</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_174" target="P61006_174">
+  <data key="d0">8.306489469586438</data>
+  <data key="d1">P61006_174:6STG_A_174;P61006_174:6STG_B_174</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_174" target="P61006_161">
+  <data key="d0">8.591656152369975</data>
+  <data key="d1">P61006_174:6ZSJ_A_174;P61006_161:6ZSJ_B_161</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_91" target="P61006_91">
+  <data key="d0">7.884086265014972</data>
+  <data key="d1">P61006_91:4LHY_A_91;P61006_91:4LHY_B_91</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_135" target="P61006_98">
+  <data key="d0">8.264902734151683</data>
+  <data key="d1">P61006_135:4LI0_A_135;P61006_98:4LI0_B_98</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_135" target="P61006_135">
+  <data key="d0">3.1749438408017174</data>
+  <data key="d1">P61006_135:4LHY_A_135;P61006_135:4LHY_B_135</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_135" target="P61006_136">
+  <data key="d0">1.316730339187223</data>
+  <data key="d1">P61006_135:4LHY_A_135;P61006_136:4LHY_A_136</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_158" target="P61006_38">
+  <data key="d0">6.108744997361553</data>
+  <data key="d1">P61006_38:6STF_C_38;P61006_158:6STF_D_158</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_158" target="P61006_33">
+  <data key="d0">4.933253828753152</data>
+  <data key="d1">P61006_158:6STF_B_158;P61006_33:6STF_E_33</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_158" target="P61006_152">
+  <data key="d0">4.054342946460778</data>
+  <data key="d1">P61006_152:6STG_A_152;P61006_158:6STG_A_158</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_158" target="P61006_23">
+  <data key="d0">5.305607735846066</data>
+  <data key="d1">P61006_23:4LHY_B_23;P61006_158:4LHY_B_158</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_158" target="P61006_28">
+  <data key="d0">3.5380565353710165</data>
+  <data key="d1">P61006_28:5SZI_A_28;P61006_158:5SZI_A_158</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_158" target="P61006_85">
+  <data key="d0">5.4265704596109625</data>
+  <data key="d1">P61006_158:4LHX_B_158;P61006_85:4LHX_B_85</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_158" target="P61006_161">
+  <data key="d0">3.0092292516777155</data>
+  <data key="d1">P61006_158:4LI0_A_158;P61006_161:4LI0_A_161</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_38" target="P61006_33">
+  <data key="d0">5.3229120336586195</data>
+  <data key="d1">P61006_33:6STF_A_33;P61006_38:6STF_A_38</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_38" target="P61006_28">
+  <data key="d0">7.009315700713244</data>
+  <data key="d1">P61006_38:6STF_C_38;P61006_28:6STF_D_28</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_38" target="P61006_38">
+  <data key="d0">8.379469192947353</data>
+  <data key="d1">P61006_38:4LHV_A_38;P61006_38:4LHV_C_38</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_38" target="P61006_161">
+  <data key="d0">5.781582174151275</data>
+  <data key="d1">P61006_161:6STF_B_161;P61006_38:6STF_E_38</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_38" target="P61006_44">
+  <data key="d0">3.7230970443448808</data>
+  <data key="d1">P61006_44:4LHY_B_44;P61006_38:4LHY_B_38</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_33" target="P61006_18">
+  <data key="d0">7.711343975437522</data>
+  <data key="d1">P61006_18:4LHW_A_18;P61006_33:4LHW_C_33</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_33" target="P61006_161">
+  <data key="d0">7.805457772658748</data>
+  <data key="d1">P61006_161:6STF_B_161;P61006_33:6STF_E_33</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_33" target="P61006_23">
+  <data key="d0">3.539184054762281</data>
+  <data key="d1">P61006_33:6STG_A_33;P61006_23:6STG_A_23</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_33" target="P61006_152">
+  <data key="d0">3.3108063108034647</data>
+  <data key="d1">P61006_33:5SZI_A_33;P61006_152:5SZI_A_152</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_76" target="P61006_10">
+  <data key="d0">4.677008162886364</data>
+  <data key="d1">P61006_76:4LHV_C_76;P61006_10:4LHV_C_10</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_76" target="P61006_76">
+  <data key="d0">7.160330258515561</data>
+  <data key="d1">P61006_76:4LHW_A_76;P61006_76:4LHW_B_76</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_76" target="P61006_44">
+  <data key="d0">5.969837408400891</data>
+  <data key="d1">P61006_44:4LHV_C_44;P61006_76:4LHV_C_76</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_10" target="P61006_10">
+  <data key="d0">8.87011022636325</data>
+  <data key="d1">P61006_10:6STG_A_10;P61006_10:6STG_B_10</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_18" target="P61006_20">
+  <data key="d0">2.8429325533467598</data>
+  <data key="d1">P61006_20:4LHX_B_20;P61006_18:4LHX_B_18</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_161" target="P61006_85">
+  <data key="d0">3.1686194513704624</data>
+  <data key="d1">P61006_85:4LHZ_A_85;P61006_161:4LHZ_A_161</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_161" target="P61006_165">
+  <data key="d0">2.8288227814310427</data>
+  <data key="d1">P61006_165:4LHV_E_165;P61006_161:4LHV_E_161</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_173" target="P61006_173">
+  <data key="d0">7.59298143587312</data>
+  <data key="d1">P61006_173:6STG_A_173;P61006_173:6STG_B_173</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P61006_28" target="P61006_23">
+  <data key="d0">4.7646194505042505</data>
+  <data key="d1">P61006_23:4LHV_C_23;P61006_28:4LHV_C_28</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_152" target="P61006_23">
+  <data key="d0">3.316579705785322</data>
+  <data key="d1">P61006_152:4LHX_A_152;P61006_23:4LHX_A_23</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_152" target="P61006_20">
+  <data key="d0">4.687051515026792</data>
+  <data key="d1">P61006_152:4LHZ_A_152;P61006_20:4LHZ_A_20</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_165" target="P61006_85">
+  <data key="d0">3.495531985587849</data>
+  <data key="d1">P61006_165:4LHV_C_165;P61006_85:4LHV_C_85</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_23" target="P61006_20">
+  <data key="d0">2.9845358814588825</data>
+  <data key="d1">P61006_23:3TNF_A_23;P61006_20:3TNF_A_20</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_85" target="P61006_13">
+  <data key="d0">3.4111656923168234</data>
+  <data key="d1">P61006_85:6ZSI_B_85;P61006_13:6ZSI_B_13</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_5" target="P61006_3">
+  <data key="d0">2.9495338062316323</data>
+  <data key="d1">P61006_5:6SQ2_A_5;P61006_3:6SQ2_A_3</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P61006_13" target="P61006_20">
+  <data key="d0">5.698251219514395</data>
+  <data key="d1">P61006_20:4LHW_D_20;P61006_13:4LHW_D_13</data>
+  <data key="d2">intra</data>
+</edge>
+</graph></graphml>
