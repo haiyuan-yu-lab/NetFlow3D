@@ -1,0 +1,2 @@
+Subnetwork_UniProts	Subnetwork_size
+P61006,P62491,Q01968,Q8NDI1,Q8TBN0,Q96QF0	6
