@@ -2,45 +2,35 @@
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
 <key id="d1" for="edge" attr.name="source" attr.type="string"/>
 <key id="d0" for="edge" attr.name="distance" attr.type="double"/>
-<graph edgedefault="undirected"><node id="P62491_4"/>
-<node id="P62491_92"/>
-<node id="P62491_177"/>
+<graph edgedefault="undirected"><node id="P62491_154"/>
 <node id="P62491_74"/>
-<node id="P62491_11"/>
-<node id="P62491_140"/>
-<node id="P62491_171"/>
-<node id="P62491_72"/>
-<node id="P62491_195"/>
-<node id="P62491_104"/>
-<node id="P62491_187"/>
 <node id="P62491_111"/>
 <node id="P62491_9"/>
-<node id="P62491_154"/>
-<node id="P62491_33"/>
-<node id="P62491_91"/>
-<node id="P62491_128"/>
 <node id="P62491_82"/>
 <node id="P62491_8"/>
-<node id="P62491_24"/>
-<node id="P62491_129"/>
-<node id="P62491_40"/>
-<node id="P62491_53"/>
+<node id="P62491_128"/>
 <node id="P62491_119"/>
+<node id="P62491_104"/>
+<node id="P62491_171"/>
+<node id="P62491_177"/>
 <node id="P62491_196"/>
+<node id="P62491_24"/>
+<node id="P62491_195"/>
+<node id="P62491_4"/>
+<node id="P62491_40"/>
+<node id="P62491_91"/>
+<node id="P62491_140"/>
+<node id="P62491_129"/>
+<node id="P62491_53"/>
+<node id="P62491_11"/>
 <node id="P62491_29"/>
-<edge source="P62491_4" target="P62491_8">
-  <data key="d0">5.607413016147347</data>
-  <data key="d1">P62491_8:AF-P62491-F1-model_v4.pdb_A_8;P62491_4:AF-P62491-F1-model_v4.pdb_A_4</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_92" target="P62491_128">
-  <data key="d0">4.481705133647027</data>
-  <data key="d1">P62491_128:AF-P62491-F1-model_v4.pdb_A_128;P62491_92:AF-P62491-F1-model_v4.pdb_A_92</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_92" target="P62491_91">
-  <data key="d0">1.3307149976061992</data>
-  <data key="d1">P62491_91:AF-P62491-F1-model_v4.pdb_A_91;P62491_92:AF-P62491-F1-model_v4.pdb_A_92</data>
+<node id="P62491_72"/>
+<node id="P62491_92"/>
+<node id="P62491_33"/>
+<node id="P62491_187"/>
+<edge source="P62491_154" target="P62491_129">
+  <data key="d0">5.965990676974699</data>
+  <data key="d1">P62491_154:AF-P62491-F1-model_v4.pdb_A_154;P62491_129:AF-P62491-F1-model_v4.pdb_A_129</data>
   <data key="d2">intra</data>
 </edge>
 <edge source="P62491_74" target="P62491_72">
@@ -53,44 +43,29 @@
   <data key="d1">P62491_74:AF-P62491-F1-model_v4.pdb_A_74;P62491_104:AF-P62491-F1-model_v4.pdb_A_104</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="P62491_11" target="P62491_8">
-  <data key="d0">3.52421916920966</data>
-  <data key="d1">P62491_8:AF-P62491-F1-model_v4.pdb_A_8;P62491_11:AF-P62491-F1-model_v4.pdb_A_11</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_11" target="P62491_9">
-  <data key="d0">4.562599386037666</data>
-  <data key="d1">P62491_11:AF-P62491-F1-model_v4.pdb_A_11;P62491_9:AF-P62491-F1-model_v4.pdb_A_9</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_140" target="P62491_91">
-  <data key="d0">5.955726921461031</data>
-  <data key="d1">P62491_91:AF-P62491-F1-model_v4.pdb_A_91;P62491_140:AF-P62491-F1-model_v4.pdb_A_140</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_171" target="P62491_119">
-  <data key="d0">5.332426827145916</data>
-  <data key="d1">P62491_171:AF-P62491-F1-model_v4.pdb_A_171;P62491_119:AF-P62491-F1-model_v4.pdb_A_119</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_195" target="P62491_196">
-  <data key="d0">1.3324623008402117</data>
-  <data key="d1">P62491_195:AF-P62491-F1-model_v4.pdb_A_195;P62491_196:AF-P62491-F1-model_v4.pdb_A_196</data>
-  <data key="d2">intra</data>
-</edge>
 <edge source="P62491_9" target="P62491_8">
   <data key="d0">1.3325318664348202</data>
   <data key="d1">P62491_8:AF-P62491-F1-model_v4.pdb_A_8;P62491_9:AF-P62491-F1-model_v4.pdb_A_9</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="P62491_154" target="P62491_129">
-  <data key="d0">5.965990676974699</data>
-  <data key="d1">P62491_154:AF-P62491-F1-model_v4.pdb_A_154;P62491_129:AF-P62491-F1-model_v4.pdb_A_129</data>
+<edge source="P62491_9" target="P62491_11">
+  <data key="d0">4.562599386037666</data>
+  <data key="d1">P62491_11:AF-P62491-F1-model_v4.pdb_A_11;P62491_9:AF-P62491-F1-model_v4.pdb_A_9</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="P62491_33" target="P62491_29">
-  <data key="d0">2.872273081023705</data>
-  <data key="d1">P62491_33:AF-P62491-F1-model_v4.pdb_A_33;P62491_29:AF-P62491-F1-model_v4.pdb_A_29</data>
+<edge source="P62491_8" target="P62491_4">
+  <data key="d0">5.607413016147347</data>
+  <data key="d1">P62491_8:AF-P62491-F1-model_v4.pdb_A_8;P62491_4:AF-P62491-F1-model_v4.pdb_A_4</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_8" target="P62491_11">
+  <data key="d0">3.52421916920966</data>
+  <data key="d1">P62491_8:AF-P62491-F1-model_v4.pdb_A_8;P62491_11:AF-P62491-F1-model_v4.pdb_A_11</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_128" target="P62491_92">
+  <data key="d0">4.481705133647027</data>
+  <data key="d1">P62491_128:AF-P62491-F1-model_v4.pdb_A_128;P62491_92:AF-P62491-F1-model_v4.pdb_A_92</data>
   <data key="d2">intra</data>
 </edge>
 <edge source="P62491_128" target="P62491_129">
@@ -98,9 +73,34 @@
   <data key="d1">P62491_128:AF-P62491-F1-model_v4.pdb_A_128;P62491_129:AF-P62491-F1-model_v4.pdb_A_129</data>
   <data key="d2">intra</data>
 </edge>
+<edge source="P62491_119" target="P62491_171">
+  <data key="d0">5.332426827145916</data>
+  <data key="d1">P62491_171:AF-P62491-F1-model_v4.pdb_A_171;P62491_119:AF-P62491-F1-model_v4.pdb_A_119</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_196" target="P62491_195">
+  <data key="d0">1.3324623008402117</data>
+  <data key="d1">P62491_195:AF-P62491-F1-model_v4.pdb_A_195;P62491_196:AF-P62491-F1-model_v4.pdb_A_196</data>
+  <data key="d2">intra</data>
+</edge>
 <edge source="P62491_24" target="P62491_29">
   <data key="d0">5.102016541458609</data>
   <data key="d1">P62491_29:AF-P62491-F1-model_v4.pdb_A_29;P62491_24:AF-P62491-F1-model_v4.pdb_A_24</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_91" target="P62491_92">
+  <data key="d0">1.3307149976061992</data>
+  <data key="d1">P62491_91:AF-P62491-F1-model_v4.pdb_A_91;P62491_92:AF-P62491-F1-model_v4.pdb_A_92</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_91" target="P62491_140">
+  <data key="d0">5.955726921461031</data>
+  <data key="d1">P62491_91:AF-P62491-F1-model_v4.pdb_A_91;P62491_140:AF-P62491-F1-model_v4.pdb_A_140</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_29" target="P62491_33">
+  <data key="d0">2.872273081023705</data>
+  <data key="d1">P62491_33:AF-P62491-F1-model_v4.pdb_A_33;P62491_29:AF-P62491-F1-model_v4.pdb_A_29</data>
   <data key="d2">intra</data>
 </edge>
 </graph></graphml>
