@@ -2,183 +2,68 @@
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
 <key id="d1" for="edge" attr.name="source" attr.type="string"/>
 <key id="d0" for="edge" attr.name="distance" attr.type="double"/>
-<graph edgedefault="undirected"><node id="P62491_128"/>
-<node id="Q96QF0_372"/>
-<node id="P62491_74"/>
-<node id="P62491_72"/>
-<node id="Q96QF0_407"/>
-<node id="Q96QF0_360"/>
-<node id="P62491_140"/>
+<graph edgedefault="undirected"><node id="P62491_171"/>
 <node id="Q96QF0_412"/>
 <node id="P62491_9"/>
-<node id="P62491_171"/>
-<node id="P62491_129"/>
-<node id="Q96QF0_409"/>
-<node id="Q96QF0_417"/>
+<node id="P62491_128"/>
+<node id="Q96QF0_372"/>
 <node id="Q96QF0_389"/>
+<node id="P62491_140"/>
+<node id="Q96QF0_409"/>
+<node id="P62491_129"/>
+<node id="Q96QF0_360"/>
+<node id="Q96QF0_417"/>
+<node id="Q96QF0_407"/>
+<node id="P62491_72"/>
 <node id="Q96QF0_411"/>
-<node id="Q96QF0_340"/>
-<node id="Q96QF0_341"/>
+<node id="P62491_74"/>
+<node id="Q96QF0_404"/>
+<node id="Q96QF0_392"/>
+<node id="Q96QF0_419"/>
+<node id="Q96QF0_451"/>
+<node id="Q96QF0_452"/>
 <node id="Q96QF0_461"/>
+<node id="Q96QF0_340"/>
+<node id="Q96QF0_460"/>
+<node id="Q96QF0_317"/>
+<node id="Q96QF0_341"/>
 <node id="Q96QF0_251"/>
 <node id="Q96QF0_252"/>
 <node id="Q96QF0_256"/>
-<node id="Q96QF0_419"/>
-<node id="Q96QF0_404"/>
-<node id="Q96QF0_451"/>
-<node id="Q96QF0_452"/>
-<node id="Q96QF0_317"/>
 <node id="Q96QF0_257"/>
-<node id="Q96QF0_460"/>
-<node id="Q96QF0_214"/>
 <node id="Q96QF0_210"/>
-<node id="Q96QF0_392"/>
+<node id="Q96QF0_214"/>
 <node id="Q96QF0_173"/>
-<node id="Q96QF0_476"/>
+<node id="Q96QF0_194"/>
+<node id="Q96QF0_185"/>
 <node id="Q96QF0_468"/>
+<node id="Q96QF0_476"/>
 <node id="Q96QF0_226"/>
 <node id="Q96QF0_235"/>
-<node id="Q96QF0_185"/>
-<node id="Q96QF0_194"/>
-<node id="P62491_154"/>
+<node id="P62491_119"/>
+<node id="P62491_8"/>
+<node id="P62491_53"/>
+<node id="P62491_11"/>
+<node id="P62491_4"/>
 <node id="P62491_111"/>
 <node id="P62491_104"/>
-<node id="P62491_8"/>
-<node id="P62491_11"/>
-<node id="P62491_53"/>
-<node id="P62491_4"/>
-<node id="P62491_92"/>
-<node id="P62491_119"/>
-<node id="P62491_24"/>
-<node id="P62491_91"/>
-<node id="P62491_29"/>
 <node id="P62491_33"/>
+<node id="P62491_29"/>
+<node id="P62491_91"/>
+<node id="P62491_92"/>
+<node id="P62491_24"/>
+<node id="P62491_154"/>
+<node id="P62491_40"/>
 <node id="P62491_82"/>
 <node id="P62491_177"/>
-<node id="P62491_40"/>
-<edge source="P62491_128" target="Q96QF0_372">
-  <data key="d0">8.11408732018293</data>
-  <data key="d1">P62491_128:4UJ3_P_128;Q96QF0_372:4UJ3_Q_356</data>
+<edge source="P62491_171" target="Q96QF0_412">
+  <data key="d0">7.277380932731594</data>
+  <data key="d1">P62491_171:4UJ3_M_171;Q96QF0_412:4UJ3_Q_396</data>
   <data key="d2">inter</data>
 </edge>
-<edge source="P62491_128" target="P62491_154">
-  <data key="d0">5.081626681264871</data>
-  <data key="d1">P62491_128:6DJL_A_128;P62491_154:6DJL_A_154</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_128" target="P62491_92">
-  <data key="d0">3.7736907780553643</data>
-  <data key="d1">P62491_92:4C4P_A_92;P62491_128:4C4P_A_128</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_128" target="P62491_129">
-  <data key="d0">1.3159092019826975</data>
-  <data key="d1">P62491_129:1OIX_A_129;P62491_128:1OIX_A_128</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_372" target="P62491_74">
-  <data key="d0">8.418798193079303</data>
-  <data key="d1">P62491_74:4UJ5_B_74;Q96QF0_372:4UJ5_C_356</data>
-  <data key="d2">inter</data>
-</edge>
-<edge source="Q96QF0_372" target="P62491_129">
-  <data key="d0">4.917857069527355</data>
-  <data key="d1">P62491_129:4UJ5_B_129;Q96QF0_372:4UJ5_D_356</data>
-  <data key="d2">inter</data>
-</edge>
-<edge source="Q96QF0_372" target="P62491_140">
-  <data key="d0">7.88244352113965</data>
-  <data key="d1">P62491_140:4UJ5_A_140;Q96QF0_372:4UJ5_C_356</data>
-  <data key="d2">inter</data>
-</edge>
-<edge source="Q96QF0_372" target="Q96QF0_407">
-  <data key="d0">2.5457458647338242</data>
-  <data key="d1">Q96QF0_372:4UJ3_W_356;Q96QF0_407:4UJ3_W_391</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_372" target="Q96QF0_409">
-  <data key="d0">5.003902546352311</data>
-  <data key="d1">Q96QF0_372:4UJ4_B_356;Q96QF0_409:4UJ4_B_393</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_74" target="P62491_111">
-  <data key="d0">3.3883402913915623</data>
-  <data key="d1">P62491_74:5JCZ_A_74;P62491_111:5JCZ_A_111</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_74" target="P62491_104">
-  <data key="d0">2.9496282311851534</data>
-  <data key="d1">P62491_104:5C46_F_104;P62491_74:5C46_F_74</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_74" target="P62491_72">
-  <data key="d0">3.0963885238254174</data>
-  <data key="d1">P62491_72:2GZD_B_72;P62491_74:2GZD_B_74</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_72" target="Q96QF0_407">
-  <data key="d0">8.296480867934255</data>
-  <data key="d1">P62491_72:4UJ5_B_72;Q96QF0_407:4UJ5_C_391</data>
-  <data key="d2">inter</data>
-</edge>
-<edge source="P62491_72" target="P62491_104">
-  <data key="d0">2.3854990379683687</data>
-  <data key="d1">P62491_104:4C4P_A_104;P62491_72:4C4P_A_72</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_407" target="P62491_129">
-  <data key="d0">6.781778782957333</data>
-  <data key="d1">P62491_129:4UJ5_B_129;Q96QF0_407:4UJ5_D_391</data>
-  <data key="d2">inter</data>
-</edge>
-<edge source="Q96QF0_407" target="Q96QF0_417">
-  <data key="d0">3.081247445074755</data>
-  <data key="d1">Q96QF0_407:4UJ3_N_391;Q96QF0_417:4UJ3_N_401</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_407" target="Q96QF0_409">
-  <data key="d0">4.044258218545439</data>
-  <data key="d1">Q96QF0_409:4UJ4_K_393;Q96QF0_407:4UJ4_K_391</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_407" target="Q96QF0_419">
-  <data key="d0">4.506808655416173</data>
-  <data key="d1">Q96QF0_407:4UJ3_E_391;Q96QF0_419:4UJ3_E_403</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_407" target="Q96QF0_389">
-  <data key="d0">5.8543163880462785</data>
-  <data key="d1">Q96QF0_389:4UJ3_E_373;Q96QF0_407:4UJ3_E_391</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_407" target="Q96QF0_404">
-  <data key="d0">5.961619710531934</data>
-  <data key="d1">Q96QF0_404:4UJ5_C_388;Q96QF0_407:4UJ5_C_391</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_360" target="P62491_140">
-  <data key="d0">8.235854822780203</data>
-  <data key="d1">P62491_140:4UJ3_M_140;Q96QF0_360:4UJ3_Q_344</data>
-  <data key="d2">inter</data>
-</edge>
-<edge source="P62491_140" target="Q96QF0_412">
-  <data key="d0">8.673115945673302</data>
-  <data key="d1">P62491_140:4UJ3_M_140;Q96QF0_412:4UJ3_Q_396</data>
-  <data key="d2">inter</data>
-</edge>
-<edge source="P62491_140" target="Q96QF0_417">
-  <data key="d0">5.215731295625385</data>
-  <data key="d1">P62491_140:4UJ3_M_140;Q96QF0_417:4UJ3_Q_401</data>
-  <data key="d2">inter</data>
-</edge>
-<edge source="P62491_140" target="Q96QF0_389">
-  <data key="d0">8.413481631764022</data>
-  <data key="d1">P62491_140:4UJ3_M_140;Q96QF0_389:4UJ3_Q_373</data>
-  <data key="d2">inter</data>
-</edge>
-<edge source="P62491_140" target="P62491_91">
-  <data key="d0">5.744273223604283</data>
-  <data key="d1">P62491_140:4C4P_A_140;P62491_91:4C4P_A_91</data>
+<edge source="P62491_171" target="P62491_119">
+  <data key="d0">4.301832575563509</data>
+  <data key="d1">P62491_119:4D0L_B_119;P62491_171:4D0L_B_171</data>
   <data key="d2">intra</data>
 </edge>
 <edge source="Q96QF0_412" target="P62491_9">
@@ -186,9 +71,9 @@
   <data key="d1">Q96QF0_412:4UJ3_K_396;P62491_9:4UJ3_P_9</data>
   <data key="d2">inter</data>
 </edge>
-<edge source="Q96QF0_412" target="P62491_171">
-  <data key="d0">7.277380932731594</data>
-  <data key="d1">P62491_171:4UJ3_M_171;Q96QF0_412:4UJ3_Q_396</data>
+<edge source="Q96QF0_412" target="P62491_140">
+  <data key="d0">8.673115945673302</data>
+  <data key="d1">P62491_140:4UJ3_M_140;Q96QF0_412:4UJ3_Q_396</data>
   <data key="d2">inter</data>
 </edge>
 <edge source="Q96QF0_412" target="P62491_129">
@@ -216,14 +101,109 @@
   <data key="d1">P62491_11:6IY1_B_11;P62491_9:6IY1_B_9</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="P62491_171" target="P62491_119">
-  <data key="d0">4.301832575563509</data>
-  <data key="d1">P62491_119:4D0L_B_119;P62491_171:4D0L_B_171</data>
+<edge source="P62491_128" target="Q96QF0_372">
+  <data key="d0">8.11408732018293</data>
+  <data key="d1">P62491_128:4UJ3_P_128;Q96QF0_372:4UJ3_Q_356</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P62491_128" target="P62491_154">
+  <data key="d0">5.081626681264871</data>
+  <data key="d1">P62491_128:6DJL_A_128;P62491_154:6DJL_A_154</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="P62491_129" target="Q96QF0_409">
+<edge source="P62491_128" target="P62491_92">
+  <data key="d0">3.7736907780553643</data>
+  <data key="d1">P62491_92:4C4P_A_92;P62491_128:4C4P_A_128</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_128" target="P62491_129">
+  <data key="d0">1.3159092019826975</data>
+  <data key="d1">P62491_129:1OIX_A_129;P62491_128:1OIX_A_128</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_372" target="P62491_140">
+  <data key="d0">7.88244352113965</data>
+  <data key="d1">P62491_140:4UJ5_A_140;Q96QF0_372:4UJ5_C_356</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="Q96QF0_372" target="P62491_129">
+  <data key="d0">4.917857069527355</data>
+  <data key="d1">P62491_129:4UJ5_B_129;Q96QF0_372:4UJ5_D_356</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="Q96QF0_372" target="P62491_74">
+  <data key="d0">8.418798193079303</data>
+  <data key="d1">P62491_74:4UJ5_B_74;Q96QF0_372:4UJ5_C_356</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="Q96QF0_372" target="Q96QF0_407">
+  <data key="d0">2.5457458647338242</data>
+  <data key="d1">Q96QF0_372:4UJ3_W_356;Q96QF0_407:4UJ3_W_391</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_372" target="Q96QF0_409">
+  <data key="d0">5.003902546352311</data>
+  <data key="d1">Q96QF0_372:4UJ4_B_356;Q96QF0_409:4UJ4_B_393</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_389" target="P62491_140">
+  <data key="d0">8.413481631764022</data>
+  <data key="d1">P62491_140:4UJ3_M_140;Q96QF0_389:4UJ3_Q_373</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="Q96QF0_389" target="Q96QF0_407">
+  <data key="d0">5.8543163880462785</data>
+  <data key="d1">Q96QF0_389:4UJ3_E_373;Q96QF0_407:4UJ3_E_391</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_389" target="Q96QF0_419">
+  <data key="d0">5.483189786764333</data>
+  <data key="d1">Q96QF0_419:4UJ3_E_403;Q96QF0_389:4UJ3_E_373</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_389" target="Q96QF0_417">
+  <data key="d0">3.184557205891898</data>
+  <data key="d1">Q96QF0_417:4UJ3_W_401;Q96QF0_389:4UJ3_W_373</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_140" target="Q96QF0_360">
+  <data key="d0">8.235854822780203</data>
+  <data key="d1">P62491_140:4UJ3_M_140;Q96QF0_360:4UJ3_Q_344</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P62491_140" target="Q96QF0_417">
+  <data key="d0">5.215731295625385</data>
+  <data key="d1">P62491_140:4UJ3_M_140;Q96QF0_417:4UJ3_Q_401</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="P62491_140" target="P62491_91">
+  <data key="d0">5.744273223604283</data>
+  <data key="d1">P62491_140:4C4P_A_140;P62491_91:4C4P_A_91</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_409" target="P62491_129">
   <data key="d0">5.577576529420618</data>
   <data key="d1">P62491_129:4UJ3_V_129;Q96QF0_409:4UJ3_W_393</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="Q96QF0_409" target="Q96QF0_407">
+  <data key="d0">4.044258218545439</data>
+  <data key="d1">Q96QF0_409:4UJ4_K_393;Q96QF0_407:4UJ4_K_391</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_409" target="Q96QF0_411">
+  <data key="d0">2.5639308889543773</data>
+  <data key="d1">Q96QF0_411:4UJ4_B_395;Q96QF0_409:4UJ4_B_393</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_409" target="Q96QF0_417">
+  <data key="d0">5.000484350576839</data>
+  <data key="d1">Q96QF0_417:4UJ3_E_401;Q96QF0_409:4UJ3_E_393</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_129" target="Q96QF0_407">
+  <data key="d0">6.781778782957333</data>
+  <data key="d1">P62491_129:4UJ5_B_129;Q96QF0_407:4UJ5_D_391</data>
   <data key="d2">inter</data>
 </edge>
 <edge source="P62491_129" target="Q96QF0_411">
@@ -236,14 +216,9 @@
   <data key="d1">P62491_129:4C4P_A_129;P62491_154:4C4P_A_154</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q96QF0_409" target="Q96QF0_417">
-  <data key="d0">5.000484350576839</data>
-  <data key="d1">Q96QF0_417:4UJ3_E_401;Q96QF0_409:4UJ3_E_393</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_409" target="Q96QF0_411">
-  <data key="d0">2.5639308889543773</data>
-  <data key="d1">Q96QF0_411:4UJ4_B_395;Q96QF0_409:4UJ4_B_393</data>
+<edge source="Q96QF0_417" target="Q96QF0_407">
+  <data key="d0">3.081247445074755</data>
+  <data key="d1">Q96QF0_407:4UJ3_N_391;Q96QF0_417:4UJ3_N_401</data>
   <data key="d2">intra</data>
 </edge>
 <edge source="Q96QF0_417" target="Q96QF0_419">
@@ -251,24 +226,64 @@
   <data key="d1">Q96QF0_419:4UJ3_N_403;Q96QF0_417:4UJ3_N_401</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q96QF0_417" target="Q96QF0_389">
-  <data key="d0">3.184557205891898</data>
-  <data key="d1">Q96QF0_417:4UJ3_W_401;Q96QF0_389:4UJ3_W_373</data>
+<edge source="Q96QF0_407" target="P62491_72">
+  <data key="d0">8.296480867934255</data>
+  <data key="d1">P62491_72:4UJ5_B_72;Q96QF0_407:4UJ5_C_391</data>
+  <data key="d2">inter</data>
+</edge>
+<edge source="Q96QF0_407" target="Q96QF0_404">
+  <data key="d0">5.961619710531934</data>
+  <data key="d1">Q96QF0_404:4UJ5_C_388;Q96QF0_407:4UJ5_C_391</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q96QF0_389" target="Q96QF0_419">
-  <data key="d0">5.483189786764333</data>
-  <data key="d1">Q96QF0_419:4UJ3_E_403;Q96QF0_389:4UJ3_E_373</data>
+<edge source="Q96QF0_407" target="Q96QF0_419">
+  <data key="d0">4.506808655416173</data>
+  <data key="d1">Q96QF0_407:4UJ3_E_391;Q96QF0_419:4UJ3_E_403</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q96QF0_340" target="Q96QF0_341">
-  <data key="d0">1.323641663543332</data>
-  <data key="d1">Q96QF0_340:4UJ3_W_324;Q96QF0_341:4UJ3_W_325</data>
+<edge source="P62491_72" target="P62491_74">
+  <data key="d0">3.0963885238254174</data>
+  <data key="d1">P62491_72:2GZD_B_72;P62491_74:2GZD_B_74</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q96QF0_340" target="Q96QF0_461">
+<edge source="P62491_72" target="P62491_104">
+  <data key="d0">2.3854990379683687</data>
+  <data key="d1">P62491_104:4C4P_A_104;P62491_72:4C4P_A_72</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_74" target="P62491_111">
+  <data key="d0">3.3883402913915623</data>
+  <data key="d1">P62491_74:5JCZ_A_74;P62491_111:5JCZ_A_111</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_74" target="P62491_104">
+  <data key="d0">2.9496282311851534</data>
+  <data key="d1">P62491_104:5C46_F_104;P62491_74:5C46_F_74</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_404" target="Q96QF0_392">
+  <data key="d0">2.540783160495494</data>
+  <data key="d1">Q96QF0_404:4UJ3_Q_388;Q96QF0_392:4UJ3_Q_376</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_404" target="Q96QF0_419">
+  <data key="d0">3.0245250430836284</data>
+  <data key="d1">Q96QF0_419:4UJ4_E_403;Q96QF0_404:4UJ4_E_388</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_451" target="Q96QF0_452">
+  <data key="d0">1.3245131105888566</data>
+  <data key="d1">Q96QF0_451:4UJ4_H_435;Q96QF0_452:4UJ4_H_436</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_461" target="Q96QF0_340">
   <data key="d0">3.0367257345428693</data>
   <data key="d1">Q96QF0_340:4UJ4_E_324;Q96QF0_461:4UJ4_E_445</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_461" target="Q96QF0_460">
+  <data key="d0">1.3234371635030535</data>
+  <data key="d1">Q96QF0_461:4UJ3_W_445;Q96QF0_460:4UJ3_W_444</data>
   <data key="d2">intra</data>
 </edge>
 <edge source="Q96QF0_461" target="Q96QF0_317">
@@ -276,9 +291,9 @@
   <data key="d1">Q96QF0_461:4UJ3_E_445;Q96QF0_317:4UJ3_E_301</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q96QF0_461" target="Q96QF0_460">
-  <data key="d0">1.3234371635030535</data>
-  <data key="d1">Q96QF0_461:4UJ3_W_445;Q96QF0_460:4UJ3_W_444</data>
+<edge source="Q96QF0_340" target="Q96QF0_341">
+  <data key="d0">1.323641663543332</data>
+  <data key="d1">Q96QF0_340:4UJ3_W_324;Q96QF0_341:4UJ3_W_325</data>
   <data key="d2">intra</data>
 </edge>
 <edge source="Q96QF0_251" target="Q96QF0_252">
@@ -291,14 +306,14 @@
   <data key="d1">Q96QF0_256:6F6P_A_240;Q96QF0_251:6F6P_A_235</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q96QF0_252" target="Q96QF0_256">
-  <data key="d0">2.89257899692406</data>
-  <data key="d1">Q96QF0_256:6F6P_C_240;Q96QF0_252:6F6P_C_236</data>
-  <data key="d2">intra</data>
-</edge>
 <edge source="Q96QF0_252" target="Q96QF0_257">
   <data key="d0">4.758433551140024</data>
   <data key="d1">Q96QF0_252:6F6P_B_236;Q96QF0_257:6F6P_B_241</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q96QF0_252" target="Q96QF0_256">
+  <data key="d0">2.89257899692406</data>
+  <data key="d1">Q96QF0_256:6F6P_C_240;Q96QF0_252:6F6P_C_236</data>
   <data key="d2">intra</data>
 </edge>
 <edge source="Q96QF0_256" target="Q96QF0_257">
@@ -306,29 +321,9 @@
   <data key="d1">Q96QF0_256:6F6P_D_241;Q96QF0_257:6F6P_D_242</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q96QF0_419" target="Q96QF0_404">
-  <data key="d0">3.0245250430836284</data>
-  <data key="d1">Q96QF0_419:4UJ4_E_403;Q96QF0_404:4UJ4_E_388</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_404" target="Q96QF0_392">
-  <data key="d0">2.540783160495494</data>
-  <data key="d1">Q96QF0_404:4UJ3_Q_388;Q96QF0_392:4UJ3_Q_376</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_451" target="Q96QF0_452">
-  <data key="d0">1.3245131105888566</data>
-  <data key="d1">Q96QF0_451:4UJ4_H_435;Q96QF0_452:4UJ4_H_436</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q96QF0_214" target="Q96QF0_210">
+<edge source="Q96QF0_210" target="Q96QF0_214">
   <data key="d0">2.6819411556612844</data>
   <data key="d1">Q96QF0_214:4LHZ_E_198;Q96QF0_210:4LHZ_E_194</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="P62491_111" target="P62491_104">
-  <data key="d0">3.9099500386788404</data>
-  <data key="d1">P62491_104:4D0M_R_104;P62491_111:4D0M_R_111</data>
   <data key="d2">intra</data>
 </edge>
 <edge source="P62491_8" target="P62491_53">
@@ -346,24 +341,29 @@
   <data key="d1">P62491_4:6IXV_F_4;P62491_8:6IXV_F_8</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="P62491_92" target="P62491_91">
-  <data key="d0">1.3108958475284327</data>
-  <data key="d1">P62491_91:2GZD_B_91;P62491_92:2GZD_B_92</data>
+<edge source="P62491_111" target="P62491_104">
+  <data key="d0">3.9099500386788404</data>
+  <data key="d1">P62491_104:4D0M_R_104;P62491_111:4D0M_R_111</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="P62491_24" target="P62491_91">
-  <data key="d0">4.595523184453317</data>
-  <data key="d1">P62491_24:6IXV_E_24;P62491_91:6IXV_E_91</data>
+<edge source="P62491_33" target="P62491_29">
+  <data key="d0">2.1843928887776256</data>
+  <data key="d1">P62491_29:4C4P_A_29;P62491_33:4C4P_A_33</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="P62491_24" target="P62491_29">
+<edge source="P62491_29" target="P62491_24">
   <data key="d0">4.607825057950916</data>
   <data key="d1">P62491_29:4C4P_A_29;P62491_24:4C4P_A_24</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="P62491_29" target="P62491_33">
-  <data key="d0">2.1843928887776256</data>
-  <data key="d1">P62491_29:4C4P_A_29;P62491_33:4C4P_A_33</data>
+<edge source="P62491_91" target="P62491_92">
+  <data key="d0">1.3108958475284327</data>
+  <data key="d1">P62491_91:2GZD_B_91;P62491_92:2GZD_B_92</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="P62491_91" target="P62491_24">
+  <data key="d0">4.595523184453317</data>
+  <data key="d1">P62491_24:6IXV_E_24;P62491_91:6IXV_E_91</data>
   <data key="d2">intra</data>
 </edge>
 </graph></graphml>

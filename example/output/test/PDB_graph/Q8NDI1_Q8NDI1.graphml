@@ -2,26 +2,26 @@
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
 <key id="d1" for="edge" attr.name="source" attr.type="string"/>
 <key id="d0" for="edge" attr.name="distance" attr.type="double"/>
-<graph edgedefault="undirected"><node id="Q8NDI1_1128"/>
-<node id="Q8NDI1_545"/>
+<graph edgedefault="undirected"><node id="Q8NDI1_545"/>
+<node id="Q8NDI1_1128"/>
 <node id="Q8NDI1_469"/>
 <node id="Q8NDI1_473"/>
 <node id="Q8NDI1_468"/>
-<node id="Q8NDI1_477"/>
-<node id="Q8NDI1_503"/>
-<node id="Q8NDI1_499"/>
 <node id="Q8NDI1_505"/>
-<node id="Q8NDI1_507"/>
-<node id="Q8NDI1_464"/>
+<node id="Q8NDI1_503"/>
 <node id="Q8NDI1_518"/>
-<node id="Q8NDI1_444"/>
-<node id="Q8NDI1_1071"/>
+<node id="Q8NDI1_507"/>
+<node id="Q8NDI1_477"/>
+<node id="Q8NDI1_499"/>
+<node id="Q8NDI1_464"/>
 <node id="Q8NDI1_1198"/>
-<node id="Q8NDI1_1096"/>
 <node id="Q8NDI1_1191"/>
+<node id="Q8NDI1_444"/>
 <node id="Q8NDI1_1174"/>
+<node id="Q8NDI1_1096"/>
+<node id="Q8NDI1_1071"/>
 <node id="Q8NDI1_1084"/>
-<edge source="Q8NDI1_1128" target="Q8NDI1_545">
+<edge source="Q8NDI1_545" target="Q8NDI1_1128">
   <data key="d0">8.64514112986556</data>
   <data key="d1">Q8NDI1_1128:6ZSH_A_1128;Q8NDI1_545:6ZSH_B_545</data>
   <data key="d2">inter</data>
@@ -41,14 +41,14 @@
   <data key="d1">Q8NDI1_473:2D89_A_38;Q8NDI1_468:2D89_A_33</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q8NDI1_473" target="Q8NDI1_503">
-  <data key="d0">5.448743029513625</data>
-  <data key="d1">Q8NDI1_473:2D89_A_38;Q8NDI1_503:2D89_A_68</data>
-  <data key="d2">intra</data>
-</edge>
 <edge source="Q8NDI1_473" target="Q8NDI1_499">
   <data key="d0">5.6470440545684975</data>
   <data key="d1">Q8NDI1_499:2D89_A_64;Q8NDI1_473:2D89_A_38</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_473" target="Q8NDI1_503">
+  <data key="d0">5.448743029513625</data>
+  <data key="d1">Q8NDI1_473:2D89_A_38;Q8NDI1_503:2D89_A_68</data>
   <data key="d2">intra</data>
 </edge>
 <edge source="Q8NDI1_468" target="Q8NDI1_477">
@@ -56,34 +56,9 @@
   <data key="d1">Q8NDI1_477:2D89_A_42;Q8NDI1_468:2D89_A_33</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q8NDI1_477" target="Q8NDI1_503">
-  <data key="d0">5.618078472019899</data>
-  <data key="d1">Q8NDI1_503:2D89_A_68;Q8NDI1_477:2D89_A_42</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q8NDI1_477" target="Q8NDI1_464">
-  <data key="d0">3.674668745517901</data>
-  <data key="d1">Q8NDI1_464:2D89_A_29;Q8NDI1_477:2D89_A_42</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q8NDI1_477" target="Q8NDI1_507">
-  <data key="d0">5.796813817569776</data>
-  <data key="d1">Q8NDI1_477:2D89_A_42;Q8NDI1_507:2D89_A_72</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q8NDI1_503" target="Q8NDI1_499">
-  <data key="d0">1.897688191133667</data>
-  <data key="d1">Q8NDI1_503:2D89_A_68;Q8NDI1_499:2D89_A_64</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q8NDI1_503" target="Q8NDI1_505">
+<edge source="Q8NDI1_505" target="Q8NDI1_503">
   <data key="d0">3.141729592055544</data>
   <data key="d1">Q8NDI1_503:2D89_A_68;Q8NDI1_505:2D89_A_70</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q8NDI1_503" target="Q8NDI1_507">
-  <data key="d0">2.428156880777979</data>
-  <data key="d1">Q8NDI1_507:2D89_A_72;Q8NDI1_503:2D89_A_68</data>
   <data key="d2">intra</data>
 </edge>
 <edge source="Q8NDI1_505" target="Q8NDI1_518">
@@ -96,9 +71,34 @@
   <data key="d1">Q8NDI1_507:2D89_A_72;Q8NDI1_505:2D89_A_70</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q8NDI1_507" target="Q8NDI1_518">
+<edge source="Q8NDI1_503" target="Q8NDI1_499">
+  <data key="d0">1.897688191133667</data>
+  <data key="d1">Q8NDI1_503:2D89_A_68;Q8NDI1_499:2D89_A_64</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_503" target="Q8NDI1_507">
+  <data key="d0">2.428156880777979</data>
+  <data key="d1">Q8NDI1_507:2D89_A_72;Q8NDI1_503:2D89_A_68</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_503" target="Q8NDI1_477">
+  <data key="d0">5.618078472019899</data>
+  <data key="d1">Q8NDI1_503:2D89_A_68;Q8NDI1_477:2D89_A_42</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_518" target="Q8NDI1_507">
   <data key="d0">5.024384636346233</data>
   <data key="d1">Q8NDI1_507:2D89_A_72;Q8NDI1_518:2D89_A_83</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_507" target="Q8NDI1_477">
+  <data key="d0">5.796813817569776</data>
+  <data key="d1">Q8NDI1_477:2D89_A_42;Q8NDI1_507:2D89_A_72</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8NDI1_477" target="Q8NDI1_464">
+  <data key="d0">3.674668745517901</data>
+  <data key="d1">Q8NDI1_464:2D89_A_29;Q8NDI1_477:2D89_A_42</data>
   <data key="d2">intra</data>
 </edge>
 </graph></graphml>
