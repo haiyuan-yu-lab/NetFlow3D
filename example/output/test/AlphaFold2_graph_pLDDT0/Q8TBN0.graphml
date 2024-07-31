@@ -2,54 +2,49 @@
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="type" attr.type="string"/>
 <key id="d1" for="edge" attr.name="source" attr.type="string"/>
 <key id="d0" for="edge" attr.name="distance" attr.type="double"/>
-<graph edgedefault="undirected"><node id="Q8TBN0_289"/>
-<node id="Q8TBN0_131"/>
-<node id="Q8TBN0_96"/>
-<node id="Q8TBN0_71"/>
-<node id="Q8TBN0_43"/>
-<node id="Q8TBN0_378"/>
-<node id="Q8TBN0_356"/>
-<node id="Q8TBN0_360"/>
-<node id="Q8TBN0_246"/>
+<graph edgedefault="undirected"><node id="Q8TBN0_246"/>
+<node id="Q8TBN0_381"/>
+<node id="Q8TBN0_220"/>
+<node id="Q8TBN0_289"/>
 <node id="Q8TBN0_249"/>
-<node id="Q8TBN0_312"/>
+<node id="Q8TBN0_7"/>
 <node id="Q8TBN0_349"/>
 <node id="Q8TBN0_32"/>
-<node id="Q8TBN0_8"/>
-<node id="Q8TBN0_7"/>
-<node id="Q8TBN0_381"/>
+<node id="Q8TBN0_96"/>
 <node id="Q8TBN0_125"/>
-<node id="Q8TBN0_290"/>
+<node id="Q8TBN0_312"/>
+<node id="Q8TBN0_71"/>
 <node id="Q8TBN0_141"/>
+<node id="Q8TBN0_290"/>
 <node id="Q8TBN0_199"/>
-<node id="Q8TBN0_220"/>
+<node id="Q8TBN0_360"/>
 <node id="Q8TBN0_124"/>
-<edge source="Q8TBN0_289" target="Q8TBN0_290">
-  <data key="d0">1.3374017009286863</data>
-  <data key="d1">Q8TBN0_290:AF-Q8TBN0-F1-model_v4.pdb_A_290;Q8TBN0_289:AF-Q8TBN0-F1-model_v4.pdb_A_289</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q8TBN0_356" target="Q8TBN0_360">
-  <data key="d0">2.930617123796272</data>
-  <data key="d1">Q8TBN0_356:AF-Q8TBN0-F1-model_v4.pdb_A_356;Q8TBN0_360:AF-Q8TBN0-F1-model_v4.pdb_A_360</data>
-  <data key="d2">intra</data>
-</edge>
-<edge source="Q8TBN0_360" target="Q8TBN0_220">
-  <data key="d0">3.793946311273211</data>
-  <data key="d1">Q8TBN0_220:AF-Q8TBN0-F1-model_v4.pdb_A_220;Q8TBN0_360:AF-Q8TBN0-F1-model_v4.pdb_A_360</data>
-  <data key="d2">intra</data>
-</edge>
+<node id="Q8TBN0_356"/>
+<node id="Q8TBN0_131"/>
+<node id="Q8TBN0_43"/>
+<node id="Q8TBN0_378"/>
+<node id="Q8TBN0_8"/>
 <edge source="Q8TBN0_246" target="Q8TBN0_249">
   <data key="d0">3.214368928527665</data>
   <data key="d1">Q8TBN0_246:AF-Q8TBN0-F1-model_v4.pdb_A_246;Q8TBN0_249:AF-Q8TBN0-F1-model_v4.pdb_A_249</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q8TBN0_312" target="Q8TBN0_381">
+<edge source="Q8TBN0_381" target="Q8TBN0_312">
   <data key="d0">4.661430396136518</data>
   <data key="d1">Q8TBN0_312:AF-Q8TBN0-F1-model_v4.pdb_A_312;Q8TBN0_381:AF-Q8TBN0-F1-model_v4.pdb_A_381</data>
   <data key="d2">intra</data>
 </edge>
-<edge source="Q8TBN0_8" target="Q8TBN0_7">
+<edge source="Q8TBN0_220" target="Q8TBN0_360">
+  <data key="d0">3.793946311273211</data>
+  <data key="d1">Q8TBN0_220:AF-Q8TBN0-F1-model_v4.pdb_A_220;Q8TBN0_360:AF-Q8TBN0-F1-model_v4.pdb_A_360</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8TBN0_289" target="Q8TBN0_290">
+  <data key="d0">1.3374017009286863</data>
+  <data key="d1">Q8TBN0_290:AF-Q8TBN0-F1-model_v4.pdb_A_290;Q8TBN0_289:AF-Q8TBN0-F1-model_v4.pdb_A_289</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8TBN0_7" target="Q8TBN0_8">
   <data key="d0">1.35073778505452</data>
   <data key="d1">Q8TBN0_8:AF-Q8TBN0-F1-model_v4.pdb_A_8;Q8TBN0_7:AF-Q8TBN0-F1-model_v4.pdb_A_7</data>
   <data key="d2">intra</data>
@@ -57,6 +52,11 @@
 <edge source="Q8TBN0_125" target="Q8TBN0_124">
   <data key="d0">1.3326248725082286</data>
   <data key="d1">Q8TBN0_124:AF-Q8TBN0-F1-model_v4.pdb_A_124;Q8TBN0_125:AF-Q8TBN0-F1-model_v4.pdb_A_125</data>
+  <data key="d2">intra</data>
+</edge>
+<edge source="Q8TBN0_360" target="Q8TBN0_356">
+  <data key="d0">2.930617123796272</data>
+  <data key="d1">Q8TBN0_356:AF-Q8TBN0-F1-model_v4.pdb_A_356;Q8TBN0_360:AF-Q8TBN0-F1-model_v4.pdb_A_360</data>
   <data key="d2">intra</data>
 </edge>
 </graph></graphml>
