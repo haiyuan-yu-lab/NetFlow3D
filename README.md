@@ -7,11 +7,10 @@ The Python Standard Library and the following packages:
 - numpy (version 1.23.5)
 - networkx (version 2.8.8)
 - pandas (version 1.5.2)
-- statsmodels (version 0.13.5)
 
 ## Installation (~5min)
 
-	git clone https://github.com/hyulab/NetFlow3D.git
+	git clone https://github.com/haiyuan-yu-lab/NetFlow3D.git
 	cd NetFlow3D
 	python NetFlow3D.py -h
 	
