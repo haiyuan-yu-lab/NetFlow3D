@@ -22,7 +22,7 @@ from scipy.stats import poisson
 file_path = os.path.dirname(os.path.abspath(__file__))
 
 
-def get_bmr_uniprot(background_mutability_file, id_mapping_file, mutrate_lower_quantile, indel_inframe_frac, output):
+def get_bmr_uniprot(background_mutability_file, id_mapping_file, output, indel_inframe_frac = 0.09, mutrate_lower_quantile = 0.01):
 	"""
 	Purpose: Calculate the per-basepair in-frame and loss-of-function (LOF) mutation rates for each protein and write the results to a file.
 
@@ -68,7 +68,7 @@ def get_bmr_uniprot(background_mutability_file, id_mapping_file, mutrate_lower_q
 	return
 
 
-def get_expr_uniprot(id_mapping_file, output, expr_whitelist_file, expr_input_file):
+def get_expr_uniprot(id_mapping_file, expr_whitelist_file, expr_input_file, output):
 	"""
 	Processes input expression data to map gene IDs to UniProt IDs and writes the results to a file.
 
@@ -114,7 +114,7 @@ def get_expr_uniprot(id_mapping_file, output, expr_whitelist_file, expr_input_fi
 	return
 
 
-def mutation_preprocessing(input_maf, id_mapping_file, output, expr_uniprot_file=None):
+def mutation_preprocessing(input_maf, id_mapping_file, output, expr_uniprot_file = None):
 	"""
 	Preprocesses input MAF file.
 
@@ -188,7 +188,7 @@ def mutation_preprocessing(input_maf, id_mapping_file, output, expr_uniprot_file
 	return
 
 
-def lof_analysis(preprocessed_maf, mutrate_file, prolen_dict_file, output, lof={"Frame_Shift_Del", "Frame_Shift_Ins", "Nonsense_Mutation", "Nonstop_Mutation", "Translation_Start_Site", "Splice_Site"}):
+def lof_analysis(preprocessed_maf, mutrate_file, prolen_dict_file, output, lof = {"Frame_Shift_Del", "Frame_Shift_Ins", "Nonsense_Mutation", "Nonstop_Mutation", "Translation_Start_Site", "Splice_Site"}):
 	"""
 	Performs statistical tests to compare observed vs. expected loss-of-function (LOF) mutations per protein.
 
@@ -256,7 +256,7 @@ def lof_analysis(preprocessed_maf, mutrate_file, prolen_dict_file, output, lof={
 	return
 
 
-def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_Frame_Del", "In_Frame_Ins", "Missense_Mutation"}):
+def inframe_analysis(preprocessed_maf, mutrate_file, prolen_file, PDB_intra_resource, PDB_inter_resource, AF2_intra_resource, PIONEER_inter_resource, binary_interactome, output_path, intra_dist_upperlimit = 6, inter_dist_upperlimit = 9, threads = 10, inframe = {"In_Frame_Del", "In_Frame_Ins", "Missense_Mutation"}):
 	"""
 	Performs statistical tests to compare observed vs. expected in-frame mutations per protein, per residue, and per 3D cluster.
 
@@ -271,11 +271,9 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 	inframe : set, optional
 		Set of variant classifications considered as in-frame mutations.
 	"""
-	# Load global arguments (assuming args is a global object with necessary parameters)
-	global args
 
 	# Load protein length (in amino acid residues)
-	with open(args.prolen_file) as f:
+	with open(prolen_file) as f:
 		prolen_dict = json.load(f)
 
 	# Load observed in-frame mutation data
@@ -313,7 +311,7 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 		for prot, df_one in df_mis.groupby("UniProt"):
 			df_byprot["Uniprots"].append(prot)
 			df_byprot["Observed_mut"].append(df_one[["Chromosome", "Start_Position", "Reference_Allele", "Tumor_Seq_Allele2", "Tumor_Sample_Barcode"]].drop_duplicates().shape[0])
-		df_byprot = pd.DataFrame(df_byprot)
+		df_byprot = pd.DataFrame(df_byprot).sort_values(by = "Uniprots")
 		
 		# Calculate expected in-frame mutation count
 		df_byprot["Expected_mut"] = df_byprot["Uniprots"].apply(lambda x: uniprot2inframe_mutrate[x] * prolen_dict[x] * 3 * sample_size)
@@ -346,7 +344,7 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 		df["Structure_source"] = "[NA]"
 		
 		# Save the per-residue mutation data
-		df.rename(columns={"UniProt": "Uniprots"})[["Residues", "Structure_source", "Uniprots"]].to_csv(final_output_intra_res, sep="\t", header=True, index=None)
+		df.sort_values(by = "Residues").rename(columns={"UniProt": "Uniprots"})[["Residues", "Structure_source", "Uniprots"]].to_csv(final_output_intra_res, sep="\t", header=True, index=None)
 		
 		# Calculate p-values for each residue cluster
 		funcs.get_cluster_pval(output_path + "Per_residue_info.txt", final_output_intra_res, sample_size, uniprot2inframe_mutrate)
@@ -368,13 +366,12 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 		function_input = []
 		for key in uniprot2res:
 			function_input.append([
-				key, uniprot2res, output_path + "PDB_graph/", 
-				args.PDB_intra_resource, args.PDB_inter_resource, 
-				args.intra_dist_upperlimit, args.inter_dist_upperlimit
+				key, uniprot2res, output_path + "PDB_graph/", PDB_intra_resource, PDB_inter_resource, 
+				intra_dist_upperlimit, inter_dist_upperlimit
 			])
 
 		# Generate MR-MR (MR: mutated residue) contact graphs using multiprocessing
-		with Pool(args.threads) as p:
+		with Pool(threads) as p:
 			output = p.map(get_graph_by_uniprot_binary_multirun, function_input)
 
 		# Flatten the output list
@@ -390,7 +387,7 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 			]
 
 			# Generate clusters using multiprocessing
-			with Pool(args.threads) as p:
+			with Pool(threads) as p:
 				output = p.map(get_cluster_from_graph_multirun, function_input)
 
 			# Separate intra- and inter-protein clusters
@@ -409,14 +406,14 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 			if df_intra:
 				df_intra = pd.concat(df_intra).drop(columns={1}).rename(columns={0: "Residues"})
 				df_intra["Structure_source"] = "PDB"
-				df_intra.to_csv(final_output_intra_pdb, sep="\t", header=True, index=None)
+				df_intra.sort_values(by = "Residues").to_csv(final_output_intra_pdb, sep="\t", header=True, index=None)
 				funcs.get_cluster_pval(output_path + "Per_residue_info.txt", final_output_intra_pdb, sample_size, uniprot2inframe_mutrate)
 
 			# Process inter-protein clusters
 			if df_inter:
 				df_inter = pd.concat(df_inter).drop(columns={1}).rename(columns={0: "Residues"})
 				df_inter["Structure_source"] = "PDB"
-				df_inter.to_csv(final_output_inter_pdb, sep="\t", header=True, index=None)
+				df_inter.sort_values(by = "Residues").to_csv(final_output_inter_pdb, sep="\t", header=True, index=None)
 				funcs.get_cluster_pval(output_path + "Per_residue_info.txt", final_output_inter_pdb, sample_size, uniprot2inframe_mutrate)
 				df_inter = pd.read_csv(final_output_inter_pdb, sep="\t")
 				df_inter["Uniprots"] = df_inter["Uniprots"].apply(funcs.binary_interaction)
@@ -434,12 +431,12 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 		for key in uniprot2res:
 			function_input.append([
 				key, uniprot2res, output_path + "AlphaFold2_graph_pLDDT0/", 
-				args.AF2_intra_resource, None, 
-				args.intra_dist_upperlimit, None
+				AF2_intra_resource, None, 
+				intra_dist_upperlimit, None
 			])
 
 		# Generate MR-MR contact graphs using multiprocessing
-		with Pool(args.threads) as p:
+		with Pool(threads) as p:
 			output = p.map(get_graph_by_uniprot_binary_multirun, function_input)
 
 		# Flatten the output list
@@ -456,7 +453,7 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 			]
 
 			# Generate clusters using multiprocessing
-			with Pool(args.threads) as p:
+			with Pool(threads) as p:
 				output = p.map(get_cluster_from_graph_multirun, function_input)
 
 			# Collect intra-protein clusters
@@ -467,7 +464,7 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 			df_intra["Structure_source"] = "AlphaFold2"
 
 			# Save intra-protein cluster data
-			df_intra.to_csv(final_output_intra_af2, sep="\t", header=True, index=None)
+			df_intra.sort_values(by = "Residues").to_csv(final_output_intra_af2, sep="\t", header=True, index=None)
 			
 			# Calculate p-values for each cluster
 			funcs.get_cluster_pval(output_path + "Per_residue_info.txt", final_output_intra_af2, sample_size, uniprot2inframe_mutrate)
@@ -479,7 +476,7 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 		# 3D clustering algorithm for PIONEER PPI interface data
 		try:
 			# Load the binary interactome data
-			df_interactome = pd.read_csv(args.binary_interactome, sep="\t", header=None, dtype=str)
+			df_interactome = pd.read_csv(binary_interactome, sep="\t", header=None, dtype=str)
 			
 			# Process interactome data to create a list of binary interactions
 			binary_interactome = df_interactome.apply(
@@ -490,7 +487,7 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 			sys.exit("Please check the binary interactome file! Each row must contain two UniProt IDs separated by a tab. See example for details. Exiting process.")
 		
 		# Identify clusters from the PIONEER interface data
-		funcs.get_cluster_from_interface(uniprot2res, args.ires_file, binary_interactome, final_output_inter_pioneer)
+		funcs.get_cluster_from_interface(uniprot2res, PIONEER_inter_resource, binary_interactome, final_output_inter_pioneer)
 		
 		# Calculate p-values for each cluster
 		funcs.get_cluster_pval(output_path + "Per_residue_info.txt", final_output_inter_pioneer, sample_size, uniprot2inframe_mutrate)
@@ -507,7 +504,7 @@ def inframe_analysis(preprocessed_maf, mutrate_file, output_path, inframe={"In_F
 	return [final_output_intra_res, final_output_intra_uniprot, final_output_intra_pdb, final_output_inter_pdb, final_output_intra_af2, final_output_inter_pioneer]
 
 
-def generate_result_table(final_output_intra_lof, final_output_intra_pdb, final_output_inter_pdb, final_output_intra_af2, final_output_inter_pioneer, output):
+def generate_result_table(final_output_intra_lof, final_output_intra_pdb, final_output_inter_pdb, final_output_intra_af2, final_output_inter_pioneer, canonical_isoform_file, output):
 	"""
 	Generates a summary table combining data from various sources. The results are saved to a specified output file.
 	"""
@@ -557,7 +554,7 @@ def generate_result_table(final_output_intra_lof, final_output_intra_pdb, final_
 	df_all["Adjusted_pvalue"] = df_all["Adjusted_pvalue"].apply(lambda x: '{:0.2e}'.format(x))
 	
 	# Annotate canonical isoforms
-	canonical_isoforms = funcs.extract_uniprot_ids(args.canonical_isoform)
+	canonical_isoforms = funcs.extract_uniprot_ids(canonical_isoform_file)
 	df_all["Canonical_isoform"] = df_all["Uniprots"].apply(lambda x: funcs.whether_canonical(x, canonical_isoforms))
 	
 	# Select and order columns for the final output
@@ -569,7 +566,7 @@ def generate_result_table(final_output_intra_lof, final_output_intra_pdb, final_
 	return
 
 
-def network_propagation(output_file, output_path, expr_uniprot_file=None, final_output_intra_lof=None, final_output_intra_pdb=None, final_output_inter_pdb=None, final_output_intra_af2=None, final_output_inter_pioneer=None):
+def network_propagation(binary_interactome, output_file, output_path, expr_uniprot_file=None, final_output_intra_lof=None, final_output_intra_pdb=None, final_output_inter_pdb=None, final_output_intra_af2=None, final_output_inter_pioneer=None, intercept = 1.0, restart_prob = 0.5, max_subnetwork_size = 5, random_seed = 2062, delta_trial = 20, threads = 5):
 	"""
 	Perform 3D-structurally-informed PPI network propagation to identify significantly interconnected modules.
 
@@ -583,12 +580,9 @@ def network_propagation(output_file, output_path, expr_uniprot_file=None, final_
 		Path to the file containing expressed UniProt IDs.
 	"""
 
-	# Load parameters
-	global args
-
 	# Build PPI network
 	try:
-		df_interactome = pd.read_csv(args.binary_interactome, sep="\t", header=None, dtype=str)
+		df_interactome = pd.read_csv(binary_interactome, sep="\t", header=None, dtype=str)
 		binary_interactome = set(df_interactome.apply(lambda x: (x[0].split("-")[0], x[1].split("-")[0]), axis=1))
 		G = nx.Graph(binary_interactome)
 	except Exception:
@@ -602,29 +596,29 @@ def network_propagation(output_file, output_path, expr_uniprot_file=None, final_
 	# Network propagation: Get initial heat distribution
 	G_heat_diffusion = funcs.get_initial_distribution(
 		G, final_output_intra_pdb, final_output_intra_af2, final_output_inter_pdb, 
-		final_output_inter_pioneer, final_output_intra_lof, output_path + "initial_state.graphml.gz", args.intercept
+		final_output_inter_pioneer, final_output_intra_lof, output_path + "initial_state.graphml.gz", intercept
 	)
 	
 	if sum(nx.get_node_attributes(G_heat_diffusion, 'heat_score').values()) > 0:
 		# Determine edge threshold
-		if len(G_heat_diffusion.edges()) < args.max_subnetwork_size:
+		if len(G_heat_diffusion.edges()) < max_subnetwork_size:
 			delta = -np.inf
 		else:
 			with open(output_path + "choose_delta.txt", "w") as f:
 				f.write("\t".join(["delta", "top_edge_cutoff", "subnetwork_sizes"]) + "\n")
 			
 			function_input = [
-				[G_heat_diffusion, output_path + "choose_delta.txt", args.restart_prob, args.max_subnetwork_size, args.random_seed + i]
-				for i in range(args.delta_trial)
+				[G_heat_diffusion, output_path + "choose_delta.txt", restart_prob, max_subnetwork_size, random_seed + i]
+				for i in range(delta_trial)
 			]
-			with Pool(args.threads) as p:
+			with Pool(threads) as p:
 				output = p.map(get_one_delta_multirun, function_input)
 			
 			delta = pd.read_csv(output_path + "choose_delta.txt", sep="\t")["delta"].min()
 
 		# Identify interconnected modules
 		all_subnetworks = funcs.identify_hot_modules(
-			G_heat_diffusion, output_path + "final_state.graphml.gz", beta=args.restart_prob, delta=delta
+			G_heat_diffusion, output_path + "final_state.graphml.gz", beta=restart_prob, delta=delta
 		)
 		
 		# Save the results
@@ -678,14 +672,14 @@ if __name__ == "__main__":
 						help='Background per-basepair mutation rate of each gene (native file)')
 	parser.add_argument('-l', '--prolen_file', type=str, default=file_path + "/metadata/uniprot2prolen.json", 
 						help='Sequence length map of human proteins in amino acid residues (native file)')
-	parser.add_argument('-i', '--ires_file', type=str, default=file_path + "/metadata/HomoSapiens_interfaces_PIONEER_veryhigh.txt", 
-						help='Protein-protein interaction interfaces predicted by PIONEER (native file)')
 	parser.add_argument('-a', '--PDB_intra_resource', type=str, default=file_path + "/graph/PDB_intra/", 
 						help='Intra-chain residue-residue distances from PDB structures (native resource)')
 	parser.add_argument('-e', '--PDB_inter_resource', type=str, default=file_path + "/graph/PDB_inter/", 
 						help='Inter-chain residue-residue distances from PDB structures (native resource)')
 	parser.add_argument('-d', '--AF2_intra_resource', type=str, default=file_path + "/graph/AF2_pLDDT0/", 
 						help='Intra-chain residue-residue distances from AlphaFold structures (native resource)')
+	parser.add_argument('-i', '--PIONEER_inter_resource', type=str, default=file_path + "/metadata/HomoSapiens_interfaces_PIONEER_veryhigh.txt", 
+						help='Protein-protein interaction interfaces predicted by PIONEER (native file)')
 	parser.add_argument('-P', '--id_mapping_file', type=str, default=file_path + "/metadata/HUMAN_9606_idmapping.dat.gz", 
 						help='ID conversion file (native file)')
 	parser.add_argument('-c', '--canonical_isoform', type=str, default=file_path + "/metadata/UP000005640_9606.fasta", 
@@ -741,12 +735,12 @@ if __name__ == "__main__":
 	
 	# Run NetFlow3D analysis
 	# Calculate per-basepair background mutation rates for each UniProt ID
-	get_bmr_uniprot(args.background_mutability_file, args.id_mapping_file, args.mutrate_lower_quantile, args.indel_inframe_frac, os.path.join(output_path, "mutrate.txt"))
+	get_bmr_uniprot(args.background_mutability_file, args.id_mapping_file, os.path.join(output_path, "mutrate.txt"), args.indel_inframe_frac, args.mutrate_lower_quantile)
 
 	# Generate a list of expressed UniProt IDs if an expression input file is provided; otherwise, consider all UniProt IDs as expressed.
 	if args.expr_input_file:
 		expr_uniprots = os.path.join(output_path, "Expr_uniprots.txt")
-		get_expr_uniprot(args.id_mapping_file, expr_uniprots, args.expr_whitelist_file, args.expr_input_file)
+		get_expr_uniprot(args.id_mapping_file, args.expr_whitelist_file, args.expr_input_file, expr_uniprots)
 	else:
 		expr_uniprots = None
 
@@ -759,16 +753,17 @@ if __name__ == "__main__":
 
 	# Perform in-frame mutation analysis and calculate p-values
 	final_output_intra_res, final_output_intra_uniprot, final_output_intra_pdb, final_output_inter_pdb, final_output_intra_af2, final_output_inter_pioneer = inframe_analysis(
-		os.path.join(output_path, "Preprocessed.maf"), os.path.join(output_path, "mutrate.txt"), output_path
+		os.path.join(output_path, "Preprocessed.maf"), os.path.join(output_path, "mutrate.txt"), args.prolen_file, 
+		args.PDB_intra_resource, args.PDB_inter_resource, args.AF2_intra_resource, args.PIONEER_inter_resource, 
+		args.binary_interactome, output_path, args.intra_dist_upperlimit, args.inter_dist_upperlimit, args.threads
 	)
 
 	# Generate a summary table of mutation signatures
-	generate_result_table(final_output_intra_lof, final_output_intra_pdb, final_output_inter_pdb, final_output_intra_af2, final_output_inter_pioneer, os.path.join(args.output_path, f"{args.job_name}_signatures.txt"))
-
-	# Clean up intermediate files
-	os.remove(os.path.join(output_path, "Preprocessed.maf"))
+	generate_result_table(final_output_intra_lof, final_output_intra_pdb, final_output_inter_pdb, final_output_intra_af2, final_output_inter_pioneer, args.canonical_isoform, os.path.join(args.output_path, f"{args.job_name}_signatures.txt"))
 
 	if args.no_network == False:
 		# Perform 3D-structurally-informed PPI network propagation to identify significantly interconnected modules.
-		network_propagation(os.path.join(args.output_path, f"{args.job_name}_subnetworks.txt"), output_path, os.path.join(output_path, "Expr_uniprots.txt"), final_output_intra_lof, final_output_intra_pdb, final_output_inter_pdb, final_output_intra_af2, final_output_inter_pioneer)
-
+		network_propagation(args.binary_interactome, os.path.join(args.output_path, f"{args.job_name}_subnetworks.txt"), 
+			output_path, os.path.join(output_path, "Expr_uniprots.txt"), final_output_intra_lof, final_output_intra_pdb, 
+			final_output_inter_pdb, final_output_intra_af2, final_output_inter_pioneer, args.intercept, args.restart_prob,
+			args.max_subnetwork_size, args.random_seed, args.delta_trial, args.threads)
