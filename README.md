@@ -115,7 +115,7 @@ NetFlow3D will output the following and files and a folder. `{job_name}` will be
 	1. `Input_parameters.txt`: Records the input parameters.
    	2. `Expr_uniprots.txt`: Contains UniProt IDs of expressed genes. 
 	3. `Per_residue_info.txt`: Summarizes mutation information for each residue.
-        4. `mutrate.txt`: Includes background model parameters.
+ 	4. `mutrate.txt`: Includes background model parameters.
  	5. `All_intra_LoF_pvalue.txt`: Includes results of LOF enrichment analysis.
   	6. `PDB_graph`, `AlphaFold2_graph_pLDDT0`: Includes residue-residue contact maps.
 	7. `PIONEER_inter_pvalue.txt`, `PDB_intra_pvalue.txt`, `PDB_inter_pvalue.txt`, `AlphaFold2_intra_pvalue_pLDDT0.txt`: Includes results of 3D cluster clustering analysis.
