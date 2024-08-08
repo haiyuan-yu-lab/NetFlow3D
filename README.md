@@ -38,9 +38,9 @@ Your command should be in the following format (the contents in `[]` are optiona
 	
 We provide example input files in `./example/input/`. Here is an example of your command (please run the following command to see if NetFlow3D is working properly, taking ~1min):
 
-	python NetFlow3D.py -m example/input/mutations.maf -I test -X example/input/expressed_genes.txt -n example/input/interactome.txt -t 10
+	python NetFlow3D.py -m example/input/mutations.maf -I test -X example/input/expressed_genes.txt
 	
-If you run the above command, the output should be found in `./output/`, including `test_signatures.txt`, `test_subnetworks_intercept1.0_lowres_edgeweightTrue.txt`, and a folder `test/`. To get an idea of what the output files should look like, please see example output files in `./example/output/`.
+If you run the above command, the output should be found in `./output/`, including `test_signatures.txt`, `test_subnetworks.txt`, and a folder `test/`. To get an idea of what the output files should look like, please see example output files in `./example/output/`.
 
 
 ## Prepare input files
