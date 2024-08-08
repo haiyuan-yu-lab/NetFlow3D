@@ -18,6 +18,9 @@ The Python Standard Library and the following packages:
 	git clone https://github.com/haiyuan-yu-lab/NetFlow3D.git
 	cd NetFlow3D
 	python NetFlow3D.py -h
+
+## Run the Unit Tests
+	python test_netflow3d.py
 	
 ## Usage
 Your command should be in the following format (the contents in `[]` are optional):
