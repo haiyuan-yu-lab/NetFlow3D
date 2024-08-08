@@ -111,7 +111,7 @@ NetFlow3D will output the following and files and a folder. `{job_name}` will be
 
 - `{job_name}/`
 
-	This is a folder containing intermediate files by NetFlow3D:
+	This is a folder containing intermediate files:
 	1. `Input_parameters.txt`: Records the input parameters.
    	2. `Expr_uniprots.txt`: Contains UniProt IDs of expressed genes. 
 	3. `Per_residue_info.txt`: Summarizes mutation information for each residue.
