@@ -55,6 +55,8 @@ If you run the above command, the output should be found in `./output/`, includi
 	<ul>
 	<li>Chromosome</li>
 	<li>Start_Position</li>
+	<li>Reference_Allele</li>
+	<li>Tumor_Seq_Allele2</li>	
 	<li>Variant_Classification</li>
 	<li>ENSP</li>
 	<li>Transcript_ID</li>
@@ -62,7 +64,6 @@ If you run the above command, the output should be found in `./output/`, includi
 	<li>Protein_position</li>
 	<li>Tumor_Sample_Barcode</li>
 	</ul>
-
 	Other columns can also be present in the MAF file but they will not be used. 
 
 ### Optional input
