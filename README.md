@@ -26,7 +26,7 @@ To see the available options and usage information, please run:
 	
  	python NetFlow3D.py -h
  
-Your command should be in the following format (the contents in `[]` are optional):
+To run NetFlow3D, your command should be in the following format (the contents in `[]` are optional):
 
 	python NetFlow3D.py -m <input_maf> -I <job_name> [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-t <threads>]
 
