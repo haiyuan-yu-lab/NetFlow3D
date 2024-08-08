@@ -16,12 +16,16 @@ The Python Standard Library and the following packages:
 
 	git clone https://github.com/haiyuan-yu-lab/NetFlow3D.git
 	cd NetFlow3D
-	python NetFlow3D.py -h
 
 ## Run unit tests (~1.5min)
 	python test_netflow3d.py
 	
 ## Usage
+
+To see the available options and usage information for NetFlow3D.py, please run:
+	
+ 	python NetFlow3D.py -h
+ 
 Your command should be in the following format (the contents in `[]` are optional):
 
 	python NetFlow3D.py -m <input_maf> -I <job_name> [-X <expressed_genes>] [-n <binary_interactome>] [-o <output_path>] [-t <threads>]
