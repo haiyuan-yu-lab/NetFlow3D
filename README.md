@@ -19,7 +19,7 @@ The Python Standard Library and the following packages:
 	cd NetFlow3D
 	python NetFlow3D.py -h
 
-## Run the Unit Tests
+## Run unit tests
 	python test_netflow3d.py
 	
 ## Usage
