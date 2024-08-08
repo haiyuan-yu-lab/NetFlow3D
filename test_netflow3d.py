@@ -100,6 +100,5 @@ class TestNetFlow3D(unittest.TestCase):
 				result = filecmp.cmp(tempfilename, o)
 				os.unlink(tempfilename)
 				self.assertTrue(result)
-
-if __name__ == '__main__':
-    unittest.main(argv=[''], verbosity=2, exit=False)
+			
+unittest.main(argv=[''], verbosity=2, exit=False)
