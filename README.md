@@ -112,13 +112,15 @@ NetFlow3D will output the following and files and a folder. `{job_name}` will be
 - `{job_name}/`
 
 	This is a folder containing intermediate files by NetFlow3D:
-	1. `initial_state.graphml.gz`: input to the network propagation model in NetFlow3D.
-	2. `final_state.graphml.gz`: output from the network propagation model in NetFlow3D.
-	3. `choose_delta.txt`: δ's from randomized input
-	4. `Per_residue_info.txt`: mutation information summarized to each residue.
-        5. `Expr_uniprots.txt`
-	6. `PIONEER_inter_pvalue.txt`, `PDB_intra_pvalue.txt`, `PDB_inter_pvalue.txt`, `AlphaFold2_intra_pvalue_pLDDT0.txt`: 3D cluster information.
-	7.  `All_intra_LoF_pvalue.txt`: LOF enrichment information.
-	8. `PDB_graph`, `AlphaFold2_graph_pLDDT0`: residue-residue contact map.
+	1. `Input_parameters.txt`: Log the input parameters. 
+   	2. `Expr_uniprots.txt`: UniProt IDs encoded by expressed genes. 
+	3. `Per_residue_info.txt`: mutation information summarized to each residue.
+        4. `mutrate.txt`: Background model parameters.
+ 	5. `All_intra_LoF_pvalue.txt`: LOF enrichment information.
+  	6. `PDB_graph`, `AlphaFold2_graph_pLDDT0`: residue-residue contact map.
+	7. `PIONEER_inter_pvalue.txt`, `PDB_intra_pvalue.txt`, `PDB_inter_pvalue.txt`, `AlphaFold2_intra_pvalue_pLDDT0.txt`: 3D cluster information.
+ 	8. `initial_state.graphml.gz`: input to the network propagation model in NetFlow3D.
+ 	9. `choose_delta.txt`: δ's from randomized input
+	10. `final_state.graphml.gz`: output from the network propagation model in NetFlow3D.
 
 
