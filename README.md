@@ -22,7 +22,7 @@ The Python Standard Library and the following packages:
 	
 ## Usage
 
-To see the available options and usage information for NetFlow3D.py, please run:
+To see the available options and usage information, please run:
 	
  	python NetFlow3D.py -h
  
