@@ -129,7 +129,7 @@ The Human Protein Structurome consists of two parts:
 Each file in this folder (file name format: `{UniProtID}.graphml.gz`) stores a residue-residue interaction network derived from PDB structures (https://www.rcsb.org/). Each network is represented by a graph, where the nodes are the amino acid residues in this protein covered by at least one PDB chain. An edge exists if the minimal intra-chain distance between two residues among all available PDB chains is smaller than 10 angstrom (the distance between two residues in a specific PDB chain is defined as the distance between their closest atoms in that chain). Each node does not have an attribute. Each edge has two attributes: "distance" (unit: angstrom) and "source" (the residues in the PDB chain where the value in "distance" is obtained, format: UniProtResidue1:PDBResidue1;UniProtResidue2:PDBResidue2).
 
 - `./graph/PDB_inter/`
-Each file in this folder (file name format: `{UniProtID}.graphml.gz`) stores a residue-residue interaction network derived from PDB structures. These networks represent interactions between residues located in different PDB chains. Each network is depicted as a graph, where:
+Each file in this folder (file name format: `{UniProtID}.graphml.gz`) stores a residue-residue interaction network derived from PDB structures. These networks represent interactions between residues located in different PDB chains. Each network is represented by a graph, where:
 	1. One end of an edge represents a residue in the protein identified by the UniProtID.
 	2. The other end of the edge represents a residue either from the same protein or another protein, but it must be from a different PDB chain.
 
