@@ -133,7 +133,7 @@ Each file in this folder (file name format: `{UniProtID}.graphml.gz`) stores a r
 	1. One end of an edge represents a residue in the protein identified by the UniProtID.
 	2. The other end of the edge represents a residue either from the same protein or another protein, but it must be from a different PDB chain.
 
-The interaction is included in the network if the minimal inter-chain distance between the two residues, across all available PDB structures, is less than 10 angstroms.
+An edge exists if the minimal inter-chain distance between the two residues, across all available PDB structures, is less than 10 angstroms.
 
 - `./graph/AF2_pLDDT0/`
 Each file in this folder (file name format: `{UniProtID}.graphml.gz`) stores a residue-residue interaction network derived from the structures in AlphaFold DB (https://alphafold.ebi.ac.uk/). The way of generating the files in this part is the same as that of generating the files in `./graph/PDB_intra/`. All residues in the AlphaFold DB structures are involved when generating this folder regardless of model confidence.
