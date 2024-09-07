@@ -125,7 +125,6 @@ NetFlow3D will output the following and files and a folder. `{job_name}` will be
 ## The Human Protein Structurome
 The Human Protein Structurome consists of two parts:
 ### Part 1: residue-residue contact map derived from 3D protein structures
-These data are stored under `./graph/`:
 - `./graph/PDB_intra/`
 Each file in this folder (file name format: UniProtID.graphml.gz) stores a residue-residue interaction network derived from PDB structures (https://www.rcsb.org/). Each network is represented by a graph, where the nodes are the amino acid residues covered by at least one PDB chain of the protein indicated in the file name. An edge exists if the minimal intra-chain distance between two residues among all available PDB chains is smaller than 10 angstrom (the distance between two residues in a specific PDB chain is defined as the distance between their closest atoms in that chain). Each node does not have an attribute. Each edge has two attributes: "distance" (unit: angstrom) and "source" (the residues in the PDB chain where the value in "distance" is obtained, format: UniProtResidue1:PDBResidue1;UniProtResidue2:PDBResidue2).
 
