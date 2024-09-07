@@ -130,10 +130,8 @@ Each file in this folder (file name format: `{UniProtID}.graphml.gz`) stores a r
 
 - `./graph/PDB_inter/`
 Each file in this folder (file name format: `{UniProtID}.graphml.gz`) stores a residue-residue interaction network derived from PDB structures. These networks represent interactions between residues located in different PDB chains. Each network is depicted as a graph, where:
-	<ul>
-	<li>One end of an edge represents a residue in the protein identified by the UniProtID.
-	<li>The other end of the edge represents a residue either from the same protein or another protein, but it must be from a different PDB chain.
-	</ul>
+	1. One end of an edge represents a residue in the protein identified by the UniProtID.
+	2. The other end of the edge represents a residue either from the same protein or another protein, but it must be from a different PDB chain.
 
 The interaction is included in the network if the minimal inter-chain distance between the two residues, across all available PDB structures, is less than 10 angstroms.
 
