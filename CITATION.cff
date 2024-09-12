@@ -1,9 +1,11 @@
-cff-version: 1.1.0
+cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-- family-names: Zhang
-  given-names: Yingying
-orcid: https://orcid.org/0000-0003-3819-5467
-title:haiyuan-yu-lab/NetFlow3D: v1.0.0 - Initial Release
-version: v1.0.0
+- family-names: "Zhang"
+  given-names: "Yingying"
+  orcid: "https://orcid.org/0000-0003-3819-5467"
+title: "NetFlow3D: v1.0.0 - Initial Release"
+version: 1.0.0
+doi: 10.5281/zenodo.13754812
 date-released: 2024-09-12
+url: "https://github.com/haiyuan-yu-lab/NetFlow3D"
