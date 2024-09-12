@@ -4,7 +4,7 @@ authors:
 - family-names: "Zhang"
   given-names: "Yingying"
   orcid: "https://orcid.org/0000-0003-3819-5467"
-title: "NetFlow3D: v1.0.0 - Initial Release"
+title: "NetFlow3D"
 version: 1.0.0
 doi: 10.5281/zenodo.13754812
 date-released: 2024-09-12
