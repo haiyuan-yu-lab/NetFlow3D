@@ -1,5 +1,4 @@
 import unittest
-import commonhelper
 import filecmp
 from io import StringIO
 import tempfile
