@@ -789,7 +789,8 @@ def get_suitable_delta(G, beta, size_cutoff, output, upper_bound=1, lower_bound=
 			E = np.matmul(F, np.diag(diag_elements))
 			# Store the heat diffusion matrix and non-zero edge values
 			E_list.append(E)
-			heat_edges.extend(E[E.nonzero()].tolist()[0])
+			# heat_edges.extend(E[E.nonzero()].tolist()[0])
+			heat_edges.extend(E[E.nonzero()].tolist())
 	
 	# Sort the collected edge values in descending order
 	heat_edges = sorted(heat_edges, reverse=True)
