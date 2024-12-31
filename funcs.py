@@ -578,7 +578,8 @@ def identify_hot_modules(G, graph_output, beta, delta):
 		E[E <= delta] = 0
 		
 		# Construct a directed graph from the filtered heat diffusion matrix
-		G = nx.from_numpy_matrix(E.transpose(), create_using=nx.DiGraph)
+		# G = nx.from_numpy_matrix(E.transpose(), create_using=nx.DiGraph)
+		G = nx.from_numpy_array(E.transpose(), create_using=nx.DiGraph)
 		
 		# Relabel the graph nodes with UniProt IDs
 		G = nx.relabel_nodes(G, idx2uniprot)
@@ -801,7 +802,8 @@ def get_suitable_delta(G, beta, size_cutoff, output, upper_bound=1, lower_bound=
 	# Check if the initial module sizes are within the size cutoff
 	module_size = []
 	for E_copy in copy.deepcopy(E_list):
-		G_tmp = nx.from_numpy_matrix(E_copy.transpose(), create_using=nx.DiGraph)
+		# G_tmp = nx.from_numpy_matrix(E_copy.transpose(), create_using=nx.DiGraph)
+		G_tmp = nx.from_numpy_array(E_copy.transpose(), create_using=nx.DiGraph)
 		for element in list(nx.strongly_connected_components(G_tmp)):
 			module_size.append(len(element))
 
@@ -819,7 +821,8 @@ def get_suitable_delta(G, beta, size_cutoff, output, upper_bound=1, lower_bound=
 			module_size = []
 			for E_copy in copy.deepcopy(E_list):
 				E_copy[E_copy <= delta] = 0
-				G_tmp = nx.from_numpy_matrix(E_copy.transpose(), create_using=nx.DiGraph)
+				# G_tmp = nx.from_numpy_matrix(E_copy.transpose(), create_using=nx.DiGraph)
+				G_tmp = nx.from_numpy_array(E_copy.transpose(), create_using=nx.DiGraph)
 				for element in list(nx.strongly_connected_components(G_tmp)):
 					module_size.append(len(element))
 			
