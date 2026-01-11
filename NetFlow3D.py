@@ -764,6 +764,6 @@ if __name__ == "__main__":
 	if args.no_network == False:
 		# Perform 3D-structurally-informed PPI network propagation to identify significantly interconnected modules.
 		network_propagation(args.binary_interactome, os.path.join(args.output_path, f"{args.job_name}_subnetworks.txt"), 
-			output_path, os.path.join(output_path, "Expr_uniprots.txt"), final_output_intra_lof, final_output_intra_pdb, 
+			output_path, expr_uniprots, final_output_intra_lof, final_output_intra_pdb, 
 			final_output_inter_pdb, final_output_intra_af2, final_output_inter_pioneer, args.intercept, args.restart_prob,
 			args.max_subnetwork_size, args.random_seed, args.delta_trial, args.threads)
