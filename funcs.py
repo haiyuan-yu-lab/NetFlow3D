@@ -873,7 +873,7 @@ def get_one_delta(G_original, delta_output, restart_prob, max_subnetwork_size, s
 	random.shuffle(weight_list)
 	
 	# Perform double edge swap to randomize the graph structure while preserving degree sequence
-	nx.double_edge_swap(G, nswap=len(G.edges()), max_tries=500000, seed=seed)
+	nx.double_edge_swap(G, nswap=len(G.edges()), max_tries = min(5 * len(G.edges()), 5000000), seed=seed)
 	
 	# Assign the shuffled weights back to the edges of the graph
 	for i, (u, v) in enumerate(G.edges()):
