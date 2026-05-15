@@ -104,12 +104,16 @@ def get_res_annotation(df, output):
 			res2mutinfo[(row["UniProt"], element)].append("_".join([row["Chromosome"], row["Start_Position"], row["Tumor_Sample_Barcode"]]))
 		return True
 
+	if df.shape[0] == 0:
+		return
+	
 	# Initialize dictionaries to store mutation counts and information
 	res2mutcount = defaultdict(int)
 	res2mutinfo = defaultdict(list)
 	
 	# Apply the gather_mutation_info function to each row in the DataFrame
-	df["status"] = df.apply(gather_mutation_info, axis=1)
+	for _, row in df.iterrows():
+		gather_mutation_info(row)
 
 	# Open the output file in write mode
 	with open(output, "w") as f:
@@ -715,7 +719,10 @@ def get_initial_distribution(G_original, final_output_intra_pdb, final_output_in
 	for file in [final_output_inter_pdb, final_output_inter_pioneer]:
 		if file is not None:
 			df = pd.read_csv(file, sep="\t")
-			df["status"] = df.apply(get_interaction2pval, axis=1)
+			if df.shape[0] == 0:
+				continue
+			for _, row in df.iterrows():
+				get_interaction2pval(row)
 	for u, v in interaction2pval:
 		if G.has_edge(u, v):
 			# Adjust edge weight by adding the negative log of the minimum p-value, capped at 300
@@ -726,7 +733,10 @@ def get_initial_distribution(G_original, final_output_intra_pdb, final_output_in
 	for file in [final_output_intra_pdb, final_output_intra_af2, final_output_inter_pdb, final_output_inter_pioneer]:
 		if file is not None:
 			df = pd.read_csv(file, sep="\t")
-			df["status"] = df.apply(get_uniprot2pval, axis=1)
+			if df.shape[0] == 0:
+				continue
+			for _, row in df.iterrows():
+				get_uniprot2pval(row)
 	for uniprot in set(uniprot2pval).intersection(set(G.nodes())):
 		# Adjust node heat score by adding the negative log of the minimum p-value, capped at 300
 		G.nodes[uniprot]["heat_score"] = min(-np.log10(min(uniprot2pval[uniprot])), 300)
